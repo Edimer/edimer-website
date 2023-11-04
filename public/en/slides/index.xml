@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Slides | Prueba</title>
+    <title>Slides | Edimer David Jaramillo</title>
     <link>https://prueba.github.io/en/slides/</link>
       <atom:link href="https://prueba.github.io/en/slides/index.xml" rel="self" type="application/rss+xml" />
     <description>Slides</description>
@@ -43,10 +43,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Eating...&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
-&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+&lt;p&gt;In-line math: $\mu = 2$&lt;/p&gt;
 &lt;p&gt;Block math:&lt;/p&gt;
 &lt;p&gt;$$
-f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+\mu = 2
 $$&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;

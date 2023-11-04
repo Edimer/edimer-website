@@ -30,11 +30,11 @@
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://prueba.github.io/en/tags/</loc>
+    <loc>https://prueba.github.io/en/post/getting-started/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://prueba.github.io/en/post/getting-started/</loc>
+    <loc>https://prueba.github.io/en/tags/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -47,6 +47,10 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://prueba.github.io/en/post/2020-12-01-r-rmarkdown/</loc>
+    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://prueba.github.io/en/tag/otra/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -102,6 +106,10 @@
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://prueba.github.io/en/apps/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://prueba.github.io/en/tag/deep-learning/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -110,15 +118,11 @@
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://prueba.github.io/en/project/example/</loc>
+    <loc>https://prueba.github.io/en/apps/example/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://prueba.github.io/en/project/external-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://prueba.github.io/en/project/</loc>
+    <loc>https://prueba.github.io/en/apps/external-project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
