@@ -5,7 +5,7 @@ theme: "starter-hugo-academic"
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Edimer David Jaramillo # Website name
-baseURL: 'https://prueba.github.io' # Website URL
+baseURL: 'https://edimer.netlify.app' # Website URL
 
 ############################
 ## LANGUAGE
