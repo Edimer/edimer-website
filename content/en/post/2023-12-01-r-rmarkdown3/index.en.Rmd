@@ -1,16 +1,16 @@
 ---
-title: "Probando con R Markdown"
+title: "Otra prueba"
 author: "Frida Gomam"
-date: 2023-12-31T21:16:14-05:00
-categories: ["R"]
-tags: ["R Markdown", "plot", "regression", "otra"]
+date: 2023-12-01T21:18:14-05:00
 output:
   html_document:
     toc: true
+categories: ["R", "Machine Learning"]
+tags: ["R Markdown", "plot", "regression", "otra"]
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = FALSE)
+knitr::opts_chunk$set(collapse = FALSE, warning = FALSE, message = FALSE)
 ```
 
 # R Markdown
@@ -38,3 +38,10 @@ pie(
   init.angle = -50, border = NA
 )
 ```
+
+# Tabla
+
+```{r}
+readr::read_csv("ejemplo.csv")
+```
+

@@ -1,12 +1,12 @@
 ---
-title: "Probando con R Markdown"
+title: "Otra prueba"
 author: "Frida Gomam"
-date: 2023-12-31T21:16:14-05:00
-categories: ["R"]
-tags: ["R Markdown", "plot", "regression", "otra"]
+date: 2023-12-01T21:18:14-05:00
 output:
   html_document:
     toc: true
+categories: ["R", "Machine Learning"]
+tags: ["R Markdown", "plot", "regression", "otra"]
 ---
 
 
@@ -66,3 +66,28 @@ pie(
 <img src="{{< blogdown/postref >}}index.en_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
 <p class="caption"><span id="fig:pie"></span>Figure 1: A fancy pie chart.</p>
 </div>
+
+# Tabla
+
+
+```r
+readr::read_csv("ejemplo.csv")
+```
+
+```
+## # A tibble: 150 × 5
+##    Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+##           <dbl>       <dbl>        <dbl>       <dbl> <chr>  
+##  1          5.1         3.5          1.4         0.2 setosa 
+##  2          4.9         3            1.4         0.2 setosa 
+##  3          4.7         3.2          1.3         0.2 setosa 
+##  4          4.6         3.1          1.5         0.2 setosa 
+##  5          5           3.6          1.4         0.2 setosa 
+##  6          5.4         3.9          1.7         0.4 setosa 
+##  7          4.6         3.4          1.4         0.3 setosa 
+##  8          5           3.4          1.5         0.2 setosa 
+##  9          4.4         2.9          1.4         0.2 setosa 
+## 10          4.9         3.1          1.5         0.1 setosa 
+## # ℹ 140 more rows
+```
+
