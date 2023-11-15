@@ -84,5 +84,8 @@
   </url><url>
     <loc>https://edimer.netlify.app/en/categories/</loc>
     <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/post/</loc>
+    <changefreq>weekly</changefreq>
   </url>
 </urlset>
