@@ -4,6 +4,10 @@ date: "2023-06-31"
 categories: 
   - Quarto
   - R
+tags: 
+  - Quarto
+  - Plot
+  - R
 format:
   hugo-md:
     toc: true

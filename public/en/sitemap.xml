@@ -117,7 +117,13 @@
     <loc>https://edimer.netlify.app/en/post/ejemplo-quarto-r/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://edimer.netlify.app/en/tag/quarto/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://edimer.netlify.app/en/category/quarto/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/r/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
