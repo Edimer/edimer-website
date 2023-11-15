@@ -46,6 +46,26 @@
     <lastmod>2023-11-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://edimer.netlify.app/en/category/coordinates/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/post/ejemplo-quarto-py/prueba-py/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/category/matplotlib/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/python/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/quarto/</loc>
+    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://edimer.netlify.app/en/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -115,9 +135,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://edimer.netlify.app/en/post/ejemplo-quarto-r/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://edimer.netlify.app/en/tag/quarto/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://edimer.netlify.app/en/category/quarto/</loc>
