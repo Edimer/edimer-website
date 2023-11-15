@@ -1,7 +1,7 @@
 ---
 title: "Otra prueba!"
 author: "Frida Gomam"
-date: 2023-11-30
+date: 2023-11-01
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression", "otra"]
 output:
