@@ -1,19 +1,18 @@
 ---
-title: "Probando con R Markdown"
+title: "Prueba"
 author: "Frida Gomam"
-date: 2023-11-17
-categories: ["R"]
+date: 2023-12-31T21:13:14-05:00
+categories: ["R", "Machine Learning"]
 tags: ["R Markdown", "plot", "regression", "otra"]
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = FALSE, warning = FALSE,
-                      message = FALSE)
+knitr::opts_chunk$set(collapse = TRUE, warning = FALSE, message = FALSE)
 ```
 
 # R Markdown
 
-Probando...
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 You can embed an R code chunk like this:
 
@@ -37,15 +36,9 @@ pie(
 )
 ```
 
-# Gráfico interactivo
+# Tabla
 
 ```{r}
-library(plotly)
-library(tidyverse)
-ggplotly(
-  iris %>% 
-    ggplot(aes(x = Sepal.Length)) +
-    geom_density()
-)
+readr::read_csv("ejemplo.csv")
 ```
 

@@ -5,6 +5,7 @@ blogdown::stop_server()
 
 
 # Guía --> https://carpentries-incubator.github.io/blogging-with-hugo-and-github-pages/
+# Guía --> https://www.drdataking.com/post/building-your-website-with-hugo-and-rmarkdown/
  
 # Guías de Hugo --> Quarto
 # https://silviacanelon.com/about/
