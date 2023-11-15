@@ -13,3 +13,5 @@ blogdown::stop_server()
 # https://www.paulrjohnson.net/
 # https://university.wowchemy.com/getting-started/customize/
 
+# Plantillas Hugoblox
+# https://hugoblox.com/templates/
