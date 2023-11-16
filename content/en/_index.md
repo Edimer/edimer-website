@@ -217,11 +217,6 @@ sections:
     columns: "2"
     view: compact
   id: posts
-- block: tag_cloud
-  content:
-    title: Popular Topics
-  design:
-    columns: "2"  
 - block: portfolio
   content:
     buttons:
@@ -268,6 +263,11 @@ sections:
     columns: "2"
     view: compact
   id: talks
+- block: tag_cloud
+  content:
+    title: Popular Topics
+  design:
+    columns: "2"   
 - block: contact
   content:
     address:

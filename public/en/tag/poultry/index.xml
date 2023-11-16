@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Poultry | Edimer David Jaramillo</title>
+    <link>https://edimer.netlify.app/en/tag/poultry/</link>
+      <atom:link href="https://edimer.netlify.app/en/tag/poultry/index.xml" rel="self" type="application/rss+xml" />
+    <description>Poultry</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 17 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://edimer.netlify.app/media/icon_hu14a0761fffe66db994c11cec7004791f_50951_512x512_fill_lanczos_center_3.png</url>
+      <title>Poultry</title>
+      <link>https://edimer.netlify.app/en/tag/poultry/</link>
+    </image>
+    
+    <item>
+      <title>Caracterización de Sistemas de Producción Industrial de Pollo de Engorde en el Departamento de Santander- Colombia</title>
+      <link>https://edimer.netlify.app/en/publication/sistemas-de-produccion-pollo/</link>
+      <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://edimer.netlify.app/en/publication/sistemas-de-produccion-pollo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
