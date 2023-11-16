@@ -4,10 +4,10 @@ education:
   courses:
   - course: Specialist in statistics
     institution: Universidad Nacional, Colombia
-    year: 2016
+    year: 2017
   - course: Zootechnician
     institution: Universidad Nacional, Colombia
-    year: 2015
+    year: 2016
 name_pronunciation: Edimer David Jaramillo
 first_name: Edimer
 last_name: David Jaramillo
@@ -18,6 +18,8 @@ interests:
 - Data visualization
 - Sound analysis
 - Bioinformatics
+- Big Data
+- Geographic information system
 organizations:
 - name: Datalytics
   url: https://www.datalytics.com/
@@ -85,12 +87,6 @@ social:
 - icon: envelope
   icon_pack: fas
   link: /#contact
-- display:
-    header: true
-  icon: atom
-  icon_pack: fas
-  label: Machine Learning with R and Python
-  link: https://blogrpy.netlify.app/
 - icon: github
   icon_pack: fab
   link: https://github.com/Edimer
@@ -100,6 +96,12 @@ social:
 - icon: cv
   icon_pack: ai
   link: uploads/cv_edimer.html
+- display:
+    header: true
+  icon: atom
+  icon_pack: fas
+  label: Machine Learning with R and Python
+  link: https://blogrpy.netlify.app/  
 status:
   icon: ☕️
 superuser: true
