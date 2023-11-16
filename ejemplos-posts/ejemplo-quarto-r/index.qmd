@@ -1,9 +1,13 @@
 ---
-title: Hello, Quarto
+title: "Ejemplo de Quarto con R"
 date: "2023-06-31"
 categories: 
-  - Matplotlib
-  - Coordinates
+  - Quarto
+  - R
+tags: 
+  - Quarto
+  - Plot
+  - R
 format:
   hugo-md:
     toc: true

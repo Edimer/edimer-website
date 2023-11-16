@@ -1,9 +1,12 @@
 ---
-title: Hello, Quarto Python
-date: "2023-12-31"
+title: "Ejemplo de Quarto con Python"
+date: "2023-07-31"
 categories: 
   - Matplotlib
   - Coordinates
+tags: 
+  - Quarto
+  - Python
 format: hugo-md
 jupyter: python3
 ---
