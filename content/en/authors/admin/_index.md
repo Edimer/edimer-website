@@ -1,5 +1,5 @@
 ---
-bio: Este texto aparecerá al final de cada publicación (post).
+bio: I am more of a friend of Salviati than of Simplicio, although I respect and admire Sagredo's neutral vision!
 education:
   courses:
   - course: Specialist in statistics

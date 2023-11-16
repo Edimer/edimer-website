@@ -1,0 +1,1 @@
+todas las imágenes fueron tomadas de: https://shiny.rstudio.com/tutorial/

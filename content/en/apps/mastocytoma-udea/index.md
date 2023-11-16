@@ -19,6 +19,7 @@ tags:
 - Fastai
 - Pets
 - Deep Learning
+- Python
 title: Mastocytoma classifier with artificial vision
 url_code: ""
 url_pdf: ""

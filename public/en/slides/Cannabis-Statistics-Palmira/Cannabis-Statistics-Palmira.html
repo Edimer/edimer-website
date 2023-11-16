@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Pruebas de Evaluación Agronómica de genotipos de Cannabis sp.</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Edimer David Jaramillo" />
+    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="mtheme_max.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Pruebas de Evaluación Agronómica de genotipos de Cannabis sp.
+## Análisis Estadístico con R
+<html>
+<div style="float:left">
+
+</div>
+<hr color='#EB811B' size=1px width=800px>
+</html>
+### <a href="https://edimer.github.io/">Edimer David Jaramillo</a>
+### Universidad Nacional - Palmira
+### 28-11-2020
+
+---
+
+
+class: inverse, center, middle
+
+# 
+
+&lt;center&gt;
+&lt;img src = "https://yahooeysblog.files.wordpress.com/2017/01/george-e-p-box-models.jpg?w=640"/&gt;
+&lt;/center&gt;
+
+
+---
+
+class: inverse, center, middle
+
+# Diseño de experimentos: introducción
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt; 
+
+&lt;center&gt;
+&lt;img src = "https://cdn1.iconfinder.com/data/icons/future-farming-color/96/future-farming-technology-agriculture-science-512.png"; height = 400/&gt;
+&lt;/center&gt;
+
+
+
+---
+
+# Ronald Fisher
+
+- [La Estadística una ciencia del sigo XX. R.A. Fisher, el genio](https://revistas.unal.edu.co/index.php/estad/article/view/28348/28693)
+
+.pull-left[
+
+&lt;center&gt;
+&lt;img src = "https://images-na.ssl-images-amazon.com/images/I/41Qltfc7x-L._SX323_BO1,204,203,200_.jpg"/&gt;
+&lt;/center&gt;
+
+]
+
+.pull-right[
+
+&lt;center&gt;
+&lt;img src = "http://www.madrimasd.org/blogs/matematicas/files/2019/07/image001.gif"/&gt;
+&lt;/center&gt;
+
+- [Scientific method: Statistical errors](https://www.nature.com/news/scientific-method-statistical-errors-1.14700)
+
+]
+
+---
+
+# El arte de la experimentación
+
+.pull-left[ 
+
+#### ¿Por qué hacer un experimento?
+
+- Determinar las principales causas de variación en una respuesta medida
+- Encontrar las condiciones que dan lugar a una respuesta máxima o mínima
+- Comparar las respuestas logradas en diferentes entornos de variables controlables
+- Obtener un modelo matemático para predecir respuestas futuras
+
+#### Técnicas fundamentales
+
+- Replicación `-&gt;`  Incrementa precisión
+- Bloqueo `-&gt;` Incrementa precisión
+- Aleatorización `-&gt;` Reduce el sesgo
+
+]
+
+.pull-right[
+
+&lt;br&gt;
+
+&lt;center&gt;
+&lt;img src = "https://media.springernature.com/w306/springer-static/cover-hires/book/978-3-319-52250-0"/&gt;
+&lt;/center&gt;
+
+
+]
+
+---
+
+class: inverse, center, middle
+
+# Evaluación Agronómica en Cannabis: Experimento y Análisis Estadístico
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt;
+
+&lt;center&gt;
+&lt;img src = "https://cdn0.iconfinder.com/data/icons/medical-cannabis-color/64/cannabis-drug-medicine-experiment-marijuana-medical-512.png"; height = 400/&gt;
+&lt;/center&gt;
+
+---
+
+# Guía práctica
+
+- [Tomado de *Situación actual y proyecciones del cannabis en Colombia*](https://www.acosemillas.com/wp-content/uploads/2019/10/3.-ICA-CANNABIS-MEDICINAL-CONGRESO.pdf)
+
+&lt;center&gt;
+&lt;img src = "img/protocolo.PNG"; width = 320/&gt;
+&lt;/center&gt;
+
+.pull-left[
+
+#### Diseño Experimental
+
+- Bloques Completos al Azar con 3 repeticiones.
+- Cada unidad experimental deberá estar compuesta mínimo por 20 plantas
+- Variables: Longitud del peciolo (cm), Número de foliolos, THC (%), CBD (%), otras...
+
+]
+
+.pull-right[
+
+#### Análisis Estadístico
+
+- Variables cualitativas: Análisis de Frecuencias
+- Variables Cuantitativas: Análisis Varianza – Comparación Medias (Duncan, Tukey, LSD)
+
+]
+
+
+---
+
+class: inverse, center, middle
+
+# Ejemplo de análisis con R
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt;
+
+&lt;center&gt;
+&lt;img src = "https://www.puneetks.com/img/headers/R2.png"/&gt;
+&lt;/center&gt;
+
+---
+
+# Datos y resumen descriptivo
+
+
+```r
+datos &lt;- read.csv("data/data_ejemplo.csv")
+head(datos)
+```
+
+```
+##   Genotipo  Bloque   Altura
+## 1       G1 Bloque1 144.0995
+## 2       G1 Bloque1 145.5495
+## 3       G1 Bloque1 153.4027
+## 4       G1 Bloque1 146.8695
+## 5       G1 Bloque1 147.1276
+## 6       G1 Bloque1 154.0891
+```
+
+
+
+```r
+summary(datos)
+```
+
+```
+##    Genotipo            Bloque              Altura     
+##  Length:180         Length:180         Min.   :107.5  
+##  Class :character   Class :character   1st Qu.:111.7  
+##  Mode  :character   Mode  :character   Median :120.3  
+##                                        Mean   :122.6  
+##                                        3rd Qu.:130.6  
+##                                        Max.   :154.4
+```
+
+---
+
+# Distribución por genotipo
+
+
+```r
+library(tidyverse)
+datos %&gt;% ggplot(aes(x = Genotipo, y = Altura)) +
+  geom_boxplot() + labs(y = "Altura (cm)")
+```
+
+&lt;img src="Cannabis-Statistics-Palmira_files/figure-html/unnamed-chunk-3-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Distribución por genotipo  y bloque
+
+
+```r
+datos %&gt;% ggplot(aes(x = Genotipo, y = Altura)) +
+  facet_wrap(~Bloque) +
+  geom_boxplot() + labs(y = "Altura (cm)")
+```
+
+&lt;img src="Cannabis-Statistics-Palmira_files/figure-html/unnamed-chunk-4-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Hipótesis y Modelo Matemático
+
+### Modelo General
+
+`$$y_{ij} = \mu + \alpha_i + \beta_j + \epsilon_{ij},\ i = 1, 2, 3,\  j = 1, 2, 3$$`
+
+### Hipótesis Principal
+
+`$$H_0: \alpha_1 = \alpha_2 = \alpha_3 = 0 \\
+H_1: Algún\ \alpha_i\ diferente\ de\ 0$$`
+
+### Hipótesis Verificación
+
+`$$H_0: \beta_1 = \beta_2 = \beta_3 = 0 \\
+H_1: Algún\ \beta_i\ diferente\ de\ 0$$`
+
+---
+
+# Ajuste del modelo
+
+
+```r
+modelo &lt;- aov(Altura ~ Genotipo + Bloque, data = datos)
+summary(modelo)
+```
+
+```
+##              Df Sum Sq Mean Sq F value   Pr(&gt;F)    
+## Genotipo      2   6541    3270   42.33 1.01e-15 ***
+## Bloque        2   4786    2393   30.98 3.04e-12 ***
+## Residuals   175  13521      77                     
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+```
+
+- **Error aleatorio del modelo `\(\sigma^2\)`:**
+
+
+```r
+# Estimador de la varianza del error aleatorio
+varErr &lt;- summary(modelo)[[1]]$"Mean Sq"[3]
+
+# Estimación de la desviación estándar del error aleatorio
+desvErr &lt;- sqrt(varErr)
+desvErr
+```
+
+```
+## [1] 8.789916
+```
+
+---
+
+# Diagnósticos del modelo
+
+
+```r
+par(mfrow = c(2, 2))
+plot(modelo)
+```
+
+&lt;img src="Cannabis-Statistics-Palmira_files/figure-html/unnamed-chunk-7-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Comparación de medias (Tukey) - Tabla
+
+
+```r
+TukeyHSD(modelo)
+```
+
+```
+##   Tukey multiple comparisons of means
+##     95% family-wise confidence level
+## 
+## Fit: aov(formula = Altura ~ Genotipo + Bloque, data = datos)
+## 
+## $Genotipo
+##             diff        lwr       upr     p adj
+## G2-G1   1.340723  -2.452774  5.134220 0.6815422
+## G3-G1 -12.064370 -15.857867 -8.270873 0.0000000
+## G3-G2 -13.405093 -17.198590 -9.611596 0.0000000
+## 
+## $Bloque
+##                       diff        lwr        upr     p adj
+## Bloque2-Bloque1  -9.249517 -13.043014 -5.4560197 0.0000001
+## Bloque3-Bloque1 -12.074287 -15.867784 -8.2807900 0.0000000
+## Bloque3-Bloque2  -2.824770  -6.618268  0.9687269 0.1861421
+```
+
+---
+
+# Comparación de medias (Tukey) - Gráfico Genotipos
+
+
+```r
+plot(TukeyHSD(modelo, which = "Genotipo"))
+```
+
+&lt;img src="Cannabis-Statistics-Palmira_files/figure-html/unnamed-chunk-9-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Comparación de medias (Tukey) - Gráfico Bloque
+
+
+```r
+plot(TukeyHSD(modelo, which = "Bloque"))
+```
+
+&lt;img src="Cannabis-Statistics-Palmira_files/figure-html/unnamed-chunk-10-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+class: inverse, center, middle
+
+# Material de apoyo
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt;
+
+---
+
+# Repositorio Github
+
+&lt;br&gt;
+&lt;center&gt;
+&lt;img src = "img/img0.PNG"/&gt;
+&lt;/center&gt;
+
+.footnote[
+[1] [Diapositivas, código fuente y datos.](https://github.com/Edimer/AgroR/tree/master/Cannabis-Statistics-Palmira)
+]
+
+---
+class: inverse, center, middle
+
+# ¡Gracias!
+
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt; 
+
+&lt;center&gt;
+&lt;img src="img/gracias.gif"/&gt;
+&lt;/center&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

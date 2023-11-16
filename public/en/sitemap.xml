@@ -2,19 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://edimer.netlify.app/en/talk/example-talk/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://edimer.netlify.app/en/event/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://edimer.netlify.app/en/apps/</loc>
     <lastmod>2023-07-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/education/</loc>
+    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/r/</loc>
     <lastmod>2023-07-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -47,6 +43,10 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/pets/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/python/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -102,12 +102,36 @@
     <lastmod>2022-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/slides/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+    <loc>https://edimer.netlify.app/en/tag/agriculture/</loc>
+    <lastmod>2020-11-01T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/slides/example/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+    <loc>https://edimer.netlify.app/en/talk/design-and-statistical-analysis-of-experiments-in-cannabis/</loc>
+    <lastmod>2020-11-01T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/experiment-design/</loc>
+    <lastmod>2020-11-01T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/event/</loc>
+    <lastmod>2020-11-01T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/data-science/</loc>
+    <lastmod>2020-10-01T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/talk/data-science-with-r-uses-in-the-agricultural-sector-example-in-plant-tissue-culture/</loc>
+    <lastmod>2020-10-01T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/talk/creating-applications-with-shiny/</loc>
+    <lastmod>2020-08-01T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/shiny/</loc>
+    <lastmod>2020-08-01T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://edimer.netlify.app/en/categories/</loc>
