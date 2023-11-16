@@ -5,32 +5,48 @@
     <link>https://edimer.netlify.app/en/apps/</link>
       <atom:link href="https://edimer.netlify.app/en/apps/index.xml" rel="self" type="application/rss+xml" />
     <description>Apps</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 10 Jul 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://edimer.netlify.app/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://edimer.netlify.app/media/icon_hu14a0761fffe66db994c11cec7004791f_50951_512x512_fill_lanczos_center_3.png</url>
       <title>Apps</title>
       <link>https://edimer.netlify.app/en/apps/</link>
     </image>
     
     <item>
-      <title>Example Project</title>
-      <link>https://edimer.netlify.app/en/apps/example/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://edimer.netlify.app/en/apps/example/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
-</description>
+      <title>Saber 11 - Colombia</title>
+      <link>https://edimer.netlify.app/en/apps/saber-tests/</link>
+      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://edimer.netlify.app/en/apps/saber-tests/</guid>
+      <description>&lt;h1 id=&#34;project-description&#34;&gt;Project description&lt;/h1&gt;
+&lt;p&gt;This application allows you to monitor the academic performance of high school students in Colombia. The user can choose a year, geographic region and school of interest, and will be able to see grades in mathematics, English, reading, social sciences and natural sciences. A comparative analysis of the current situation of the school with respect to other schools in the region is shown, in addition, the location is shown in a quadrant that the user can modify.&lt;/p&gt;
+&lt;p&gt;This project serves the purpose of using open data from the Colombian government to show uses of data science in the educational sector.&lt;/p&gt;
+&lt;p&gt;Development carried out with &lt;a href=&#34;https://cran.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R&lt;/a&gt; and &lt;a href=&#34;https://shiny.posit.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Shiny&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;app&#34;&gt;App&lt;/h1&gt;
+&lt;div class=&#34;h_iframe&#34;&gt;
+&lt;iframe
+	src=&#34;https://sidereus-pruebas-saber11-colombia.hf.space&#34;
+	frameborder=&#34;0&#34;
+	height=&#34;400&#34;
+	width=&#34;750&#34;
+&gt;&lt;/iframe&gt;
+&lt;/div&gt;</description>
     </item>
     
     <item>
-      <title>External Project</title>
-      <link>https://edimer.netlify.app/en/apps/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://edimer.netlify.app/en/apps/external-project/</guid>
-      <description></description>
+      <title>Mastocytoma classifier with artificial vision</title>
+      <link>https://edimer.netlify.app/en/apps/mastocytoma-udea/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://edimer.netlify.app/en/apps/mastocytoma-udea/</guid>
+      <description>&lt;h1 id=&#34;project-description&#34;&gt;Project description&lt;/h1&gt;
+&lt;p&gt;This project aims to implement computer vision algorithms to classify two types of mastocytoma in pets (high grade - MAG and low grade - MBG). The current version uses the &lt;a href=&#34;https://en.wikipedia.org/wiki/Residual_neural_network&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Resnet&lt;/a&gt; neural network architecture trained through &lt;a href=&#34;https://docs.fast.ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fastai&lt;/a&gt;. The app was built with &lt;a href=&#34;https://www.gradio.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gradio&lt;/a&gt; and deployed on &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugging Face&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This project is in continuous development with the involvement of students and professors from the University of Antioquia (Colombia), evaluating new algorithms and increasing the number of samples in model training.&lt;/p&gt;
+&lt;h1 id=&#34;app&#34;&gt;App&lt;/h1&gt;
+&lt;script
+	type=&#34;module&#34;
+	src=&#34;https://gradio.s3-us-west-2.amazonaws.com/3.38.0/gradio.js&#34;
+&gt;&lt;/script&gt;
+&lt;p&gt;&lt;gradio-app src=&#34;https://sidereus-mastocitoma-udea.hf.space&#34;&gt;&lt;/gradio-app&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

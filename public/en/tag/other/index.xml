@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Other | Edimer David Jaramillo</title>
+    <link>https://edimer.netlify.app/en/tag/other/</link>
+      <atom:link href="https://edimer.netlify.app/en/tag/other/index.xml" rel="self" type="application/rss+xml" />
+    <description>Other</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://edimer.netlify.app/media/icon_hu14a0761fffe66db994c11cec7004791f_50951_512x512_fill_lanczos_center_3.png</url>
+      <title>Other</title>
+      <link>https://edimer.netlify.app/en/tag/other/</link>
+    </image>
+    
+    <item>
+      <title>Mastocytoma classifier with artificial vision</title>
+      <link>https://edimer.netlify.app/en/apps/saber-tests/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://edimer.netlify.app/en/apps/saber-tests/</guid>
+      <description>&lt;p&gt;This project aims to implement computer vision algorithms to classify two types of mastocytoma in pets (high grade - MAG and low grade - MBG). The current version uses the &lt;a href=&#34;https://en.wikipedia.org/wiki/Residual_neural_network&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Resnet&lt;/a&gt; neural network architecture trained through &lt;a href=&#34;https://docs.fast.ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fastai&lt;/a&gt;. The app was built with &lt;a href=&#34;https://www.gradio.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gradio&lt;/a&gt; and deployed on &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugging Face&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This project is in continuous development with the involvement of students and professors from the University of Antioquia (Colombia), evaluating new algorithms and increasing the number of samples in model training.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

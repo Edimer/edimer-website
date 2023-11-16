@@ -10,60 +10,44 @@
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/categories/</loc>
-    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
+    <loc>https://edimer.netlify.app/en/apps/</loc>
+    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/tag/otra/</loc>
-    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
+    <loc>https://edimer.netlify.app/en/tag/education/</loc>
+    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/post/post1-rmarkdown/</loc>
-    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://edimer.netlify.app/en/tag/plot/</loc>
-    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://edimer.netlify.app/en/post/</loc>
-    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://edimer.netlify.app/en/category/r/</loc>
-    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://edimer.netlify.app/en/tag/r-markdown/</loc>
-    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://edimer.netlify.app/en/tag/regression/</loc>
-    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
+    <loc>https://edimer.netlify.app/en/apps/saber-tests/</loc>
+    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://edimer.netlify.app/en/tags/</loc>
-    <lastmod>2023-11-01T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/category/coordinates/</loc>
-    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <loc>https://edimer.netlify.app/en/tag/visualization/</loc>
+    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/post/ejemplo-quarto-py/prueba-py/</loc>
-    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <loc>https://edimer.netlify.app/en/tag/computer-vision/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/category/matplotlib/</loc>
-    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <loc>https://edimer.netlify.app/en/tag/deep-learning/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/tag/python/</loc>
-    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <loc>https://edimer.netlify.app/en/tag/fastai/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/tag/quarto/</loc>
-    <lastmod>2023-07-31T00:00:00+00:00</lastmod>
+    <loc>https://edimer.netlify.app/en/apps/mastocytoma-udea/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/pets/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://edimer.netlify.app/en/</loc>
@@ -98,26 +82,6 @@
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/apps/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://edimer.netlify.app/en/tag/deep-learning/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://edimer.netlify.app/en/tag/demo/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://edimer.netlify.app/en/apps/example/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://edimer.netlify.app/en/apps/external-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://edimer.netlify.app/en/publication/journal-article/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -134,13 +98,10 @@
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/post/ejemplo-quarto-r/</loc>
+    <loc>https://edimer.netlify.app/en/categories/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/category/quarto/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://edimer.netlify.app/en/tag/r/</loc>
+    <loc>https://edimer.netlify.app/en/post/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
