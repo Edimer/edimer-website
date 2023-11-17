@@ -271,45 +271,36 @@ sections:
 - block: contact
   content:
     address:
-      city: Stanford
-      country: United States
-      country_code: US
-      postcode: "94305"
-      region: CA
-      street: 450 Serra Mall
-    appointment_url: https://calendly.com
+      city: Medellín
+      country: Colombia
+      country_code: CO
+      postcode: ""
+      region: Antioquia
+      street: 
+    appointment_url: 
     autolink: true
     contact_links:
-    - icon: twitter
-      icon_pack: fab
-      link: https://twitter.com/Twitter
-      name: DM Me
-    - icon: skype
-      icon_pack: fab
-      link: skype:echo123?call
-      name: Skype Me
-    - icon: video
-      icon_pack: fas
-      link: https://zoom.com
-      name: Zoom Me
+    - icon: envelope
+      icon_pack: fa
+      link: 
+      name: edavidja@unal.edu.co
+    - icon: envelope
+      icon_pack: fa
+      link: 
+      name: edimer.davidj@udea.edu.co
+    - icon: envelope
+      icon_pack: fa
+      link: 
+      name: edimer.david@datalytics.com  
     coordinates:
-      latitude: "37.4275"
-      longitude: "-122.1697"
-    directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-    email: test@example.org
-    form:
-      formspree:
-        id: null
-      netlify:
-        captcha: false
-      provider: netlify
+      latitude: "6.26210"
+      longitude: "-75.57633"
+    directions: 
+    email:
     office_hours:
-    - Monday 10:00 to 13:00
-    - Wednesday 09:00 to 10:00
-    phone: 888 888 88 88
+    phone: 
     subtitle: null
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis
-      ut magna et, vehicula efficitur enim.
+    text: If you want to contact me, do not hesitate to write to me at any of the following emails.
     title: Contact
   design:
     columns: "2"
