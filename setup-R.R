@@ -1,4 +1,4 @@
-blogdown::new_site(theme = "wowchemy/starter-hugo-academic")
+# blogdown::new_site(theme = "wowchemy/starter-hugo-academic")
 blogdown::build_site()
 blogdown::serve_site()
 blogdown::stop_server()

@@ -128,6 +128,24 @@ sections:
   content:
     date_format: Jan 2006
     items:
+    - certificate_url: https://www.datacamp.com/completed/statement-of-accomplishment/course/4f82e3e0cc94c2693c5f05883caea60208c7bb53
+      date_end: "2024-04-03"
+      date_start: "2024-04-03"
+      description: ""
+      icon: datacamp
+      organization: DataCamp
+      organization_url: https://www.datacamp.com/
+      title: Developing LLM Applications with LangChain
+      url: "https://www.datacamp.com/courses/developing-llm-applications-with-langchain"
+    - certificate_url: https://www.datacamp.com/completed/statement-of-accomplishment/course/d1834144239463402b85fd91e94284121e67b92f
+      date_end: "2024-04-02"
+      date_start: "2024-04-02"
+      description: ""
+      icon: datacamp
+      organization: DataCamp
+      organization_url: https://www.datacamp.com/
+      title: Understanding Artificial Intelligence
+      url: "https://www.datacamp.com/courses/understanding-artificial-intelligence"
     - certificate_url: https://www.datacamp.com/statement-of-accomplishment/course/a225799e94d813ecfb4f2625843bc1e9e5aaa139?trk=public_profile_see-credential
       date_end: "2022-05-30"
       date_start: "2022-05-30"

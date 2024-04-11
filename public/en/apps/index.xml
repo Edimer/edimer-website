@@ -5,32 +5,12 @@
     <link>https://edimer.netlify.app/en/apps/</link>
       <atom:link href="https://edimer.netlify.app/en/apps/index.xml" rel="self" type="application/rss+xml" />
     <description>Apps</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 10 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://edimer.netlify.app/media/icon_hu14a0761fffe66db994c11cec7004791f_50951_512x512_fill_lanczos_center_3.png</url>
       <title>Apps</title>
       <link>https://edimer.netlify.app/en/apps/</link>
     </image>
-    
-    <item>
-      <title>Saber 11 - Colombia</title>
-      <link>https://edimer.netlify.app/en/apps/saber-tests/</link>
-      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://edimer.netlify.app/en/apps/saber-tests/</guid>
-      <description>&lt;h1 id=&#34;project-description&#34;&gt;Project description&lt;/h1&gt;
-&lt;p&gt;This application allows you to monitor the academic performance of high school students in Colombia. The user can choose a year, geographic region and school of interest, and will be able to see grades in mathematics, English, reading, social sciences and natural sciences. A comparative analysis of the current situation of the school with respect to other schools in the region is shown, in addition, the location is shown in a quadrant that the user can modify.&lt;/p&gt;
-&lt;p&gt;This project serves the purpose of using open data from the Colombian government to show uses of data science in the educational sector.&lt;/p&gt;
-&lt;p&gt;Development carried out with &lt;a href=&#34;https://cran.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R&lt;/a&gt; and &lt;a href=&#34;https://shiny.posit.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Shiny&lt;/a&gt;.&lt;/p&gt;
-&lt;h1 id=&#34;app&#34;&gt;App&lt;/h1&gt;
-&lt;div class=&#34;h_iframe&#34;&gt;
-&lt;iframe
-	src=&#34;https://sidereus-pruebas-saber11-colombia.hf.space&#34;
-	frameborder=&#34;0&#34;
-	height=&#34;400&#34;
-	width=&#34;750&#34;
-&gt;&lt;/iframe&gt;
-&lt;/div&gt;</description>
-    </item>
     
     <item>
       <title>Mastocytoma classifier with artificial vision</title>

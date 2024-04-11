@@ -107,6 +107,5 @@ status:
 superuser: true
 ---
 
-I am a Zootechnician and specialist in Statistics, with the ability to use statistical methods to solve problems in multiple areas of knowledge.
-I have experience in university teaching, formulation of research projects and statistical consulting. I am dedicated to extracting knowledge from data by implementing machine learning techniques, using programming languages such as *R* and *Python*. Active participant in *Data Science* competitions through platforms such as [Kaggle](https://www.kaggle.com/), [Zindi (Africa)](https://zindi.africa/) and [DataSource (Latin America)](https://www.datasource.ai/).
+I am a Zootechnician and Statistics specialist, with a strong background in applying statistical methods and artificial intelligence techniques to solve problems in various knowledge areas. I have experience in university teaching, formulating research projects, and statistical consulting. I am skilled in extracting knowledge from data by implementing machine learning and artificial intelligence techniques, using programming languages such as *R* and *Python*. I am an active participant in Data Science competitions through platforms such as  [Kaggle](https://www.kaggle.com/), [Zindi (Africa)](https://zindi.africa/) and [DataSource (Latin America)](https://www.datasource.ai/).
 {style="text-align: justify;"}

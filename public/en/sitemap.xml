@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://edimer.netlify.app/en/apps/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
+    <loc>https://edimer.netlify.app/en/tag/artificial-intelligence/</loc>
+    <lastmod>2024-04-06T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/tag/education/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
+    <loc>https://edimer.netlify.app/en/talk/artificial-intelligence-advances-and-challenges/</loc>
+    <lastmod>2024-04-06T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/tag/r/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
+    <loc>https://edimer.netlify.app/en/tag/llm/</loc>
+    <lastmod>2024-04-06T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/apps/saber-tests/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
+    <loc>https://edimer.netlify.app/en/event/</loc>
+    <lastmod>2024-04-06T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://edimer.netlify.app/en/tags/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-06T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/tag/visualization/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
+    <loc>https://edimer.netlify.app/en/apps/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/computer-vision/</loc>
@@ -114,10 +114,6 @@
     <lastmod>2020-11-01T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://edimer.netlify.app/en/event/</loc>
-    <lastmod>2020-11-01T08:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://edimer.netlify.app/en/tag/data-science/</loc>
     <lastmod>2020-10-01T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -127,6 +123,10 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://edimer.netlify.app/en/talk/creating-applications-with-shiny/</loc>
+    <lastmod>2020-08-01T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/r/</loc>
     <lastmod>2020-08-01T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
