@@ -8,15 +8,30 @@ en:
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   contentDir: content/en
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+# Spanish language
+es:
+  languageCode: es-es
+  contentDir: content/es
+  title: Edimer David Jaramillo
+  params:
+    description: Sitio web personal de Edimer David Jaramillo - Científico de Datos y Profesor
+  menu:
+    main:
+      - name: Acerca de mí
+        url: '#about'
+        weight: 10
+      - name: Posts
+        url: '#posts'
+        weight: 20
+      - name: Apps
+        url: '#projects'
+        weight: 30
+      - name: Investigación
+        url: '#featured'
+        weight: 40
+      - name: Charlas
+        url: '#talks'
+        weight: 50
+      - name: Contacto
+        url: '#contact'
+        weight: 60

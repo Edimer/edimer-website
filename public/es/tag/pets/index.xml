@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pets | Edimer David Jaramillo</title>
+    <link>https://edimer.netlify.app/es/tag/pets/</link>
+      <atom:link href="https://edimer.netlify.app/es/tag/pets/index.xml" rel="self" type="application/rss+xml" />
+    <description>Pets</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>es-es</language><lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://edimer.netlify.app/media/icon_hu14a0761fffe66db994c11cec7004791f_50951_512x512_fill_lanczos_center_3.png</url>
+      <title>Pets</title>
+      <link>https://edimer.netlify.app/es/tag/pets/</link>
+    </image>
+    
+    <item>
+      <title>Clasificador de Mastocitoma con visión artificial</title>
+      <link>https://edimer.netlify.app/es/apps/mastocytoma-udea/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://edimer.netlify.app/es/apps/mastocytoma-udea/</guid>
+      <description>&lt;h1 id=&#34;descripción-del-proyecto&#34;&gt;Descripción del proyecto&lt;/h1&gt;
+&lt;p&gt;Este proyecto tiene como objetivo implementar algoritmos de visión artificial para clasificar dos tipos de mastocitoma en mascotas (alto grado - MAG y bajo grado - MBG). La versión actual utiliza la arquitectura de red neuronal &lt;a href=&#34;https://en.wikipedia.org/wiki/Residual_neural_network&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Resnet&lt;/a&gt; entrenada mediante &lt;a href=&#34;https://docs.fast.ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fastai&lt;/a&gt;. La aplicación fue construida con &lt;a href=&#34;https://www.gradio.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gradio&lt;/a&gt; y desplegada en &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugging Face&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Este proyecto está en desarrollo continuo con la participación de estudiantes y profesores de la Universidad de Antioquia (Colombia), evaluando nuevos algoritmos y aumentando el número de muestras en el entrenamiento del modelo.&lt;/p&gt;
+&lt;h1 id=&#34;aplicación&#34;&gt;Aplicación&lt;/h1&gt;
+&lt;script
+	type=&#34;module&#34;
+	src=&#34;https://gradio.s3-us-west-2.amazonaws.com/3.38.0/gradio.js&#34;
+&gt;&lt;/script&gt;
+&lt;p&gt;&lt;gradio-app src=&#34;https://sidereus-mastocitoma-udea.hf.space&#34;&gt;&lt;/gradio-app&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

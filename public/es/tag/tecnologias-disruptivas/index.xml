@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tecnologías Disruptivas | Edimer David Jaramillo</title>
+    <link>https://edimer.netlify.app/es/tag/tecnologias-disruptivas/</link>
+      <atom:link href="https://edimer.netlify.app/es/tag/tecnologias-disruptivas/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tecnologías Disruptivas</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>es-es</language><lastBuildDate>Sat, 28 Jun 2025 08:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://edimer.netlify.app/media/icon_hu14a0761fffe66db994c11cec7004791f_50951_512x512_fill_lanczos_center_3.png</url>
+      <title>Tecnologías Disruptivas</title>
+      <link>https://edimer.netlify.app/es/tag/tecnologias-disruptivas/</link>
+    </image>
+    
+    <item>
+      <title>Sistemas Agénticos con Inteligencia Artificial (IA) - Tecnologías Emergentes y Disruptivas</title>
+      <link>https://edimer.netlify.app/es/talk/sistemas-agenticos-con-inteligencia-artificial-ia-tecnologias-emergentes-y-disruptivas/</link>
+      <pubDate>Sat, 28 Jun 2025 08:00:00 +0000</pubDate>
+      <guid>https://edimer.netlify.app/es/talk/sistemas-agenticos-con-inteligencia-artificial-ia-tecnologias-emergentes-y-disruptivas/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

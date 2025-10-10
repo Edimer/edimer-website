@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Inteligencia Artificial | Edimer David Jaramillo</title>
+    <link>https://edimer.netlify.app/es/tag/inteligencia-artificial/</link>
+      <atom:link href="https://edimer.netlify.app/es/tag/inteligencia-artificial/index.xml" rel="self" type="application/rss+xml" />
+    <description>Inteligencia Artificial</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>es-es</language><lastBuildDate>Sat, 28 Jun 2025 08:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://edimer.netlify.app/media/icon_hu14a0761fffe66db994c11cec7004791f_50951_512x512_fill_lanczos_center_3.png</url>
+      <title>Inteligencia Artificial</title>
+      <link>https://edimer.netlify.app/es/tag/inteligencia-artificial/</link>
+    </image>
+    
+    <item>
+      <title>Sistemas Agénticos con Inteligencia Artificial (IA) - Tecnologías Emergentes y Disruptivas</title>
+      <link>https://edimer.netlify.app/es/talk/sistemas-agenticos-con-inteligencia-artificial-ia-tecnologias-emergentes-y-disruptivas/</link>
+      <pubDate>Sat, 28 Jun 2025 08:00:00 +0000</pubDate>
+      <guid>https://edimer.netlify.app/es/talk/sistemas-agenticos-con-inteligencia-artificial-ia-tecnologias-emergentes-y-disruptivas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Análisis de Datos y Tecnologías Emergentes</title>
+      <link>https://edimer.netlify.app/es/talk/analisis-de-datos-y-tecnologias-emergentes/</link>
+      <pubDate>Sat, 08 Feb 2025 08:00:00 +0000</pubDate>
+      <guid>https://edimer.netlify.app/es/talk/analisis-de-datos-y-tecnologias-emergentes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inteligencia Artificial - Aplicaciones y Desafíos</title>
+      <link>https://edimer.netlify.app/es/talk/inteligencia-artificial-aplicaciones-y-desafios/</link>
+      <pubDate>Wed, 05 Jun 2024 08:00:00 +0000</pubDate>
+      <guid>https://edimer.netlify.app/es/talk/inteligencia-artificial-aplicaciones-y-desafios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inteligencia Artificial-Avances y Desafíos</title>
+      <link>https://edimer.netlify.app/es/talk/inteligencia-artificial-avances-y-desafios/</link>
+      <pubDate>Sat, 06 Apr 2024 08:00:00 +0000</pubDate>
+      <guid>https://edimer.netlify.app/es/talk/inteligencia-artificial-avances-y-desafios/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

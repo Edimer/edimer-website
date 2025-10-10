@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Acústica | Edimer David Jaramillo</title>
+    <link>https://edimer.netlify.app/es/tag/acustica/</link>
+      <atom:link href="https://edimer.netlify.app/es/tag/acustica/index.xml" rel="self" type="application/rss+xml" />
+    <description>Acústica</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>es-es</language><lastBuildDate>Tue, 21 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://edimer.netlify.app/media/icon_hu14a0761fffe66db994c11cec7004791f_50951_512x512_fill_lanczos_center_3.png</url>
+      <title>Acústica</title>
+      <link>https://edimer.netlify.app/es/tag/acustica/</link>
+    </image>
+    
+    <item>
+      <title>Los elementos acústicos espectro-temporales de la música interactúan de forma integrada para modular las respuestas emocionales en cerdos</title>
+      <link>https://edimer.netlify.app/es/publication/spectro-temporal-acoustic/</link>
+      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://edimer.netlify.app/es/publication/spectro-temporal-acoustic/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

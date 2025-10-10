@@ -124,6 +124,18 @@ sections:
     title: Experience
   design:
     columns: "2"
+- block: markdown
+  content:
+    text: |
+      <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1.5rem; border-radius: 10px; margin: 1rem 0; text-align: center;">
+        <h4 style="color: white; margin: 0 0 1rem 0;">🏆 International Recognition</h4>
+        <p style="margin: 0; font-weight: bold;">Award for Best Model (Statistics)</p>
+        <p style="margin: 0.5rem 0;">GMU Statistics Competition 2024</p>
+        <p style="margin: 0.5rem 0;">Winner of the international award in the 2024 International Cherry Blossom Prediction Competition.</p>
+        <p style="margin: 1rem 0 0 0;"><a href="https://competition.statistics.gmu.edu/winners-2024/" target="_blank" style="background: rgba(255,255,255,0.2); color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; display: inline-block;">View details →</a></p>
+      </div>
+  design:
+    columns: "1"
 - block: accomplishments
   content:
     date_format: Jan 2006

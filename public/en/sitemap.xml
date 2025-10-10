@@ -2,53 +2,319 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://edimer.netlify.app/en/tag/artificial-intelligence/</loc>
-    <lastmod>2024-04-06T08:00:00+00:00</lastmod>
+    <loc>https://edimer.netlify.app/en/tag/agentic-ai/</loc>
+    <lastmod>2025-10-03T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/agentic-ai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/agentic-ai/"
+                />
+  </url><url>
+    <loc>https://edimer.netlify.app/en/talk/agentic-systems-with-artificial-intelligence-transforming-software-development-and-its-application-in-agriculture/</loc>
+    <lastmod>2025-10-03T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/talk/agentic-systems-with-artificial-intelligence-transforming-software-development-and-its-application-in-agriculture/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/talk/agentic-systems-with-artificial-intelligence-transforming-software-development-and-its-application-in-agriculture/"
+                />
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/agriculture/</loc>
+    <lastmod>2025-10-03T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/agriculture/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/agriculture/"
+                />
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/artificial-intelligence/</loc>
+    <lastmod>2025-10-03T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/artificial-intelligence/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/artificial-intelligence/"
+                />
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/innovation/</loc>
+    <lastmod>2025-10-03T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/innovation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/innovation/"
+                />
+  </url><url>
+    <loc>https://edimer.netlify.app/en/event/</loc>
+    <lastmod>2025-10-03T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/event/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/event/"
+                />
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/software-development/</loc>
+    <lastmod>2025-10-03T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/software-development/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/software-development/"
+                />
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tags/</loc>
+    <lastmod>2025-10-03T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tags/"
+                />
+  </url><url>
+    <loc>https://edimer.netlify.app/en/talk/agentic-systems-with-artificial-intelligence-ai-emerging-and-disruptive-technologies/</loc>
+    <lastmod>2025-06-28T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/talk/sistemas-agenticos-con-inteligencia-artificial-ia-tecnologias-emergentes-y-disruptivas/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/talk/agentic-systems-with-artificial-intelligence-ai-emerging-and-disruptive-technologies/"
+                />
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/disruptive-technologies/</loc>
+    <lastmod>2025-06-28T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/emerging-technologies/</loc>
+    <lastmod>2025-06-28T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/data-analysis/</loc>
+    <lastmod>2025-02-08T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/talk/data-analysis-and-emerging-technologies/</loc>
+    <lastmod>2025-02-08T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/talk/analisis-de-datos-y-tecnologias-emergentes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/talk/data-analysis-and-emerging-technologies/"
+                />
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/applications/</loc>
+    <lastmod>2024-06-05T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/talk/artificial-intelligence-applications-and-challenges/</loc>
+    <lastmod>2024-06-05T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/talk/inteligencia-artificial-aplicaciones-y-desafios/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/talk/artificial-intelligence-applications-and-challenges/"
+                />
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/challenges/</loc>
+    <lastmod>2024-06-05T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edimer.netlify.app/en/tag/machine-learning/</loc>
+    <lastmod>2024-06-05T08:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/machine-learning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/machine-learning/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/talk/artificial-intelligence-advances-and-challenges/</loc>
     <lastmod>2024-04-06T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/talk/inteligencia-artificial-avances-y-desafios/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/talk/artificial-intelligence-advances-and-challenges/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/llm/</loc>
     <lastmod>2024-04-06T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://edimer.netlify.app/en/event/</loc>
-    <lastmod>2024-04-06T08:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://edimer.netlify.app/en/tags/</loc>
-    <lastmod>2024-04-06T08:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/llm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/llm/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/apps/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/apps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/apps/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/computer-vision/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/computer-vision/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/computer-vision/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/deep-learning/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/deep-learning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/deep-learning/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/fastai/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/fastai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/fastai/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/apps/mastocytoma-udea/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/apps/mastocytoma-udea/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/apps/mastocytoma-udea/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/pets/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/pets/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/pets/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/python/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/python/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/acoustic/</loc>
     <lastmod>2023-02-21T00:00:00+00:00</lastmod>
@@ -57,10 +323,16 @@
     <loc>https://edimer.netlify.app/en/publication-type/article-journal/</loc>
     <lastmod>2023-02-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://edimer.netlify.app/en/tag/machine-learning/</loc>
-    <lastmod>2023-02-21T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/publication-type/article-journal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/publication-type/article-journal/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/music/</loc>
     <lastmod>2023-02-21T00:00:00+00:00</lastmod>
@@ -69,30 +341,100 @@
     <loc>https://edimer.netlify.app/en/publication_types/</loc>
     <lastmod>2023-02-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/publication_types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/publication_types/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/publication/</loc>
     <lastmod>2023-02-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/publication/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/publication/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/publication/spectro-temporal-acoustic/</loc>
     <lastmod>2023-02-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/publication/spectro-temporal-acoustic/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/publication/spectro-temporal-acoustic/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/publication/sistemas-de-produccion-pollo/</loc>
     <lastmod>2022-06-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/publication/sistemas-de-produccion-pollo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/publication/sistemas-de-produccion-pollo/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/multivariate-statistics/</loc>
     <lastmod>2022-06-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/multivariate-statistics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/multivariate-statistics/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/poultry/</loc>
     <lastmod>2022-06-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/poultry/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/poultry/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/general-linear-mixed-model/</loc>
     <lastmod>2022-03-01T00:00:00+00:00</lastmod>
@@ -101,43 +443,139 @@
     <loc>https://edimer.netlify.app/en/publication/music-modulates-emotional/</loc>
     <lastmod>2022-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://edimer.netlify.app/en/tag/agriculture/</loc>
-    <lastmod>2020-11-01T08:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/publication/music-modulates-emotional/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/publication/music-modulates-emotional/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/talk/design-and-statistical-analysis-of-experiments-in-cannabis/</loc>
     <lastmod>2020-11-01T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/talk/design-and-statistical-analysis-of-experiments-in-cannabis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/talk/design-and-statistical-analysis-of-experiments-in-cannabis/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/experiment-design/</loc>
     <lastmod>2020-11-01T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/experiment-design/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/experiment-design/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/data-science/</loc>
     <lastmod>2020-10-01T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/data-science/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/data-science/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/talk/data-science-with-r-uses-in-the-agricultural-sector-example-in-plant-tissue-culture/</loc>
     <lastmod>2020-10-01T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/talk/data-science-with-r-uses-in-the-agricultural-sector-example-in-plant-tissue-culture/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/talk/data-science-with-r-uses-in-the-agricultural-sector-example-in-plant-tissue-culture/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/talk/creating-applications-with-shiny/</loc>
     <lastmod>2020-08-01T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/talk/creating-applications-with-shiny/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/talk/creating-applications-with-shiny/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/r/</loc>
     <lastmod>2020-08-01T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/r/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/r/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/tag/shiny/</loc>
     <lastmod>2020-08-01T08:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/tag/shiny/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/tag/shiny/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/categories/</loc>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/categories/"
+                />
   </url><url>
     <loc>https://edimer.netlify.app/en/post/</loc>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://edimer.netlify.app/es/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://edimer.netlify.app/en/post/"
+                />
   </url>
 </urlset>

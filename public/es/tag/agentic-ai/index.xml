@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agentic AI | Edimer David Jaramillo</title>
+    <link>https://edimer.netlify.app/es/tag/agentic-ai/</link>
+      <atom:link href="https://edimer.netlify.app/es/tag/agentic-ai/index.xml" rel="self" type="application/rss+xml" />
+    <description>Agentic AI</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>es-es</language><lastBuildDate>Fri, 03 Oct 2025 08:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://edimer.netlify.app/media/icon_hu14a0761fffe66db994c11cec7004791f_50951_512x512_fill_lanczos_center_3.png</url>
+      <title>Agentic AI</title>
+      <link>https://edimer.netlify.app/es/tag/agentic-ai/</link>
+    </image>
+    
+    <item>
+      <title>Agentic Systems with Artificial Intelligence - Transforming Software Development and its Application in Agriculture</title>
+      <link>https://edimer.netlify.app/es/talk/agentic-systems-with-artificial-intelligence-transforming-software-development-and-its-application-in-agriculture/</link>
+      <pubDate>Fri, 03 Oct 2025 08:00:00 +0000</pubDate>
+      <guid>https://edimer.netlify.app/es/talk/agentic-systems-with-artificial-intelligence-transforming-software-development-and-its-application-in-agriculture/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

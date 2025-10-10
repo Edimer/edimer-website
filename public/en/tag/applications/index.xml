@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Applications | Edimer David Jaramillo</title>
+    <link>https://edimer.netlify.app/en/tag/applications/</link>
+      <atom:link href="https://edimer.netlify.app/en/tag/applications/index.xml" rel="self" type="application/rss+xml" />
+    <description>Applications</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 05 Jun 2024 08:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://edimer.netlify.app/media/icon_hu14a0761fffe66db994c11cec7004791f_50951_512x512_fill_lanczos_center_3.png</url>
+      <title>Applications</title>
+      <link>https://edimer.netlify.app/en/tag/applications/</link>
+    </image>
+    
+    <item>
+      <title>Artificial Intelligence - Applications and Challenges</title>
+      <link>https://edimer.netlify.app/en/talk/artificial-intelligence-applications-and-challenges/</link>
+      <pubDate>Wed, 05 Jun 2024 08:00:00 +0000</pubDate>
+      <guid>https://edimer.netlify.app/en/talk/artificial-intelligence-applications-and-challenges/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

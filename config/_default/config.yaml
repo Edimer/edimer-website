@@ -11,7 +11,7 @@ baseURL: 'https://edimer.netlify.app' # Website URL
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
+defaultContentLanguage: es
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: true
 removePathAccents: true
