@@ -52,9 +52,9 @@ sections:
   content:
     date_format: Jan 2006
     items:
-    - company: Datalytics
+    - company: Lovelytics
       company_logo: 
-      company_url: "https://www.datalytics.com/"
+      company_url: "https://lovelytics.com/"
       date_end: ""
       date_start: "2021-10-04"
       description: |2-
@@ -128,6 +128,24 @@ sections:
   content:
     date_format: Jan 2006
     items:
+    - certificate_url: https://credentials.databricks.com/e79ec8cc-19a4-4b3e-8288-5689c4b8a781#acc.P9cXkorx
+      date_end: "2025-06-08"
+      date_start: "2024-06-08"
+      description: ""
+      icon: databricks
+      organization: Databricks
+      organization_url: https://www.databricks.com/
+      title: Databricks Certified Machine Learning Associate
+      url: "https://www.databricks.com/learn/certification/machine-learning-associate"
+    - certificate_url: https://www.datacamp.com/completed/statement-of-accomplishment/course/f093c3086f2c547786d1f0bcf76a8e4cf207bbb0
+      date_end: "2025-05-01"
+      date_start: "2024-05-01"
+      description: ""
+      icon: datacamp
+      organization: DataCamp
+      organization_url: https://www.datacamp.com/
+      title: Introduction to Databricks
+      url: "https://www.datacamp.com/courses/introduction-to-databricks"
     - certificate_url: https://www.datacamp.com/completed/statement-of-accomplishment/course/4f82e3e0cc94c2693c5f05883caea60208c7bb53
       date_end: "2024-04-03"
       date_start: "2024-04-03"
@@ -309,7 +327,7 @@ sections:
     - icon: envelope
       icon_pack: fa
       link: 
-      name: edimer.david@datalytics.com  
+      name: edimer.david@lovelytics.com  
     coordinates:
       latitude: "6.26210"
       longitude: "-75.57633"

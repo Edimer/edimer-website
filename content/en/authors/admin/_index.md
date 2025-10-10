@@ -13,21 +13,26 @@ first_name: Edimer
 last_name: David Jaramillo
 highlight_name: true
 interests:
-- Machine learning - Deep learning
 - Statistics
-- Data visualization
-- Sound analysis
+- Machine learning - Deep learning
+- Agentic AI
+- Simulation
+- Data storytelling
 - Bioinformatics
-- Big Data
-- Geographic information system
+- Geographic Information System
 organizations:
-- name: Datalytics
-  url: https://www.datalytics.com/
+- name: Lovelytics
+  url: https://lovelytics.com/
 - name: Universidad de Antioquia
   url: https://www.udea.edu.co/wps/portal/udea/web/inicio/!ut/p/z1/hY7LDoIwEEW_xQVbOrSg4K5BYkDCIzERuzFgasEAJYDw-zbqxsTH7O7ccyaDGMoQa_OpEvlYyTavVT6y5SlKLc_ALoSxTzxInchKyNbH5oqgwz-AqRq-DAXlswdiOy42qAkh7AwLaOol0T52k02AX8CPGwFiopbF813aFsQWiPX8wnve67derctx7Ia1BhrM86wLKUXN9bNsNPiklHIYUfZOoq7J4GrVU0gXizthmbDl/dz/d5/L2dBISEvZ0FBIS9nQSEh/
 role: Data Scientist and Professor
 skills:
 - items:
+  - description: ""
+    icon: chart-line
+    icon_pack: fas
+    name: Data Science
+    percent: 90
   - description: ""
     icon: r-project
     icon_pack: fab
@@ -37,22 +42,17 @@ skills:
     icon: python
     icon_pack: fab
     name: Python
-    percent: 70
+    percent: 80
   - description: ""
-    icon: database
-    icon_pack: fas
-    name: SQL
-    percent: 40  
-  - description: ""
-    icon: chart-line
-    icon_pack: fas
-    name: Data Science
-    percent: 90
-  - description: ""
-    icon: robot
+    icon: square-root-variable
     icon_pack: fa
     name: Machine Learning
     percent: 80  
+  - description: ""
+    icon: robot
+    icon_pack: fa
+    name: Agentic AI
+    percent: 65  
   name: Technical
 - color: '#eeac02'
   color_border: '#f0bf23'
