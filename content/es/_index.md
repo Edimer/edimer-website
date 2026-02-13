@@ -68,7 +68,7 @@ sections:
     - company: Universidad de Antioquia
       company_logo: 
       company_url: "https://www.udea.edu.co/wps/portal/udea/web/inicio/!ut/p/z1/hY7LDoIwEEW_xQVbOrSg4K5BYkDCIzERuzFgasEAJYDw-zbqxsTH7O7ccyaDGMoQa_OpEvlYyTavVT6y5SlKLc_ALoSxTzxInchKyNbH5oqgwz-AqRq-DAXlswdiOy42qAkh7AwLaOol0T52k02AX8CPGwFiopbF813aFsQWiPX8wnve67derctx7Ia1BhrM86wLKUXN9bNsNPiklHIYUfZOoq7J4GrVU0gXizthmbDl/dz/d5/L2dBISEvZ0FBIS9nQSEh/"
-      date_end: ""
+      date_end: "2025-12-01"
       date_start: "2020-07-01"
       description: |2-
           Professor of statistics, experimental design and R programming language in animal experimentation.
