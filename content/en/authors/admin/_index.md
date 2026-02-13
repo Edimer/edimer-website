@@ -100,7 +100,7 @@ social:
     header: true
   icon: atom
   icon_pack: fas
-  label: Machine Learning with R and Python
+  label: Data Science with R and Python
   link: https://blogrpy.netlify.app/  
 status:
   icon: ☕️
