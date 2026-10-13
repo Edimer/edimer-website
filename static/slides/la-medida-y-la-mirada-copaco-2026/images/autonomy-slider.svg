@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 700" font-family="Helvetica Neue, Arial, sans-serif">
+  <!-- Construimos el spectrum de autonomía: asistencia (humano dirige) ↔ autonomía (máquina decide) -->
+
+  <!-- Fondo -->
+  <rect width="1050" height="700" fill="#ffffff"/>
+
+  <!-- ============ TÍTULO ============ -->
+  <text x="525" y="60" text-anchor="middle" fill="#34495e" font-size="28" font-weight="600">El control de autonomía</text>
+  <text x="525" y="92" text-anchor="middle" fill="#7f8c8d" font-size="16" font-weight="300" font-style="italic">El humano decide cuánta agencia delegar</text>
+
+  <!-- ============ EXTREMO IZQUIERDO: ASISTENCIA ============ -->
+  <g>
+    <!-- Label arriba -->
+    <text x="170" y="180" text-anchor="middle" fill="#7f8c8d" font-size="11" font-weight="400" letter-spacing="2">ASISTENCIA</text>
+
+    <!-- Bloque -->
+    <rect x="70" y="195" width="200" height="240" rx="8" fill="#ffffff" stroke="#2c3e50" stroke-width="2"/>
+
+    <!-- Iconografía: figura humana con núcleo brillante -->
+    <g transform="translate(170, 270)">
+      <!-- Cabeza -->
+      <circle cx="0" cy="-35" r="14" fill="#2c3e50"/>
+      <!-- Torso -->
+      <rect x="-22" y="-18" width="44" height="50" rx="6" fill="#2c3e50"/>
+      <!-- Brazos -->
+      <rect x="-38" y="-10" width="14" height="36" rx="4" fill="#2c3e50"/>
+      <rect x="24" y="-10" width="14" height="36" rx="4" fill="#2c3e50"/>
+      <!-- Piernas -->
+      <rect x="-16" y="32" width="12" height="38" rx="3" fill="#2c3e50"/>
+      <rect x="4" y="32" width="12" height="38" rx="3" fill="#2c3e50"/>
+      <!-- Núcleo brillante en el pecho (acento rojo) -->
+      <circle cx="0" cy="5" r="6" fill="#e74c3c"/>
+    </g>
+
+    <text x="170" y="395" text-anchor="middle" fill="#e74c3c" font-size="18" font-weight="700">Asistente</text>
+    <text x="170" y="418" text-anchor="middle" fill="#34495e" font-size="13" font-weight="400" font-style="italic">el humano dirige</text>
+
+    <!-- Pie de bloque: ejemplos -->
+    <line x1="90" y1="445" x2="250" y2="445" stroke="#ecf0f1" stroke-width="1"/>
+    <text x="170" y="468" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="400">copiloto, sugerencias,</text>
+    <text x="170" y="485" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="400">autocompletado, edición</text>
+  </g>
+
+  <!-- ============ EXTREMO DERECHO: AUTONOMÍA ============ -->
+  <g>
+    <text x="880" y="180" text-anchor="middle" fill="#7f8c8d" font-size="11" font-weight="400" letter-spacing="2">AUTONOMÍA</text>
+
+    <!-- Bloque -->
+    <rect x="780" y="195" width="200" height="240" rx="8" fill="#ffffff" stroke="#2c3e50" stroke-width="2"/>
+
+    <!-- Iconografía: pequeña flota de agentes -->
+    <g transform="translate(880, 280)">
+      <!-- Agente 1 -->
+      <g transform="translate(-50, 0)">
+        <rect x="-12" y="-22" width="24" height="22" rx="3" fill="#2c3e50"/>
+        <circle cx="-5" cy="-13" r="2.5" fill="#e74c3c"/>
+        <circle cx="5" cy="-13" r="2.5" fill="#e74c3c"/>
+        <rect x="-14" y="0" width="28" height="28" rx="3" fill="#2c3e50"/>
+        <line x1="-14" y1="14" x2="14" y2="14" stroke="#3498db" stroke-width="1.5"/>
+      </g>
+      <!-- Agente 2 (central, ligeramente mayor) -->
+      <g transform="translate(0, -10)">
+        <rect x="-14" y="-26" width="28" height="26" rx="3" fill="#2c3e50"/>
+        <circle cx="-6" cy="-16" r="3" fill="#e74c3c"/>
+        <circle cx="6" cy="-16" r="3" fill="#e74c3c"/>
+        <rect x="-17" y="0" width="34" height="34" rx="3" fill="#2c3e50"/>
+        <line x1="-17" y1="17" x2="17" y2="17" stroke="#3498db" stroke-width="2"/>
+      </g>
+      <!-- Agente 3 -->
+      <g transform="translate(50, 0)">
+        <rect x="-12" y="-22" width="24" height="22" rx="3" fill="#2c3e50"/>
+        <circle cx="-5" cy="-13" r="2.5" fill="#e74c3c"/>
+        <circle cx="5" cy="-13" r="2.5" fill="#e74c3c"/>
+        <rect x="-14" y="0" width="28" height="28" rx="3" fill="#2c3e50"/>
+        <line x1="-14" y1="14" x2="14" y2="14" stroke="#3498db" stroke-width="1.5"/>
+      </g>
+    </g>
+
+    <text x="880" y="395" text-anchor="middle" fill="#e74c3c" font-size="18" font-weight="700">Agente autónomo</text>
+    <text x="880" y="418" text-anchor="middle" fill="#34495e" font-size="13" font-weight="400" font-style="italic">la máquina decide</text>
+
+    <line x1="800" y1="445" x2="960" y2="445" stroke="#ecf0f1" stroke-width="1"/>
+    <text x="880" y="468" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="400">ejecución sin supervisión,</text>
+    <text x="880" y="485" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="400">flotas de agentes</text>
+  </g>
+
+  <!-- ============ SLIDER CENTRAL ============ -->
+  <g>
+    <!-- Riel -->
+    <rect x="290" y="310" width="470" height="14" rx="7" fill="#ecf0f1"/>
+
+    <!-- Gradiente progresivo: pintamos segmentos -->
+    <rect x="290" y="310" width="120" height="14" rx="7" fill="#2c3e50"/>
+    <rect x="410" y="310" width="120" height="14" fill="#34495e"/>
+    <rect x="530" y="310" width="120" height="14" fill="#7f8c8d"/>
+    <rect x="650" y="310" width="110" height="14" rx="7" fill="#bdc3c7"/>
+
+    <!-- Marcas verticales -->
+    <line x1="290" y1="304" x2="290" y2="330" stroke="#2c3e50" stroke-width="2"/>
+    <line x1="525" y1="304" x2="525" y2="330" stroke="#bdc3c7" stroke-width="1.5"/>
+    <line x1="760" y1="304" x2="760" y2="330" stroke="#2c3e50" stroke-width="2"/>
+
+    <!-- Knob (handle) -->
+    <circle cx="430" cy="317" r="22" fill="#ffffff" stroke="#e74c3c" stroke-width="3"/>
+    <circle cx="430" cy="317" r="10" fill="#e74c3c"/>
+
+    <!-- Etiqueta del knob -->
+    <rect x="370" y="355" width="120" height="32" rx="16" fill="#e74c3c"/>
+    <text x="430" y="376" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="600" letter-spacing="1">TÚ DECIDES</text>
+
+    <!-- Línea conectora del knob a la etiqueta -->
+    <line x1="430" y1="340" x2="430" y2="355" stroke="#e74c3c" stroke-width="2"/>
+  </g>
+
+  <!-- ============ FRASE CENTRAL ============ -->
+  <g>
+    <rect x="200" y="540" width="650" height="80" rx="8" fill="#f8f9fa" stroke="#ecf0f1" stroke-width="1"/>
+    <text x="525" y="572" text-anchor="middle" fill="#34495e" font-size="15" font-weight="400" font-style="italic">"El producto debería tener un control de autonomía</text>
+    <text x="525" y="595" text-anchor="middle" fill="#34495e" font-size="15" font-weight="400" font-style="italic">y dejar que el humano lo mueva."</text>
+    <text x="525" y="613" text-anchor="middle" fill="#95a5a6" font-size="12" font-weight="300">— Andrej Karpathy</text>
+  </g>
+
+  <!-- Atribución -->
+  <text x="525" y="685" text-anchor="middle" fill="#95a5a6" font-size="11" font-weight="300" font-style="italic">Y Combinator AI Startup School · junio 2025</text>
+</svg>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1600 900"
+     width="1600" height="900"
+     font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+
+  <!-- Artefacto del acto 2 de la charla COPACO 2026.
+       Dos paneles contrastando ciclos de investigacion:
+       Izquierda: ciclo cerrado autorreferente (rojizo, 6 nodos).
+       Derecha: ciclo iterativo en espiral expansiva (magenta, 10 nodos).
+       Disenio autocontenido: la tipografia Inter se solicita pero hay
+       fallback al sans del sistema. Animaciones sutiles. -->
+
+  <defs>
+    <!-- Marcador de flecha solida para el ciclo cerrado. -->
+    <marker id="flecha-cerrado" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#A03A3A"/>
+    </marker>
+
+    <!-- Marcador de flecha solida para el ciclo iterativo. -->
+    <marker id="flecha-iterativo" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C2185B"/>
+    </marker>
+
+    <!-- Marcador de flecha mas delgada para la conexion de retorno. -->
+    <marker id="flecha-retorno" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C2185B" opacity="0.55"/>
+    </marker>
+
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap');
+
+      .titulo-principal { font-size: 30px; font-weight: 700; fill: #1A1A1A; }
+      .subtitulo-principal { font-size: 16px; font-weight: 400; fill: #737373; }
+      .titulo-panel-mal { font-size: 22px; font-weight: 700; fill: #A03A3A; }
+      .titulo-panel-bien { font-size: 22px; font-weight: 700; fill: #C2185B; }
+      .subtitulo-panel { font-size: 13px; font-weight: 400; fill: #737373; }
+      .numero-nodo-mal { font-size: 18px; font-weight: 700; fill: #FFFFFF; }
+      .numero-nodo-bien { font-size: 18px; font-weight: 700; fill: #C2185B; }
+      .etiqueta-nodo { font-size: 13px; font-weight: 500; fill: #1A1A1A; }
+      .centro-mal { font-size: 50px; font-weight: 400; fill: #A03A3A; opacity: 0.18; }
+      .centro-bien { font-size: 38px; font-weight: 400; fill: #C2185B; opacity: 0.25; }
+      .caption { font-size: 11px; font-weight: 400; fill: #737373; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+
+  <!-- Encabezado general -->
+  <text x="80" y="62" class="titulo-principal">
+    Dos ciclos posibles de investigación
+  </text>
+  <text x="80" y="92" class="subtitulo-principal">
+    Lo que cambia no es solo el método: es la actitud frente al fenómeno que estudiamos
+  </text>
+
+  <line x1="800" y1="140" x2="800" y2="820"
+        stroke="#EAEAEA" stroke-width="1"/>
+
+  <!-- Panel izquierdo: ciclo cerrado autorreferente -->
+  <g id="panel-cerrado">
+
+    <text x="80" y="150" class="titulo-panel-mal">
+      Ciclo cerrado: lo que solemos hacer
+    </text>
+    <text x="80" y="174" class="subtitulo-panel">
+      Un loop autorreferente que persigue valores p en lugar de entendimiento
+    </text>
+
+    <g transform="translate(400 490)">
+
+      <!-- Simbolo central con rotacion lenta -->
+      <g>
+        <text x="0" y="18" text-anchor="middle" class="centro-mal">∞</text>
+        <animateTransform attributeName="transform" type="rotate"
+                          from="0 0 0" to="360 0 0"
+                          dur="40s" repeatCount="indefinite"/>
+      </g>
+
+      <!-- Flechas del ciclo entre nodos consecutivos -->
+      <path d="M 25.39 -178.20 A 180 180 0 0 1 178.20 -25.39"
+            fill="none" stroke="#A03A3A" stroke-width="2"
+            marker-end="url(#flecha-cerrado)"/>
+      <path d="M 178.20 25.39 A 180 180 0 0 1 25.39 178.20"
+            fill="none" stroke="#A03A3A" stroke-width="2"
+            marker-end="url(#flecha-cerrado)"/>
+      <path d="M -25.39 178.20 A 180 180 0 0 1 -178.20 25.39"
+            fill="none" stroke="#A03A3A" stroke-width="2"
+            marker-end="url(#flecha-cerrado)"/>
+      <path d="M -178.20 -25.39 A 180 180 0 0 1 -25.39 -178.20"
+            fill="none" stroke="#A03A3A" stroke-width="2"
+            marker-end="url(#flecha-cerrado)"/>
+
+      <!-- Nodo 1: arriba -->
+      <g transform="translate(0 -180)">
+        <circle r="34" fill="#A03A3A" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="0" y="6" text-anchor="middle" class="numero-nodo-mal">1</text>
+      </g>
+      <text x="0" y="-235" text-anchor="middle" class="etiqueta-nodo">
+        Recolectar datos
+      </text>
+
+      <!-- Nodo 2: arriba-derecha -->
+      <g transform="translate(155.88 -90)">
+        <circle r="34" fill="#A03A3A" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="0" y="6" text-anchor="middle" class="numero-nodo-mal">2</text>
+      </g>
+      <text x="200" y="-95" class="etiqueta-nodo">
+        <tspan x="200" dy="0">Aplicar ANOVA o</tspan>
+        <tspan x="200" dy="16">valor p por costumbre</tspan>
+      </text>
+
+      <!-- Nodo 3: abajo-derecha -->
+      <g transform="translate(155.88 90)">
+        <circle r="34" fill="#A03A3A" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="0" y="6" text-anchor="middle" class="numero-nodo-mal">3</text>
+      </g>
+      <text x="200" y="86" class="etiqueta-nodo">
+        <tspan x="200" dy="0">¿p &lt; 0,05?</tspan>
+        <tspan x="200" dy="16">Si no: cambiar de prueba</tspan>
+      </text>
+
+      <!-- Nodo 4: abajo -->
+      <g transform="translate(0 180)">
+        <circle r="34" fill="#A03A3A" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="0" y="6" text-anchor="middle" class="numero-nodo-mal">4</text>
+      </g>
+      <text x="0" y="240" text-anchor="middle" class="etiqueta-nodo">
+        <tspan x="0" dy="0">Reportar lo significativo,</tspan>
+        <tspan x="0" dy="16">ignorar el resto</tspan>
+      </text>
+
+      <!-- Nodo 5: abajo-izquierda -->
+      <g transform="translate(-155.88 90)">
+        <circle r="34" fill="#A03A3A" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="0" y="6" text-anchor="middle" class="numero-nodo-mal">5</text>
+      </g>
+      <text x="-200" y="94" text-anchor="end" class="etiqueta-nodo">
+        Publicar
+      </text>
+
+      <!-- Nodo 6: arriba-izquierda -->
+      <g transform="translate(-155.88 -90)">
+        <circle r="34" fill="#A03A3A" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="0" y="6" text-anchor="middle" class="numero-nodo-mal">6</text>
+      </g>
+      <text x="-200" y="-95" text-anchor="end" class="etiqueta-nodo">
+        <tspan x="-200" dy="0">Buscar otro dataset</tspan>
+        <tspan x="-200" dy="16">o repetir la receta</tspan>
+      </text>
+
+    </g>
+  </g>
+
+  <!-- Panel derecho: ciclo iterativo expansivo -->
+  <g id="panel-iterativo">
+
+    <text x="850" y="150" class="titulo-panel-bien">
+      Ciclo iterativo: lo que deberíamos hacer
+    </text>
+    <text x="850" y="174" class="subtitulo-panel">
+      Cada iteración refina la pregunta y profundiza el entendimiento del fenómeno
+    </text>
+
+    <g transform="translate(1200 490)">
+
+      <!-- Simbolo central con pulso -->
+      <g>
+        <text x="0" y="14" text-anchor="middle" class="centro-bien">
+          entender
+        </text>
+        <animate attributeName="opacity"
+                 values="0.20;0.35;0.20"
+                 dur="4s" repeatCount="indefinite"/>
+      </g>
+
+      <!-- Flechas secuenciales entre nodos -->
+      <path d="M 0 -60 Q 24 -64 48.2 -66.4"
+            fill="none" stroke="#C2185B" stroke-width="2"
+            marker-end="url(#flecha-iterativo)"/>
+      <path d="M 48.2 -66.4 Q 74 -50 98.9 -32.1"
+            fill="none" stroke="#C2185B" stroke-width="2"
+            marker-end="url(#flecha-iterativo)"/>
+      <path d="M 98.9 -32.1 Q 110 4 119.8 38.9"
+            fill="none" stroke="#C2185B" stroke-width="2"
+            marker-end="url(#flecha-iterativo)"/>
+      <path d="M 119.8 38.9 Q 105 80 87.0 119.7"
+            fill="none" stroke="#C2185B" stroke-width="2"
+            marker-end="url(#flecha-iterativo)"/>
+      <path d="M 87.0 119.7 Q 44 146 0 170"
+            fill="none" stroke="#C2185B" stroke-width="2"
+            marker-end="url(#flecha-iterativo)"/>
+      <path d="M 0 170 Q -57 165 -112.8 155.3"
+            fill="none" stroke="#C2185B" stroke-width="2"
+            marker-end="url(#flecha-iterativo)"/>
+      <path d="M -112.8 155.3 Q -160 113 -203.6 66.1"
+            fill="none" stroke="#C2185B" stroke-width="2"
+            marker-end="url(#flecha-iterativo)"/>
+      <path d="M -203.6 66.1 Q -216 -2 -224.5 -72.9"
+            fill="none" stroke="#C2185B" stroke-width="2"
+            marker-end="url(#flecha-iterativo)"/>
+      <path d="M -224.5 -72.9 Q -190 -142 -151.6 -208.7"
+            fill="none" stroke="#C2185B" stroke-width="2"
+            marker-end="url(#flecha-iterativo)"/>
+
+      <!-- Flecha de retorno punteada, paso 10 al 1 -->
+      <path d="M -151.6 -208.7 Q -50 -180 0 -60"
+            fill="none" stroke="#C2185B" stroke-width="1.5"
+            stroke-dasharray="5 5" opacity="0.55"
+            marker-end="url(#flecha-retorno)"/>
+
+      <!-- Nodo 1 -->
+      <g transform="translate(0 -60)">
+        <circle r="22" fill="#FFFFFF" stroke="#C2185B" stroke-width="2.5"/>
+        <text x="0" y="6" text-anchor="middle" class="numero-nodo-bien">1</text>
+      </g>
+      <text x="0" y="-95" text-anchor="middle" class="etiqueta-nodo">
+        Pregunta de investigación
+      </text>
+
+      <!-- Nodo 2 -->
+      <g transform="translate(48.2 -66.4)">
+        <circle r="22" fill="#FFFFFF" stroke="#C2185B" stroke-width="2.5"/>
+        <text x="0" y="6" text-anchor="middle" class="numero-nodo-bien">2</text>
+      </g>
+      <text x="80" y="-75" class="etiqueta-nodo">
+        <tspan x="80" dy="0">Entender el fenómeno:</tspan>
+        <tspan x="80" dy="14">variabilidad, escalas, no-linealidad</tspan>
+      </text>
+
+      <!-- Nodo 3 -->
+      <g transform="translate(98.9 -32.1)">
+        <circle r="22" fill="#FFFFFF" stroke="#C2185B" stroke-width="2.5"/>
+        <text x="0" y="6" text-anchor="middle" class="numero-nodo-bien">3</text>
+      </g>
+      <text x="130" y="-28" class="etiqueta-nodo">
+        <tspan x="130" dy="0">Diseño del estudio</tspan>
+        <tspan x="130" dy="14">y recolección de datos</tspan>
+      </text>
+
+      <!-- Nodo 4 -->
+      <g transform="translate(119.8 38.9)">
+        <circle r="22" fill="#FFFFFF" stroke="#C2185B" stroke-width="2.5"/>
+        <text x="0" y="6" text-anchor="middle" class="numero-nodo-bien">4</text>
+      </g>
+      <text x="150" y="42" class="etiqueta-nodo">
+        <tspan x="150" dy="0">Exploración honesta</tspan>
+        <tspan x="150" dy="14">(ajustar la pregunta si hace falta)</tspan>
+      </text>
+
+      <!-- Nodo 5 -->
+      <g transform="translate(87.0 119.7)">
+        <circle r="22" fill="#FFFFFF" stroke="#C2185B" stroke-width="2.5"/>
+        <text x="0" y="6" text-anchor="middle" class="numero-nodo-bien">5</text>
+      </g>
+      <text x="118" y="120" class="etiqueta-nodo">
+        <tspan x="118" dy="0">Elección informada</tspan>
+        <tspan x="118" dy="14">del método</tspan>
+      </text>
+
+      <!-- Nodo 6 -->
+      <g transform="translate(0 170)">
+        <circle r="22" fill="#FFFFFF" stroke="#C2185B" stroke-width="2.5"/>
+        <text x="0" y="6" text-anchor="middle" class="numero-nodo-bien">6</text>
+      </g>
+      <text x="0" y="208" text-anchor="middle" class="etiqueta-nodo">
+        <tspan x="0" dy="0">Modelo + métrica adecuada</tspan>
+        <tspan x="0" dy="14">(no solo p)</tspan>
+      </text>
+
+      <!-- Nodo 7 -->
+      <g transform="translate(-112.8 155.3)">
+        <circle r="22" fill="#FFFFFF" stroke="#C2185B" stroke-width="2.5"/>
+        <text x="0" y="6" text-anchor="middle" class="numero-nodo-bien">7</text>
+      </g>
+      <text x="-145" y="158" text-anchor="end" class="etiqueta-nodo">
+        <tspan x="-145" dy="0">Comparación con</tspan>
+        <tspan x="-145" dy="14">alternativas</tspan>
+      </text>
+
+      <!-- Nodo 8 -->
+      <g transform="translate(-203.6 66.1)">
+        <circle r="22" fill="#FFFFFF" stroke="#C2185B" stroke-width="2.5"/>
+        <text x="0" y="6" text-anchor="middle" class="numero-nodo-bien">8</text>
+      </g>
+      <text x="-235" y="70" text-anchor="end" class="etiqueta-nodo">
+        <tspan x="-235" dy="0">Auditoría e</tspan>
+        <tspan x="-235" dy="14">interpretación</tspan>
+      </text>
+
+      <!-- Nodo 9 -->
+      <g transform="translate(-224.5 -72.9)">
+        <circle r="22" fill="#FFFFFF" stroke="#C2185B" stroke-width="2.5"/>
+        <text x="0" y="6" text-anchor="middle" class="numero-nodo-bien">9</text>
+      </g>
+      <text x="-256" y="-69" text-anchor="end" class="etiqueta-nodo">
+        <tspan x="-256" dy="0">Comunicación honesta</tspan>
+        <tspan x="-256" dy="14">(incluye lo que no funcionó)</tspan>
+      </text>
+
+      <!-- Nodo 10 -->
+      <g transform="translate(-151.6 -208.7)">
+        <circle r="22" fill="#FFFFFF" stroke="#C2185B" stroke-width="2.5"/>
+        <text x="0" y="6" text-anchor="middle" class="numero-nodo-bien">10</text>
+      </g>
+      <text x="-183" y="-205" text-anchor="end" class="etiqueta-nodo">
+        <tspan x="-183" dy="0">Replicabilidad:</tspan>
+        <tspan x="-183" dy="14">código, datos, versionado</tspan>
+      </text>
+
+    </g>
+  </g>
+
+</svg>

@@ -1,31 +1,33 @@
 ---
-abstract: Design and statistical analysis of experiments in Cannabis agronomic tests.
+title: "Diseño y análisis estadístico de experimentos en cannabis"
+slug: experiments-cannabis
+event: "Universidad Nacional de Colombia - Sede Palmira"
+event_url: "https://palmira.unal.edu.co/"
+location: "Universidad Nacional de Colombia - Sede Palmira"
 address:
-  city: Palmira, Valle del Cauca
-  country: Colombia
+  street: ""
+  city: "Palmira"
+  region: "Valle del Cauca"
   postcode: ""
-  region: Colombia
-  street: 
-all_day: false
-authors: []
+  country: Colombia
+summary: "Diseño y análisis estadístico de experimentos en evaluaciones agronómicas de cannabis."
+abstract: "Diseño y análisis estadístico de experimentos en el protocolo de evaluaciones agronómicas en Cannabis sp."
 date: "2020-11-01T08:00:00Z"
 date_end: "2020-11-01T12:00:00Z"
-event: Universidad Nacional de Colombia
-event_url: https://www.palmira.unal.edu.co/
+all_day: true
+publishDate: "2020-11-01T12:00:00Z"
+authors: []
+tags: ["Diseño experimental", "Estadística", "Agricultura"]
 featured: false
 image:
-  caption: ''
-  focal_point: Right
-location: Universidad Nacional de Colombia
-projects:
-- example
-publishDate: "2020-11-01T12:00:00Z"
-slides: 
-summary: Design and statistical analysis of experiments in Cannabis agronomic tests.
-tags: [Experiment design, Agriculture]
-title: Design and statistical analysis of experiments in Cannabis
-url_pdf: ""
+  caption: ""
+  focal_point: Center
+  preview_only: false
+links: []
 url_slides: "https://edimer.github.io/talks/Cannabis-Statistics-Palmira/Cannabis-Statistics-Palmira.html#1"
 url_code: "https://github.com/Edimer/edimer.github.io/tree/master/talks/Cannabis-Statistics-Palmira"
+url_pdf: ""
 url_video: ""
+slides: ""
+projects: []
 ---

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1600 900"
+     width="1600" height="900"
+     font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+
+  <!-- Artefacto del acto 2 de la charla COPACO 2026.
+       Linea de tiempo de herramientas para analisis de datos, 1968 a 2023.
+       Tres carriles tematicos: comerciales clasicos, lenguajes y entornos
+       libres, computo numerico y reproducibilidad. Marcadores especiales
+       sobre el eje del tiempo para formatos e infraestructura de datos. -->
+
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+
+      .titulo-principal { font-size: 28px; font-weight: 700; fill: #1A1A1A; }
+      .subtitulo-principal { font-size: 15px; font-weight: 400; fill: #737373; }
+      .titulo-carril { font-size: 13px; font-weight: 700; }
+      .subtitulo-carril { font-size: 11px; font-weight: 400; fill: #737373; }
+      .anio-eje { font-size: 11px; font-weight: 500; fill: #737373; }
+      .nombre-herramienta { font-size: 11px; font-weight: 600; fill: #1A1A1A; }
+      .anio-herramienta { font-size: 10px; font-weight: 400; fill: #737373; }
+      .marcador-infra { font-size: 11px; font-weight: 700; fill: #F9A825; }
+      .anio-infra { font-size: 10px; font-weight: 400; fill: #B07A00; }
+      .caja-titulo { font-size: 15px; font-weight: 700; fill: #C2185B; }
+      .caja-texto { font-size: 12px; font-weight: 400; fill: #1A1A1A; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+
+  <!-- Encabezado -->
+  <text x="80" y="58" class="titulo-principal">
+    Las herramientas del análisis de datos: medio siglo de evolución
+  </text>
+  <text x="80" y="86" class="subtitulo-principal">
+    Software estadístico clásico, lenguajes libres, cómputo numérico moderno e infraestructura de datos
+  </text>
+
+  <!-- Ejes y referencias temporales
+
+       Coordenadas del eje:
+         x = 110  ->  año 1968 (inicio)
+         x = 1520 ->  año 2024 (fin)
+         total 1410 px / 56 años = 25.18 px por año
+
+       Función mental: x = 110 + (año - 1968) * 25.18
+
+       Carriles:
+         A (comerciales):       y_eje = 220
+         marcadores infra:      y_eje = 470 (sobre eje central)
+         B (lenguajes libres):  y_eje = 600
+         C (cómputo/ML):        y_eje = 740 -->
+
+  <!-- Línea horizontal del eje del tiempo central. Atraviesa los carriles
+       y sirve de referencia visual de la cronologia. -->
+  <line x1="110" y1="470" x2="1520" y2="470"
+        stroke="#737373" stroke-width="1.2"/>
+
+  <!-- Marcas decenales sobre el eje del tiempo -->
+  <g>
+    <line x1="110" y1="465" x2="110" y2="475" stroke="#737373" stroke-width="1.2"/>
+    <text x="110" y="495" text-anchor="middle" class="anio-eje">1968</text>
+
+    <line x1="160.4" y1="465" x2="160.4" y2="475" stroke="#737373" stroke-width="1.2"/>
+    <text x="160.4" y="495" text-anchor="middle" class="anio-eje">1970</text>
+
+    <line x1="412.2" y1="465" x2="412.2" y2="475" stroke="#737373" stroke-width="1.2"/>
+    <text x="412.2" y="495" text-anchor="middle" class="anio-eje">1980</text>
+
+    <line x1="664" y1="465" x2="664" y2="475" stroke="#737373" stroke-width="1.2"/>
+    <text x="664" y="495" text-anchor="middle" class="anio-eje">1990</text>
+
+    <line x1="915.8" y1="465" x2="915.8" y2="475" stroke="#737373" stroke-width="1.2"/>
+    <text x="915.8" y="495" text-anchor="middle" class="anio-eje">2000</text>
+
+    <line x1="1167.6" y1="465" x2="1167.6" y2="475" stroke="#737373" stroke-width="1.2"/>
+    <text x="1167.6" y="495" text-anchor="middle" class="anio-eje">2010</text>
+
+    <line x1="1419.4" y1="465" x2="1419.4" y2="475" stroke="#737373" stroke-width="1.2"/>
+    <text x="1419.4" y="495" text-anchor="middle" class="anio-eje">2020</text>
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- Carril A: Software estadistico clasico (comercial, propietario)        -->
+  <!-- y_carril = 220                                                         -->
+  <!-- ====================================================================== -->
+  <g id="carril-comerciales">
+
+    <!-- Banda de fondo del carril -->
+    <rect x="80" y="160" width="1450" height="100"
+          fill="#F5F5F5" stroke="none" rx="6" ry="6"/>
+
+    <!-- Linea conectora de los nodos del carril -->
+    <line x1="110" y1="220" x2="1520" y2="220"
+          stroke="#BBBBBB" stroke-width="1" stroke-dasharray="3 4"/>
+
+    <!-- Titulo del carril -->
+    <text x="92" y="178" class="titulo-carril" style="fill: #555555;">
+      Software estadístico clásico
+    </text>
+    <text x="92" y="194" class="subtitulo-carril">
+      Comerciales, propietarios, licenciados
+    </text>
+
+    <!-- Nodos del carril A -->
+
+    <!-- SPSS 1968: x = 110 -->
+    <g>
+      <circle cx="110" cy="220" r="6" fill="#737373" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="110" y="245" text-anchor="middle" class="nombre-herramienta" style="fill: #555555;">SPSS</text>
+      <text x="110" y="258" text-anchor="middle" class="anio-herramienta">1968</text>
+    </g>
+
+    <!-- SAS 1976: x = 110 + 8*25.18 = 311.4 -->
+    <g>
+      <circle cx="311.4" cy="220" r="6" fill="#737373" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="311.4" y="245" text-anchor="middle" class="nombre-herramienta" style="fill: #555555;">SAS</text>
+      <text x="311.4" y="258" text-anchor="middle" class="anio-herramienta">1976</text>
+    </g>
+
+    <!-- Stata 1985: x = 110 + 17*25.18 = 538 -->
+    <g>
+      <circle cx="538" cy="220" r="6" fill="#737373" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="538" y="245" text-anchor="middle" class="nombre-herramienta" style="fill: #555555;">Stata</text>
+      <text x="538" y="258" text-anchor="middle" class="anio-herramienta">1985</text>
+    </g>
+
+    <!-- JMP 1989: x = 110 + 21*25.18 = 638.8 -->
+    <g>
+      <circle cx="638.8" cy="220" r="6" fill="#737373" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="630" y="245" text-anchor="end" class="nombre-herramienta" style="fill: #555555;">JMP</text>
+      <text x="630" y="258" text-anchor="end" class="anio-herramienta">1989</text>
+    </g>
+
+    <!-- GraphPad Prism 1989: mismo año que JMP, lo desplazo en X visualmente -->
+    <g>
+      <circle cx="688" cy="220" r="6" fill="#737373" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="696" y="245" text-anchor="start" class="nombre-herramienta" style="fill: #555555;">GraphPad Prism</text>
+      <text x="696" y="258" text-anchor="start" class="anio-herramienta">1989</text>
+    </g>
+
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- Marcadores especiales de infraestructura de datos (formato, motor)     -->
+  <!-- Estos se ubican sobre el eje central (y = 470) con triangulitos        -->
+  <!-- ámbar para distinguirlos visualmente de los carriles principales.      -->
+  <!-- ====================================================================== -->
+  <g id="marcadores-infra">
+
+    <!-- Parquet 2013: x = 110 + 45*25.18 = 1243.1 -->
+    <g>
+      <polygon points="1243.1,455 1238.1,465 1248.1,465"
+               fill="#F9A825" stroke="#FFFFFF" stroke-width="1"/>
+      <text x="1243.1" y="440" text-anchor="middle" class="marcador-infra">Parquet</text>
+      <text x="1243.1" y="427" text-anchor="middle" class="anio-infra">2013</text>
+    </g>
+
+    <!-- Apache Arrow 2016: x = 110 + 48*25.18 = 1318.6 -->
+    <g>
+      <polygon points="1318.6,455 1313.6,465 1323.6,465"
+               fill="#F9A825" stroke="#FFFFFF" stroke-width="1"/>
+      <text x="1318.6" y="440" text-anchor="middle" class="marcador-infra">Apache Arrow</text>
+      <text x="1318.6" y="427" text-anchor="middle" class="anio-infra">2016</text>
+    </g>
+
+    <!-- DuckDB 2019: x = 110 + 51*25.18 = 1394.2 -->
+    <g>
+      <polygon points="1394.2,455 1389.2,465 1399.2,465"
+               fill="#F9A825" stroke="#FFFFFF" stroke-width="1"/>
+      <text x="1394.2" y="440" text-anchor="middle" class="marcador-infra">DuckDB</text>
+      <text x="1394.2" y="427" text-anchor="middle" class="anio-infra">2019</text>
+    </g>
+
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- Carril B: Lenguajes y entornos libres                                  -->
+  <!-- y_carril = 600                                                         -->
+  <!-- ====================================================================== -->
+  <g id="carril-lenguajes">
+
+    <rect x="80" y="540" width="1450" height="100"
+          fill="#FBE9EF" stroke="none" rx="6" ry="6" opacity="0.7"/>
+
+    <line x1="110" y1="600" x2="1520" y2="600"
+          stroke="#E1A4B8" stroke-width="1" stroke-dasharray="3 4"/>
+
+    <text x="92" y="558" class="titulo-carril" style="fill: #C2185B;">
+      Lenguajes y entornos de análisis libres
+    </text>
+    <text x="92" y="574" class="subtitulo-carril">
+      Código abierto, reproducibles, sin licenciamiento
+    </text>
+
+    <!-- R 1993/2000: x = 110 + 25*25.18 = 739.5 (usamos 1993, etiqueta dual) -->
+    <g>
+      <circle cx="739.5" cy="600" r="6" fill="#C2185B" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="739.5" y="625" text-anchor="middle" class="nombre-herramienta">R</text>
+      <text x="739.5" y="638" text-anchor="middle" class="anio-herramienta">1993 / 2000</text>
+    </g>
+
+    <!-- NumPy 2006: x = 110 + 38*25.18 = 1066.8 -->
+    <g>
+      <circle cx="1066.8" cy="600" r="6" fill="#C2185B" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="1066.8" y="625" text-anchor="middle" class="nombre-herramienta">NumPy</text>
+      <text x="1066.8" y="638" text-anchor="middle" class="anio-herramienta">2006</text>
+    </g>
+
+    <!-- pandas 2008: x = 110 + 40*25.18 = 1117.2 -->
+    <g>
+      <circle cx="1117.2" cy="600" r="6" fill="#C2185B" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="1117.2" y="625" text-anchor="middle" class="nombre-herramienta">pandas</text>
+      <text x="1117.2" y="638" text-anchor="middle" class="anio-herramienta">2008</text>
+    </g>
+
+    <!-- tidyverse 2016: x = 110 + 48*25.18 = 1318.6 -->
+    <g>
+      <circle cx="1318.6" cy="600" r="6" fill="#C2185B" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="1310" y="625" text-anchor="end" class="nombre-herramienta">tidyverse</text>
+      <text x="1310" y="638" text-anchor="end" class="anio-herramienta">2016</text>
+    </g>
+
+    <!-- Polars 2020: x = 110 + 52*25.18 = 1419.4 -->
+    <g>
+      <circle cx="1419.4" cy="600" r="6" fill="#C2185B" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="1419.4" y="625" text-anchor="middle" class="nombre-herramienta">Polars</text>
+      <text x="1419.4" y="638" text-anchor="middle" class="anio-herramienta">2020</text>
+    </g>
+
+    <!-- Quarto 2022: x = 110 + 54*25.18 = 1469.7 -->
+    <g>
+      <circle cx="1469.7" cy="600" r="6" fill="#C2185B" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="1477" y="625" text-anchor="start" class="nombre-herramienta">Quarto</text>
+      <text x="1477" y="638" text-anchor="start" class="anio-herramienta">2022</text>
+    </g>
+
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- Carril C: Computo numerico, ML, reproducibilidad                       -->
+  <!-- y_carril = 740                                                         -->
+  <!-- ====================================================================== -->
+  <g id="carril-computo">
+
+    <rect x="80" y="680" width="1450" height="120"
+          fill="#E3EEF7" stroke="none" rx="6" ry="6" opacity="0.7"/>
+
+    <line x1="110" y1="740" x2="1520" y2="740"
+          stroke="#9FBED9" stroke-width="1" stroke-dasharray="3 4"/>
+
+    <text x="92" y="698" class="titulo-carril" style="fill: #1565C0;">
+      Cómputo numérico, machine learning y reproducibilidad
+    </text>
+    <text x="92" y="714" class="subtitulo-carril">
+      Diferenciación automática, GPU, contenedores, versionado de modelos
+    </text>
+
+    <!-- scikit-learn 2007: x = 110 + 39*25.18 = 1092 -->
+    <g>
+      <circle cx="1092" cy="740" r="6" fill="#1565C0" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="1092" y="722" text-anchor="middle" class="nombre-herramienta" style="fill: #1565C0;">scikit-learn</text>
+      <text x="1092" y="708" text-anchor="middle" class="anio-herramienta">2007</text>
+    </g>
+
+    <!-- Numba 2012: x = 110 + 44*25.18 = 1217.9 -->
+    <g>
+      <circle cx="1217.9" cy="740" r="6" fill="#1565C0" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="1217.9" y="765" text-anchor="middle" class="nombre-herramienta" style="fill: #1565C0;">Numba</text>
+      <text x="1217.9" y="778" text-anchor="middle" class="anio-herramienta">2012</text>
+    </g>
+
+    <!-- Stan 2012: mismo año que Numba, lo desplazo arriba y un poco a la derecha. -->
+    <g>
+      <circle cx="1230" cy="722" r="6" fill="#1565C0" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="1238" y="720" text-anchor="start" class="nombre-herramienta" style="fill: #1565C0;">Stan</text>
+      <text x="1238" y="707" text-anchor="start" class="anio-herramienta">2012</text>
+    </g>
+
+    <!-- Docker 2013: x = 110 + 45*25.18 = 1243.1, lo desplazo arriba con etiqueta más a la derecha. -->
+    <g>
+      <circle cx="1255" cy="740" r="6" fill="#1565C0" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="1255" y="765" text-anchor="middle" class="nombre-herramienta" style="fill: #1565C0;">Docker</text>
+      <text x="1255" y="778" text-anchor="middle" class="anio-herramienta">2013</text>
+    </g>
+
+    <!-- Dask 2014: x desplazado hacia la derecha para no chocar con Docker. -->
+    <g>
+      <circle cx="1285" cy="722" r="6" fill="#1565C0" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="1285" y="710" text-anchor="middle" class="nombre-herramienta" style="fill: #1565C0;">Dask</text>
+      <text x="1285" y="697" text-anchor="middle" class="anio-herramienta">2014</text>
+    </g>
+
+    <!-- TensorFlow 2015: x = 110 + 47*25.18 = 1293.5 -->
+    <g>
+      <circle cx="1293.5" cy="740" r="6" fill="#1565C0" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="1293.5" y="722" text-anchor="middle" class="nombre-herramienta" style="fill: #1565C0;">TensorFlow</text>
+      <text x="1293.5" y="708" text-anchor="middle" class="anio-herramienta">2015</text>
+    </g>
+
+    <!-- PyTorch 2016: x = 110 + 48*25.18 = 1318.6 -->
+    <g>
+      <circle cx="1318.6" cy="755" r="6" fill="#1565C0" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="1318.6" y="780" text-anchor="middle" class="nombre-herramienta" style="fill: #1565C0;">PyTorch</text>
+      <text x="1318.6" y="793" text-anchor="middle" class="anio-herramienta">2016</text>
+    </g>
+
+    <!-- JAX 2018: x = 110 + 50*25.18 = 1369 -->
+    <g>
+      <circle cx="1369" cy="740" r="6" fill="#1565C0" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="1361" y="722" text-anchor="end" class="nombre-herramienta" style="fill: #1565C0;">JAX</text>
+      <text x="1361" y="708" text-anchor="end" class="anio-herramienta">2018</text>
+    </g>
+
+    <!-- MLflow 2018: mismo año, desplazo a la derecha -->
+    <g>
+      <circle cx="1383" cy="725" r="6" fill="#1565C0" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="1391" y="720" text-anchor="start" class="nombre-herramienta" style="fill: #1565C0;">MLflow</text>
+      <text x="1391" y="707" text-anchor="start" class="anio-herramienta">2018</text>
+    </g>
+
+    <!-- PyTorch 2.0 2023: x = 110 + 55*25.18 = 1494.9 -->
+    <g>
+      <circle cx="1494.9" cy="740" r="6" fill="#1565C0" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="1494.9" y="765" text-anchor="middle" class="nombre-herramienta" style="fill: #1565C0;">PyTorch 2.0</text>
+      <text x="1494.9" y="778" text-anchor="middle" class="anio-herramienta">2023</text>
+    </g>
+
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- Caja de mensaje clave                                                  -->
+  <!-- ====================================================================== -->
+  <g id="caja-mensaje">
+
+    <rect x="80" y="820" width="1450" height="60"
+          fill="#FBE9EF" stroke="#C2185B" stroke-width="1.5" rx="6" ry="6"/>
+
+    <text x="100" y="844" class="caja-titulo">
+      PyTorch, JAX y TensorFlow no son solo para deep learning.
+    </text>
+    <text x="100" y="866" class="caja-texto">
+      Son matemática diferenciable de alto rendimiento, con compilación JIT y aceleración GPU. Sirven para implementar Gompertz, MCMC, optimización numérica — cualquier cosa con derivadas.
+    </text>
+
+  </g>
+
+</svg>

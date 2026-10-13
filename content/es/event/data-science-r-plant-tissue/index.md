@@ -1,31 +1,37 @@
 ---
-abstract: 'Charla sobre usos de la ciencia de datos en el sector agrícola, con énfasis en cultivo de tejidos vegetales.'
+title: "Ciencia de datos con R: usos en el sector agropecuario (ejemplo en cultivo de tejidos vegetales)"
+slug: data-science-r-plant-tissue
+event: "Universidad Nacional de Colombia - Sede Palmira"
+event_url: "https://palmira.unal.edu.co/"
+location: "Universidad Nacional de Colombia - Sede Palmira"
 address:
-  city: Palmira, Valle del Cauca
-  country: Colombia
+  street: ""
+  city: "Palmira"
+  region: "Valle del Cauca"
   postcode: ""
-  region: Colombia
-  street: 
-all_day: false
+  country: Colombia
+summary: "Ciencia de datos y software libre con R y sus aplicaciones en el sector agropecuario, con énfasis en cultivo de tejidos vegetales."
+abstract: "Charla sobre ciencia de datos con R aplicada al sector agropecuario. Introduce los lenguajes de programación, el software libre, el lenguaje R, las tecnologías y datos abiertos, y los conceptos de ciencia de datos, inteligencia artificial, machine learning y deep learning, incluyendo el balance entre complejidad e interpretación. Muestra aplicaciones en agricultura (SIPRA, sistemas de información de Agrosavia, SoilGrids, Chitale en India), el proceso de análisis de datos con el tidyverse, recursos de aprendizaje, artículos sobre machine learning en cultivo de tejidos vegetales y un ejemplo basado en programación genética para cultivo de tejidos in vitro."
+date: "2020-11-07T08:00:00Z"
+date_end: "2020-11-07T12:00:00Z"
+all_day: true
+publishDate: "2020-11-07T12:00:00Z"
 authors: []
-date: "2020-10-01T08:00:00Z"
-date_end: "2020-10-01T12:00:00Z"
-event: Universidad Nacional de Colombia
-event_url: https://www.palmira.unal.edu.co/
+tags: ["Ciencia de datos", "R", "Agricultura", "Cultivo de tejidos vegetales", "Machine learning"]
 featured: false
 image:
-  caption: ''
-  focal_point: Right
-location: Universidad Nacional de Colombia
-projects:
-- example
-publishDate: "2020-10-01T08:00:00Z"
-slides: 
-summary: Data science and its applications in the agricultural sector.
-tags: [Data Science, Agriculture]
-title: Data Science with R - uses in the agricultural sector (example in plant tissue culture)
-url_pdf: ""
+  caption: ""
+  focal_point: Center
+  preview_only: false
+links:
+  - name: "Guía de instalación de R"
+    url: "https://rpubs.com/Edimer/675756"
+    icon_pack: fab
+    icon: r-project
 url_slides: "https://edimer.github.io/talks/R-Unal-Palmira/diapositivas/slides-unal-palmira.html#1"
-url_code: "https://github.com/Edimer/edimer.github.io/tree/master/talks/R-Unal-Palmira"
+url_code: "https://github.com/Edimer/Unal-Palmira-Data-Science"
+url_pdf: ""
 url_video: ""
+slides: ""
+projects: []
 ---

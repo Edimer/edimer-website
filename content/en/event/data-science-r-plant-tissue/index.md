@@ -1,31 +1,37 @@
 ---
-abstract: Talk about uses of data science in the agricultural sector, with emphasis on plant tissue culture.
+title: "Data science with R: uses in the agricultural sector (plant tissue culture example)"
+slug: data-science-r-plant-tissue
+event: "Universidad Nacional de Colombia - Palmira campus"
+event_url: "https://palmira.unal.edu.co/"
+location: "Universidad Nacional de Colombia - Palmira campus"
 address:
-  city: Palmira, Valle del Cauca
-  country: Colombia
+  street: ""
+  city: "Palmira"
+  region: "Valle del Cauca"
   postcode: ""
-  region: Colombia
-  street: 
-all_day: false
+  country: Colombia
+summary: "Data science and free software with R and their applications in agriculture, with emphasis on plant tissue culture."
+abstract: "Talk on data science with R applied to the agricultural sector. It introduces programming languages, free software, the R language, open technologies and open data, and the concepts of data science, artificial intelligence, machine learning and deep learning, including the trade-off between complexity and interpretability. It shows applications in agriculture (SIPRA, Agrosavia information systems, SoilGrids, Chitale in India), the data analysis workflow with the tidyverse, learning resources, papers on machine learning in plant tissue culture, and an example based on genetic programming for in vitro tissue culture."
+date: "2020-11-07T08:00:00Z"
+date_end: "2020-11-07T12:00:00Z"
+all_day: true
+publishDate: "2020-11-07T12:00:00Z"
 authors: []
-date: "2020-10-01T08:00:00Z"
-date_end: "2020-10-01T12:00:00Z"
-event: Universidad Nacional de Colombia
-event_url: https://www.palmira.unal.edu.co/
+tags: ["Data science", "R", "Agriculture", "Plant tissue culture", "Machine learning"]
 featured: false
 image:
-  caption: ''
-  focal_point: Right
-location: Universidad Nacional de Colombia
-projects:
-- example
-publishDate: "2020-10-01T08:00:00Z"
-slides: 
-summary: Data science and its applications in the agricultural sector.
-tags: [Data Science, Agriculture]
-title: Data Science with R - uses in the agricultural sector (example in plant tissue culture)
-url_pdf: ""
+  caption: ""
+  focal_point: Center
+  preview_only: false
+links:
+  - name: "R installation guide"
+    url: "https://rpubs.com/Edimer/675756"
+    icon_pack: fab
+    icon: r-project
 url_slides: "https://edimer.github.io/talks/R-Unal-Palmira/diapositivas/slides-unal-palmira.html#1"
-url_code: "https://github.com/Edimer/edimer.github.io/tree/master/talks/R-Unal-Palmira"
+url_code: "https://github.com/Edimer/Unal-Palmira-Data-Science"
+url_pdf: ""
 url_video: ""
+slides: ""
+projects: []
 ---

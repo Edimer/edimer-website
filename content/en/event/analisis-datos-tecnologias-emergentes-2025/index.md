@@ -1,31 +1,33 @@
 ---
-abstract: Data analysis and emerging technologies for decision making and innovation.
+title: "Data analysis and emerging technologies: opportunities in the AI era"
+slug: analisis-datos-tecnologias-emergentes-2025
+event: "Universidad Nacional de Colombia - Medellín campus"
+event_url: "https://medellin.unal.edu.co/"
+location: "Universidad Nacional de Colombia - Medellín campus"
 address:
-  city: Palmira, Valle del Cauca
-  country: Colombia
+  street: ""
+  city: "Medellín"
+  region: "Antioquia"
   postcode: ""
-  region: Colombia
-  street:
-all_day: false
-authors: []
+  country: Colombia
+summary: "Data analysis and emerging technologies for decision making and innovation in the AI era."
+abstract: "Talk on the evolution of data analysis, from the scientific method and personal computing to today's artificial intelligence. It explains what AI is, its subfields (machine learning and deep learning), large language models and the open- vs closed-source debate, together with their limitations and challenges. It presents tools, courses and recent cases such as Project Astra, Project Mariner, Isomorphic Labs, Stargate, GenCast, NotebookLM and AI agents as opportunities for decision making and innovation."
 date: "2025-02-08T08:00:00Z"
 date_end: "2025-02-08T12:00:00Z"
-event: Universidad Nacional de Colombia
-event_url: https://medellin.unal.edu.co/
+all_day: true
+publishDate: "2025-02-08T12:00:00Z"
+authors: []
+tags: ["Data analysis", "Emerging technologies", "Artificial intelligence", "Innovation"]
 featured: false
 image:
-  caption: ''
-  focal_point: Right
-location: Universidad Nacional de Colombia
-projects:
-- example
-publishDate: "2025-02-08T12:00:00Z"
-slides:
-summary: Data analysis and emerging technologies for decision making and innovation.
-tags: [Data Analysis, Emerging Technologies, Artificial Intelligence, Innovation]
-title: Data Analysis and Emerging Technologies
-url_pdf: ""
-url_slides: https://edimer.quarto.pub/analisis-datos-ia-unalmed2025/#/title-slide
+  caption: ""
+  focal_point: Center
+  preview_only: false
+links: []
+url_slides: "https://edimer.quarto.pub/analisis-datos-ia-unalmed2025/"
 url_code: ""
+url_pdf: ""
 url_video: ""
+slides: ""
+projects: []
 ---

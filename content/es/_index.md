@@ -303,6 +303,12 @@ sections:
   id: featured  
 - block: collection
   content:
+    # Número de charlas en el inicio; el resto queda en la página de charlas (enlace "Ver todas las charlas").
+    count: 6
+    order: desc
+    archive:
+      enable: true
+      text: Ver todas las charlas
     filters:
       folders:
       - event
