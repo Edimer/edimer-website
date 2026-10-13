@@ -235,7 +235,12 @@ def main():
     titulo = str(meta.get("title", "")).strip().rstrip(":")
     subtitulo = str(meta.get("subtitle") or "").strip()
     if subtitulo and ":" not in titulo:
-        titulo = f"{titulo}: {subtitulo[0].lower()}{subtitulo[1:]}"
+        primera = subtitulo.split()[0]
+        # Respetamos nombres propios con mayúsculas internas (OpenRouter, GitHub) y siglas (IA, SDD)
+        if any(c.isupper() for c in primera[1:]):
+            titulo = f"{titulo}: {subtitulo}"
+        else:
+            titulo = f"{titulo}: {subtitulo[0].lower()}{subtitulo[1:]}"
     if a.fecha:
         fecha, exacta = a.fecha, True
     else:
