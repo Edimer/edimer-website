@@ -6,7 +6,7 @@ event_url: ""
 location: "AMEVEA animal nutrition seminar"
 address:
   street: ""
-  city: ""
+  city: "Bogotá"
   region: ""
   postcode: ""
   country: Colombia

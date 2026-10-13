@@ -6,7 +6,7 @@ event_url: ""
 location: "Seminario de nutrición AMEVEA"
 address:
   street: ""
-  city: ""
+  city: "Bogotá"
   region: ""
   postcode: ""
   country: Colombia
