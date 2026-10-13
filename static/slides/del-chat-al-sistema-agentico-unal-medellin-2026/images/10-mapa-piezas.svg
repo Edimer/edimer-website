@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 700" font-family="Helvetica Neue, Arial, sans-serif">
+  <!-- Resumimos cada pieza del sistema agéntico con su función, alrededor de un núcleo -->
+  <rect width="1050" height="700" fill="#ffffff"/>
+
+  <text x="525" y="55" text-anchor="middle" fill="#34495e" font-size="28" font-weight="600">Cada pieza tiene una función</text>
+  <text x="525" y="86" text-anchor="middle" fill="#7f8c8d" font-size="15" font-weight="300" font-style="italic">La coordinación de todas ellas es el sistema agéntico</text>
+
+  <!-- Radios -->
+  <g stroke="#ecf0f1" stroke-width="3">
+    <line x1="525" y1="380" x2="525" y2="170"/>
+    <line x1="525" y1="380" x2="755" y2="225"/>
+    <line x1="525" y1="380" x2="820" y2="380"/>
+    <line x1="525" y1="380" x2="755" y2="535"/>
+    <line x1="525" y1="380" x2="525" y2="590"/>
+    <line x1="525" y1="380" x2="295" y2="535"/>
+    <line x1="525" y1="380" x2="230" y2="380"/>
+    <line x1="525" y1="380" x2="295" y2="225"/>
+  </g>
+
+  <!-- Núcleo -->
+  <circle cx="525" cy="380" r="86" fill="#ffffff" stroke="#e74c3c" stroke-width="3"/>
+  <circle cx="525" cy="380" r="70" fill="#e74c3c"/>
+  <text x="525" y="375" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="700">sistema</text>
+  <text x="525" y="397" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="700">agéntico</text>
+
+  <!-- Piezas: nombre (arriba) y función (abajo) -->
+  <g font-size="15">
+    <!-- Arriba: prompt -->
+    <rect x="435" y="130" width="180" height="58" rx="6" fill="#ffffff" stroke="#95a5a6" stroke-width="2"/>
+    <text x="525" y="155" text-anchor="middle" fill="#34495e" font-weight="600">prompt</text>
+    <text x="525" y="176" text-anchor="middle" fill="#7f8c8d" font-size="13" font-style="italic">intención</text>
+
+    <!-- Arriba derecha: AGENTS.md -->
+    <rect x="665" y="190" width="180" height="58" rx="6" fill="#ffffff" stroke="#16a085" stroke-width="2"/>
+    <text x="755" y="215" text-anchor="middle" fill="#16a085" font-weight="600">AGENTS.md</text>
+    <text x="755" y="236" text-anchor="middle" fill="#7f8c8d" font-size="13" font-style="italic">reglas de la casa</text>
+
+    <!-- Derecha: SYSTEM_DESIGN.md -->
+    <rect x="730" y="351" width="200" height="58" rx="6" fill="#ffffff" stroke="#3498db" stroke-width="2"/>
+    <text x="830" y="376" text-anchor="middle" fill="#3498db" font-weight="600">SYSTEM_DESIGN.md</text>
+    <text x="830" y="397" text-anchor="middle" fill="#7f8c8d" font-size="13" font-style="italic">qué y cómo se diseña</text>
+
+    <!-- Abajo derecha: herramientas -->
+    <rect x="665" y="510" width="180" height="58" rx="6" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+    <text x="755" y="535" text-anchor="middle" fill="#34495e" font-weight="600">herramientas</text>
+    <text x="755" y="556" text-anchor="middle" fill="#7f8c8d" font-size="13" font-style="italic">acción</text>
+
+    <!-- Abajo: pruebas -->
+    <rect x="435" y="565" width="180" height="58" rx="6" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+    <text x="525" y="590" text-anchor="middle" fill="#e74c3c" font-weight="600">pruebas</text>
+    <text x="525" y="611" text-anchor="middle" fill="#7f8c8d" font-size="13" font-style="italic">evidencia</text>
+
+    <!-- Abajo izquierda: skills -->
+    <rect x="205" y="510" width="180" height="58" rx="6" fill="#f8f9fa" stroke="#7f8c8d" stroke-width="2" stroke-dasharray="6,4"/>
+    <text x="295" y="535" text-anchor="middle" fill="#34495e" font-weight="600">skills</text>
+    <text x="295" y="556" text-anchor="middle" fill="#7f8c8d" font-size="13" font-style="italic">procedimientos</text>
+
+    <!-- Izquierda: Context7 -->
+    <rect x="120" y="351" width="200" height="58" rx="6" fill="#f8f9fa" stroke="#7f8c8d" stroke-width="2" stroke-dasharray="6,4"/>
+    <text x="220" y="376" text-anchor="middle" fill="#34495e" font-weight="600">Context7</text>
+    <text x="220" y="397" text-anchor="middle" fill="#7f8c8d" font-size="13" font-style="italic">documentación al día</text>
+
+    <!-- Arriba izquierda: modelo -->
+    <rect x="205" y="190" width="180" height="58" rx="6" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+    <text x="295" y="215" text-anchor="middle" fill="#34495e" font-weight="600">modelo (OpenRouter)</text>
+    <text x="295" y="236" text-anchor="middle" fill="#7f8c8d" font-size="13" font-style="italic">razonamiento</text>
+  </g>
+
+  <rect x="400" y="645" width="22" height="14" rx="3" fill="#f8f9fa" stroke="#7f8c8d" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="430" y="657" fill="#7f8c8d" font-size="12" font-style="italic">para explorar después del taller</text>
+  <text x="525" y="688" text-anchor="middle" fill="#7f8c8d" font-size="13" font-style="italic">el modelo razona · el sistema organiza · las herramientas ejecutan · tú decides y auditas</text>
+</svg>

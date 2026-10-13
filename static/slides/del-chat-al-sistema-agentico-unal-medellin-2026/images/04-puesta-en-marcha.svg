@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 700" font-family="Helvetica Neue, Arial, sans-serif">
+  <!-- Reunimos en una sola vista la llave de OpenRouter, la instalación de Hermes Desktop y su conexión -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#95a5a6"/>
+    </marker>
+  </defs>
+
+  <rect width="1050" height="700" fill="#ffffff"/>
+
+  <text x="525" y="72" text-anchor="middle" fill="#34495e" font-size="28" font-weight="600">Hermes + OpenRouter</text>
+
+  <!-- ============ OPENROUTER EN UNA LÍNEA ============ -->
+  <g>
+    <rect x="70" y="115" width="910" height="110" rx="8" fill="#f8f9fa" stroke="#ecf0f1"/>
+    <rect x="95" y="145" width="120" height="50" rx="6" fill="#e74c3c"/>
+    <text x="155" y="176" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">Hermes</text>
+    <path d="M 218 170 L 262 170" fill="none" stroke="#95a5a6" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <text x="240" y="160" text-anchor="middle" fill="#7f8c8d" font-size="10" font-style="italic">1 llave</text>
+    <circle cx="320" cy="170" r="52" fill="#ffffff" stroke="#34495e" stroke-width="2.5"/>
+    <text x="320" y="167" text-anchor="middle" fill="#34495e" font-size="14" font-weight="700">OpenRouter</text>
+    <text x="320" y="185" text-anchor="middle" fill="#7f8c8d" font-size="10">un endpoint</text>
+    <g fill="none" stroke="#bdc3c7" stroke-width="2">
+      <path d="M 372 158 L 410 140"/><path d="M 372 170 L 410 170"/><path d="M 372 182 L 410 200"/>
+    </g>
+    <g font-size="12" fill="#34495e">
+      <text x="418" y="145">Claude · GPT · Gemini</text>
+      <text x="418" y="175">DeepSeek · Qwen · Llama</text>
+      <text x="418" y="205" fill="#16a085" font-family="Menlo, Consolas, monospace">modelos :free</text>
+    </g>
+    <line x1="640" y1="135" x2="640" y2="205" stroke="#ecf0f1" stroke-width="2"/>
+    <text x="810" y="145" text-anchor="middle" fill="#16a085" font-size="11" font-weight="700" letter-spacing="1.5">MODELOS GRATUITOS</text>
+    <text x="810" y="172" text-anchor="middle" fill="#34495e" font-size="13"><tspan font-weight="700">20</tspan> por minuto · <tspan font-weight="700">50</tspan> por día</text>
+    <text x="810" y="195" text-anchor="middle" fill="#7f8c8d" font-size="12"><tspan font-weight="700">1.000</tspan>/día con ≥ 10 USD comprados</text>
+  </g>
+
+  <!-- ============ PASOS ============ -->
+  <g>
+    <!-- Fila 1 -->
+    <rect x="70" y="255" width="280" height="110" rx="8" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+    <circle cx="103" cy="288" r="17" fill="#34495e"/><text x="103" y="294" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">1</text>
+    <text x="130" y="293" fill="#34495e" font-size="15" font-weight="600">tu llave</text>
+    <text x="88" y="325" fill="#34495e" font-size="13">cuenta en openrouter.ai y</text>
+    <text x="88" y="346" fill="#34495e" font-size="13">Settings → <tspan font-weight="700">Keys</tspan></text>
+
+    <rect x="385" y="255" width="280" height="110" rx="8" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+    <circle cx="418" cy="288" r="17" fill="#34495e"/><text x="418" y="294" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">2</text>
+    <text x="445" y="293" fill="#34495e" font-size="15" font-weight="600">descargar Hermes</text>
+    <text x="403" y="325" fill="#34495e" font-size="13">paquete para Windows en</text>
+    <text x="403" y="346" fill="#3498db" font-size="13">hermes-agent.nousresearch.com</text>
+
+    <rect x="700" y="255" width="280" height="110" rx="8" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+    <circle cx="733" cy="288" r="17" fill="#34495e"/><text x="733" y="294" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">3</text>
+    <text x="760" y="293" fill="#34495e" font-size="15" font-weight="600">instalar</text>
+    <text x="718" y="325" fill="#34495e" font-size="13">abrir el <tspan font-family="Menlo, Consolas, monospace" font-size="12">.appinstaller</tspan>;</text>
+    <text x="718" y="346" fill="#34495e" font-size="13">el asistente inicial te guía</text>
+
+    <!-- Fila 2 -->
+    <rect x="70" y="390" width="280" height="110" rx="8" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+    <circle cx="103" cy="423" r="17" fill="#e74c3c"/><text x="103" y="429" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">4</text>
+    <text x="130" y="428" fill="#34495e" font-size="15" font-weight="600">conectar</text>
+    <text x="88" y="460" fill="#34495e" font-size="13">Settings → <tspan font-weight="700">Providers</tspan>:</text>
+    <text x="88" y="481" fill="#34495e" font-size="13">pegar tu llave de OpenRouter</text>
+
+    <rect x="385" y="390" width="280" height="110" rx="8" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+    <circle cx="418" cy="423" r="17" fill="#e74c3c"/><text x="418" y="429" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">5</text>
+    <text x="445" y="428" fill="#34495e" font-size="15" font-weight="600">elegir modelo</text>
+    <text x="403" y="460" fill="#34495e" font-size="13">Settings → <tspan font-weight="700">Model</tspan>, o el selector</text>
+    <text x="403" y="481" fill="#34495e" font-size="13">junto al micrófono del chat</text>
+
+    <rect x="700" y="390" width="280" height="110" rx="8" fill="#ffffff" stroke="#16a085" stroke-width="2"/>
+    <circle cx="733" cy="423" r="17" fill="#16a085"/><text x="733" y="429" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">6</text>
+    <text x="760" y="428" fill="#34495e" font-size="15" font-weight="600">abrir tu proyecto</text>
+    <text x="718" y="460" fill="#34495e" font-size="13">elegir la carpeta de trabajo;</text>
+    <text x="718" y="481" fill="#34495e" font-size="13">terminal integrada: <tspan font-family="Menlo, Consolas, monospace" font-size="12">Ctrl + `</tspan></text>
+  </g>
+  <g fill="none" stroke="#95a5a6" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M 353 310 L 381 310"/>
+    <path d="M 668 310 L 696 310"/>
+    <path d="M 353 445 L 381 445"/>
+    <path d="M 668 445 L 696 445"/>
+  </g>
+
+  <!-- ============ ADVERTENCIA ============ -->
+  <rect x="175" y="535" width="700" height="56" rx="6" fill="#ffffff" stroke="#8b2635" stroke-width="2"/>
+  <text x="525" y="560" text-anchor="middle" fill="#8b2635" font-size="14" font-weight="700">la llave es una contraseña</text>
+  <text x="525" y="580" text-anchor="middle" fill="#34495e" font-size="13">nunca en el código, en el repositorio ni en una captura de pantalla</text>
+
+  <text x="525" y="640" text-anchor="middle" fill="#95a5a6" font-size="11" font-style="italic">los nombres de menú pueden variar entre versiones de la app · los límites gratuitos cambian: verificar el día del taller</text>
+</svg>

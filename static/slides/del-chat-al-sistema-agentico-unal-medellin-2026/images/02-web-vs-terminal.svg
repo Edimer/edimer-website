@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 700" font-family="Helvetica Neue, Arial, sans-serif">
+  <!-- Contrastamos dónde ocurre el trabajo: en la web tú eres el puente; con un agente local el agente trabaja sobre tu proyecto -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#95a5a6"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e74c3c"/>
+    </marker>
+  </defs>
+
+  <rect width="1050" height="700" fill="#ffffff"/>
+
+  <text x="525" y="55" text-anchor="middle" fill="#34495e" font-size="28" font-weight="600">De la pestaña del navegador a la terminal</text>
+  <text x="525" y="86" text-anchor="middle" fill="#7f8c8d" font-size="15" font-weight="300" font-style="italic">Un prompt orienta al modelo; un sistema agéntico trabaja sobre tu proyecto, ejecuta y comprueba</text>
+
+  <!-- ================= IZQUIERDA: WEB ================= -->
+  <text x="262" y="132" text-anchor="middle" fill="#95a5a6" font-size="12" font-weight="700" letter-spacing="1.5">INTERFAZ WEB</text>
+
+  <!-- Ventana de navegador -->
+  <rect x="80" y="150" width="365" height="200" rx="8" fill="#ffffff" stroke="#95a5a6" stroke-width="2"/>
+  <rect x="80" y="150" width="365" height="30" rx="8" fill="#ecf0f1"/>
+  <rect x="80" y="172" width="365" height="8" fill="#ecf0f1"/>
+  <circle cx="100" cy="165" r="5" fill="#e74c3c"/><circle cx="117" cy="165" r="5" fill="#f1c40f"/><circle cx="134" cy="165" r="5" fill="#2ecc71"/>
+  <rect x="160" y="158" width="240" height="14" rx="7" fill="#ffffff"/>
+  <text x="280" y="169" text-anchor="middle" fill="#95a5a6" font-size="9">chat.ejemplo.com</text>
+  <!-- Burbujas -->
+  <rect x="230" y="198" width="190" height="34" rx="12" fill="#3498db"/>
+  <text x="325" y="220" text-anchor="middle" fill="#ffffff" font-size="12">¿cómo grafico la lactancia en R?</text>
+  <rect x="105" y="245" width="250" height="80" rx="12" fill="#f8f9fa" stroke="#ecf0f1"/>
+  <text x="120" y="268" fill="#34495e" font-size="11" font-family="Menlo, Consolas, monospace">ggplot(leche, aes(dias, kg)) +</text>
+  <text x="120" y="286" fill="#34495e" font-size="11" font-family="Menlo, Consolas, monospace">  geom_smooth(aes(color = raza))</text>
+  <text x="120" y="304" fill="#34495e" font-size="11" font-family="Menlo, Consolas, monospace"># ¿y mis datos?</text>
+
+  <!-- Persona puente -->
+  <circle cx="262" cy="405" r="15" fill="#34495e"/>
+  <rect x="244" y="423" width="36" height="40" rx="9" fill="#34495e"/>
+  <text x="262" y="485" text-anchor="middle" fill="#e74c3c" font-size="13" font-weight="600">tú eres el puente</text>
+  <path d="M 262 355 L 262 385" fill="none" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="275" y="374" fill="#7f8c8d" font-size="11" font-style="italic">copiar</text>
+  <path d="M 262 495 L 262 525" fill="none" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="275" y="515" fill="#7f8c8d" font-size="11" font-style="italic">pegar, ejecutar, revisar</text>
+
+  <!-- Proyecto -->
+  <rect x="152" y="532" width="220" height="40" rx="6" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+  <text x="262" y="557" text-anchor="middle" fill="#34495e" font-size="13">📁 tu proyecto</text>
+  <text x="262" y="600" text-anchor="middle" fill="#7f8c8d" font-size="12">el modelo nunca ve el repositorio ni el error real</text>
+
+  <!-- Divisor -->
+  <line x1="525" y1="120" x2="525" y2="610" stroke="#ecf0f1" stroke-width="2" stroke-dasharray="6,6"/>
+
+  <!-- ================= DERECHA: AGENTE LOCAL ================= -->
+  <text x="787" y="132" text-anchor="middle" fill="#e74c3c" font-size="12" font-weight="700" letter-spacing="1.5">SISTEMA AGÉNTICO EN TU MÁQUINA</text>
+
+  <!-- Terminal -->
+  <rect x="605" y="150" width="365" height="150" rx="8" fill="#1e1e1e"/>
+  <circle cx="625" cy="165" r="5" fill="#e74c3c"/><circle cx="642" cy="165" r="5" fill="#f1c40f"/><circle cx="659" cy="165" r="5" fill="#2ecc71"/>
+  <g font-family="Menlo, Consolas, monospace" font-size="12">
+    <text x="625" y="198" fill="#2ecc71">~/hato-lechero $ <tspan fill="#ffffff">hermes</tspan></text>
+    <text x="625" y="222" fill="#bdc3c7">› construye el informe según SYSTEM_DESIGN.md</text>
+    <text x="625" y="246" fill="#95a5a6">  leyendo AGENTS.md ...</text>
+    <text x="625" y="268" fill="#95a5a6">  editando informe.qmd</text>
+    <text x="625" y="290" fill="#2ecc71">  quarto render → informe.html ✓</text>
+  </g>
+
+  <!-- Agente hacia el proyecto -->
+  <path d="M 700 305 L 650 380" fill="none" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrow-red)"/>
+  <path d="M 787 305 L 787 380" fill="none" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrow-red)"/>
+  <path d="M 875 305 L 925 380" fill="none" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrow-red)"/>
+
+  <rect x="590" y="385" width="120" height="36" rx="4" fill="#ffffff" stroke="#3498db" stroke-width="1.5"/>
+  <text x="650" y="408" text-anchor="middle" fill="#34495e" font-size="13">archivos</text>
+  <rect x="727" y="385" width="120" height="36" rx="4" fill="#ffffff" stroke="#3498db" stroke-width="1.5"/>
+  <text x="787" y="408" text-anchor="middle" fill="#34495e" font-size="13">terminal · tests</text>
+  <rect x="864" y="385" width="120" height="36" rx="4" fill="#ffffff" stroke="#3498db" stroke-width="1.5"/>
+  <text x="924" y="408" text-anchor="middle" fill="#34495e" font-size="13">git</text>
+
+  <!-- Contexto y modelo -->
+  <rect x="610" y="455" width="160" height="40" rx="6" fill="#ffffff" stroke="#16a085" stroke-width="1.5"/>
+  <text x="690" y="480" text-anchor="middle" fill="#16a085" font-size="13" font-weight="600">AGENTS.md</text>
+  <rect x="805" y="455" width="160" height="40" rx="6" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+  <text x="885" y="480" text-anchor="middle" fill="#34495e" font-size="13">☁ modelo a elección</text>
+
+  <text x="787" y="535" text-anchor="middle" fill="#34495e" font-size="13">lee, ejecuta y comprueba en tu proyecto</text>
+  <text x="787" y="557" text-anchor="middle" fill="#34495e" font-size="13">con aprobación para lo riesgoso</text>
+  <text x="787" y="600" text-anchor="middle" fill="#7f8c8d" font-size="12">tú pasas de operador a supervisor</text>
+
+  <rect x="200" y="625" width="650" height="40" rx="4" fill="#f8f9fa" stroke="#ecf0f1" stroke-width="1"/>
+  <text x="525" y="650" text-anchor="middle" fill="#34495e" font-size="14">criterio de éxito: no una respuesta <tspan font-style="italic" fill="#7f8c8d">plausible</tspan>, sino una ejecución <tspan font-weight="700" fill="#e74c3c">verificable</tspan></text>
+  <text x="525" y="688" text-anchor="middle" fill="#95a5a6" font-size="11" font-style="italic">ilustrativo: la salida es un ejemplo, no una ejecución real</text>
+</svg>

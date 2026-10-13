@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 700" font-family="Helvetica Neue, Arial, sans-serif">
+  <!-- Mostramos un SYSTEM_DESIGN.md para un informe de producción de leche y el flujo que describe -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#95a5a6"/>
+    </marker>
+  </defs>
+
+  <rect width="1050" height="700" fill="#ffffff"/>
+
+  <text x="525" y="55" text-anchor="middle" fill="#34495e" font-size="28" font-weight="600">SYSTEM_DESIGN.md: el plano antes de construir</text>
+  <text x="525" y="86" text-anchor="middle" fill="#7f8c8d" font-size="15" font-weight="300" font-style="italic">Qué pregunta respondemos, con qué datos, con qué módulos y cómo sabremos que está bien</text>
+
+  <!-- ============ ARCHIVO ============ -->
+  <rect x="50" y="115" width="560" height="490" rx="8" fill="#ffffff" stroke="#3498db" stroke-width="2"/>
+  <rect x="50" y="115" width="560" height="36" rx="8" fill="#3498db"/>
+  <rect x="50" y="143" width="560" height="8" fill="#3498db"/>
+  <text x="72" y="139" fill="#ffffff" font-size="13" font-weight="600" font-family="Menlo, Consolas, monospace">SYSTEM_DESIGN.md</text>
+  <text x="590" y="139" text-anchor="end" fill="#ffffff" font-size="11" font-style="italic">ejemplo para adaptar</text>
+
+  <!-- Pregunta destacada -->
+  <rect x="62" y="160" width="536" height="62" rx="4" fill="#fdecea"/>
+  <g font-family="Menlo, Consolas, monospace" font-size="12.5">
+    <text x="72" y="180" fill="#e74c3c" font-weight="700"># Pregunta técnica  ← cada uno la edita</text>
+    <text x="72" y="200" fill="#34495e">¿Cómo va la producción de leche esta semana,</text>
+    <text x="72" y="216" fill="#34495e">por granja y por vaca, frente a la anterior?</text>
+
+    <text x="72" y="248" fill="#3498db" font-weight="700"># Datos</text>
+    <text x="72" y="267" fill="#34495e">datos/produccion_AAAA-SS.xlsx: granja, vaca, raza,</text>
+    <text x="72" y="284" fill="#34495e">fecha, dias_lactancia, kg_leche (kg/día)</text>
+
+    <text x="72" y="314" fill="#3498db" font-weight="700"># Requisitos</text>
+    <text x="72" y="333" fill="#34495e">- CUANDO se renderice con el archivo de la semana,</text>
+    <text x="72" y="350" fill="#34495e">  EL SISTEMA DEBERÁ generar informe.html con la</text>
+    <text x="72" y="367" fill="#34495e">  producción por granja y vacas bajo su promedio</text>
+    <text x="72" y="384" fill="#34495e">- SI hay valores faltantes o negativos:</text>
+    <text x="72" y="401" fill="#34495e">  reportarlos en el informe</text>
+
+    <text x="72" y="431" fill="#3498db" font-weight="700"># Módulos</text>
+    <text x="72" y="450" fill="#34495e">- R/leer_datos.R  lee el .xlsx (readxl) y valida</text>
+    <text x="72" y="467" fill="#34495e">- R/resumir.R     semana actual vs. anterior</text>
+    <text x="72" y="484" fill="#34495e">- informe.qmd     gráficos y conclusiones</text>
+
+    <text x="72" y="514" fill="#3498db" font-weight="700"># Invariantes</text>
+    <text x="72" y="533" fill="#34495e">- nunca modificar datos/ ni eliminar filas</text>
+    <text x="72" y="550" fill="#34495e">  en silencio</text>
+
+    <text x="72" y="580" fill="#7f8c8d" font-weight="700"># Fuera de alcance</text>
+    <text x="72" y="597" fill="#7f8c8d">modelos predictivos, publicación en la web</text>
+  </g>
+
+  <!-- ============ FLUJO QUE DESCRIBE ============ -->
+  <text x="810" y="135" text-anchor="middle" fill="#7f8c8d" font-size="11" font-weight="700" letter-spacing="1.5">LO QUE DESCRIBE</text>
+  <g text-anchor="middle">
+    <rect x="725" y="152" width="170" height="36" rx="18" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+    <text x="810" y="175" fill="#34495e" font-size="13" font-family="Menlo, Consolas, monospace">produccion.xlsx</text>
+
+    <rect x="725" y="212" width="170" height="50" rx="6" fill="#ffffff" stroke="#3498db" stroke-width="2"/>
+    <text x="810" y="234" fill="#3498db" font-size="13" font-weight="600">R/leer_datos.R</text>
+    <text x="810" y="252" fill="#7f8c8d" font-size="11">valida columnas y valores</text>
+
+    <rect x="725" y="286" width="170" height="50" rx="6" fill="#ffffff" stroke="#3498db" stroke-width="2"/>
+    <text x="810" y="308" fill="#3498db" font-size="13" font-weight="600">R/resumir.R</text>
+    <text x="810" y="326" fill="#7f8c8d" font-size="11">comparación semanal</text>
+
+    <rect x="725" y="360" width="170" height="50" rx="6" fill="#ffffff" stroke="#3498db" stroke-width="2"/>
+    <text x="810" y="382" fill="#3498db" font-size="13" font-weight="600">informe.qmd</text>
+    <text x="810" y="400" fill="#7f8c8d" font-size="11">gráficos y texto</text>
+
+    <rect x="725" y="434" width="170" height="40" rx="6" fill="#e74c3c"/>
+    <text x="810" y="459" fill="#ffffff" font-size="14" font-weight="700" font-family="Menlo, Consolas, monospace">informe.html</text>
+
+    <rect x="640" y="212" width="60" height="124" rx="6" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+    <text x="670" y="274" fill="#e74c3c" font-size="13" font-weight="600" transform="rotate(-90 670 274)">pruebas</text>
+  </g>
+  <g fill="none" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M 810 190 L 810 208"/>
+    <path d="M 810 264 L 810 282"/>
+    <path d="M 810 338 L 810 356"/>
+    <path d="M 810 412 L 810 430"/>
+    <path d="M 702 237 L 721 237"/>
+    <path d="M 702 311 L 721 311"/>
+  </g>
+  <text x="935" y="459" fill="#7f8c8d" font-size="11" font-style="italic">quarto render</text>
+
+  <!-- ============ NOTA DE HONESTIDAD ============ -->
+  <rect x="640" y="500" width="360" height="105" rx="8" fill="#f8f9fa" stroke="#ecf0f1"/>
+  <text x="820" y="525" text-anchor="middle" fill="#8b2635" font-size="12" font-weight="700" letter-spacing="1.5">OJO: NO ES UN ESTÁNDAR</text>
+  <text x="820" y="549" text-anchor="middle" fill="#34495e" font-size="13">práctica recomendable; equivale a</text>
+  <text x="820" y="571" text-anchor="middle" fill="#34495e" font-size="12" font-family="Menlo, Consolas, monospace">design.md · plan.md</text>
+  <text x="820" y="591" text-anchor="middle" fill="#34495e" font-size="12" font-family="Menlo, Consolas, monospace">ARCHITECTURE.md</text>
+
+  <text x="525" y="645" text-anchor="middle" fill="#34495e" font-size="15">el prompt pide · <tspan font-weight="700" fill="#16a085">AGENTS.md</tspan> dice cómo trabajar · <tspan font-weight="700" fill="#3498db">SYSTEM_DESIGN.md</tspan> dice qué se construye</text>
+</svg>

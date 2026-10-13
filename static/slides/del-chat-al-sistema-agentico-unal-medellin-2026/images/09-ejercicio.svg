@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 700" font-family="Helvetica Neue, Arial, sans-serif">
+  <!-- Dibujamos el ejercicio en dos partes: una demostración conjunta y el ejercicio propio, con el mismo flujo de cinco pasos -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#95a5a6"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a085"/>
+    </marker>
+  </defs>
+
+  <rect width="1050" height="700" fill="#ffffff"/>
+
+  <text x="525" y="55" text-anchor="middle" fill="#34495e" font-size="28" font-weight="600">Ejercicio: diseño y planificación de un resultado</text>
+  <text x="525" y="86" text-anchor="middle" fill="#7f8c8d" font-size="15" font-weight="300" font-style="italic">R + Quarto · Hermes Desktop + OpenRouter · el sistema construye, tú diseñas y auditas</text>
+
+  <!-- ============ DOS PARTES ============ -->
+  <g>
+    <!-- Juntos -->
+    <rect x="60" y="112" width="450" height="170" rx="8" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+    <rect x="60" y="112" width="450" height="38" rx="8" fill="#e74c3c"/>
+    <rect x="60" y="142" width="450" height="8" fill="#e74c3c"/>
+    <text x="285" y="137" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="600">1 · lo construimos juntos</text>
+    <text x="285" y="175" text-anchor="middle" fill="#34495e" font-size="13">datos simulados de hatos lecheros (.xlsx):</text>
+    <text x="285" y="195" text-anchor="middle" fill="#34495e" font-size="13">granjas, vacas, producción de leche</text>
+    <!-- ciclo semanal -->
+    <rect x="85" y="215" width="105" height="40" rx="6" fill="#f8f9fa" stroke="#bdc3c7"/>
+    <text x="137" y="240" text-anchor="middle" fill="#34495e" font-size="12">nuevo .xlsx</text>
+    <rect x="225" y="215" width="120" height="40" rx="6" fill="#f8f9fa" stroke="#bdc3c7"/>
+    <text x="285" y="240" text-anchor="middle" fill="#34495e" font-size="12" font-family="Menlo, Consolas, monospace">quarto render</text>
+    <rect x="380" y="215" width="110" height="40" rx="6" fill="#2c3e50"/>
+    <text x="435" y="240" text-anchor="middle" fill="#ffffff" font-size="12" font-family="Menlo, Consolas, monospace">informe.html</text>
+    <g fill="none" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M 192 235 L 221 235"/>
+      <path d="M 347 235 L 376 235"/>
+    </g>
+    <path d="M 435 258 Q 435 274 285 274 Q 137 274 137 260" fill="none" stroke="#16a085" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow-green)"/>
+    <text x="285" y="270" text-anchor="middle" fill="#16a085" font-size="11" font-style="italic">cada semana</text>
+
+    <!-- Tú -->
+    <rect x="540" y="112" width="450" height="170" rx="8" fill="#ffffff" stroke="#3498db" stroke-width="2"/>
+    <rect x="540" y="112" width="450" height="38" rx="8" fill="#3498db"/>
+    <rect x="540" y="142" width="450" height="8" fill="#3498db"/>
+    <text x="765" y="137" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="600">2 · tu propio ejercicio</text>
+    <g font-size="14" fill="#34495e">
+      <circle cx="580" cy="182" r="5" fill="#3498db"/><text x="595" y="187"><tspan font-weight="700">tus datos</tspan> (.xlsx, .csv…)</text>
+      <circle cx="580" cy="218" r="5" fill="#3498db"/><text x="595" y="223"><tspan font-weight="700">tu pregunta técnica</tspan> en SYSTEM_DESIGN.md</text>
+      <circle cx="580" cy="254" r="5" fill="#3498db"/><text x="595" y="259"><tspan font-weight="700">tu informe</tspan>, que puedes volver a generar</text>
+    </g>
+  </g>
+
+  <!-- ============ CINCO PASOS (COMUNES) ============ -->
+  <text x="525" y="320" text-anchor="middle" fill="#7f8c8d" font-size="11" font-weight="700" letter-spacing="1.5">EL MISMO FLUJO EN AMBOS CASOS</text>
+  <line x1="120" y1="380" x2="930" y2="380" stroke="#ecf0f1" stroke-width="6"/>
+  <g text-anchor="middle">
+    <circle cx="120" cy="380" r="34" fill="#ffffff" stroke="#16a085" stroke-width="2.5"/>
+    <text x="120" y="388" fill="#16a085" font-size="22" font-weight="700">1</text>
+    <text x="120" y="440" fill="#34495e" font-size="14" font-weight="600">AGENTS.md</text>
+    <text x="120" y="460" fill="#7f8c8d" font-size="12">reglas y comandos</text>
+
+    <circle cx="322" cy="380" r="34" fill="#ffffff" stroke="#3498db" stroke-width="2.5"/>
+    <text x="322" y="388" fill="#3498db" font-size="22" font-weight="700">2</text>
+    <text x="322" y="440" fill="#34495e" font-size="14" font-weight="600">SYSTEM_DESIGN.md</text>
+    <text x="322" y="460" fill="#7f8c8d" font-size="12">pregunta, datos, salida</text>
+
+    <circle cx="525" cy="380" r="34" fill="#e74c3c"/>
+    <text x="525" y="388" fill="#ffffff" font-size="22" font-weight="700">3</text>
+    <text x="525" y="440" fill="#34495e" font-size="14" font-weight="600">Hermes construye</text>
+    <text x="525" y="460" fill="#7f8c8d" font-size="12">instala lo que falte</text>
+
+    <circle cx="728" cy="380" r="34" fill="#ffffff" stroke="#7f8c8d" stroke-width="2.5"/>
+    <text x="728" y="388" fill="#7f8c8d" font-size="22" font-weight="700">4</text>
+    <text x="728" y="440" fill="#34495e" font-size="14" font-weight="600">pruebas + render</text>
+    <text x="728" y="460" fill="#7f8c8d" font-size="12">valida y genera el HTML</text>
+
+    <circle cx="930" cy="380" r="34" fill="#ffffff" stroke="#2c3e50" stroke-width="2.5"/>
+    <text x="930" y="388" fill="#2c3e50" font-size="22" font-weight="700">5</text>
+    <text x="930" y="440" fill="#34495e" font-size="14" font-weight="600">tú auditas</text>
+    <text x="930" y="460" fill="#7f8c8d" font-size="12">¿responde la pregunta?</text>
+  </g>
+  <g fill="none" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M 157 380 L 284 380"/>
+    <path d="M 359 380 L 487 380"/>
+    <path d="M 562 380 L 690 380"/>
+    <path d="M 765 380 L 892 380"/>
+  </g>
+  <path d="M 930 470 Q 930 492 625 492 Q 330 492 322 472" fill="none" stroke="#16a085" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow-green)"/>
+  <text x="625" y="485" text-anchor="middle" fill="#16a085" font-size="12" font-style="italic">¿no responde? ajusta SYSTEM_DESIGN.md y repite</text>
+
+  <!-- ============ PREGUNTA DE CIERRE ============ -->
+  <rect x="175" y="520" width="700" height="84" rx="6" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+  <text x="525" y="548" text-anchor="middle" fill="#e74c3c" font-size="12" font-weight="700" letter-spacing="1.5">PREGUNTA DE CIERRE</text>
+  <text x="525" y="580" text-anchor="middle" fill="#34495e" font-size="17">¿qué parte hizo el modelo y qué parte garantizó el <tspan font-weight="700">diseño del sistema</tspan>?</text>
+
+  <text x="525" y="645" text-anchor="middle" fill="#7f8c8d" font-size="13" font-style="italic">pruebas automáticas: testthat en R, pytest en Python… la idea es la misma en cualquier lenguaje</text>
+</svg>
