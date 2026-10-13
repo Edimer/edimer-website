@@ -1,19 +1,20 @@
 # Redirecciones de Netlify (este archivo se copia a la raíz del sitio publicado).
 # URLs antiguas de charlas, derivadas del título, hacia su URL estable /talk/<slug>/.
-/es/talk/analisis-de-datos-y-tecnologias-emergentes/  /es/talk/analisis-datos-tecnologias-emergentes-2025/  301
-/es/talk/inteligencia-artificial-aplicaciones-y-desafios/  /es/talk/charla-ia-udea-2024/  301
-/es/talk/data-science-with-r-uses-in-the-agricultural-sector-example-in-plant-tissue-culture/  /es/talk/data-science-r-plant-tissue/  301
-/es/talk/design-and-statistical-analysis-of-experiments-in-cannabis/  /es/talk/experiments-cannabis/  301
-/es/talk/creating-applications-with-shiny/  /es/talk/intro-shiny-r/  301
-/es/talk/inteligencia-artificial-avances-y-desafios/  /es/talk/introduction-ai/  301
-/es/talk/sistemas-agenticos-con-inteligencia-artificial-ia-tecnologias-emergentes-y-disruptivas/  /es/talk/sistemas-agenticos-ia-2025/  301
-/es/talk/agentic-systems-with-artificial-intelligence-transforming-software-development-and-its-application-in-agriculture/  /es/talk/sistemas-agenticos-ia-agrosavia-2025/  301
-/en/talk/data-analysis-and-emerging-technologies/  /en/talk/analisis-datos-tecnologias-emergentes-2025/  301
-/en/talk/artificial-intelligence-applications-and-challenges/  /en/talk/charla-ia-udea-2024/  301
-/en/talk/data-science-with-r-uses-in-the-agricultural-sector-example-in-plant-tissue-culture/  /en/talk/data-science-r-plant-tissue/  301
-/en/talk/design-and-statistical-analysis-of-experiments-in-cannabis/  /en/talk/experiments-cannabis/  301
-/en/talk/creating-applications-with-shiny/  /en/talk/intro-shiny-r/  301
-/en/talk/artificial-intelligence-advances-and-challenges/  /en/talk/introduction-ai/  301
-/en/talk/agentic-systems-with-artificial-intelligence-ai-emerging-and-disruptive-technologies/  /en/talk/sistemas-agenticos-ia-2025/  301
-/en/talk/agentic-systems-with-artificial-intelligence-transforming-software-development-and-its-application-in-agriculture/  /en/talk/sistemas-agenticos-ia-agrosavia-2025/  301
+# "301!" fuerza la redirección aunque exista un archivo viejo en esa ruta.
+/es/talk/analisis-de-datos-y-tecnologias-emergentes/  /es/talk/analisis-datos-tecnologias-emergentes-2025/  301!
+/es/talk/inteligencia-artificial-aplicaciones-y-desafios/  /es/talk/charla-ia-udea-2024/  301!
+/es/talk/data-science-with-r-uses-in-the-agricultural-sector-example-in-plant-tissue-culture/  /es/talk/data-science-r-plant-tissue/  301!
+/es/talk/design-and-statistical-analysis-of-experiments-in-cannabis/  /es/talk/experiments-cannabis/  301!
+/es/talk/creating-applications-with-shiny/  /es/talk/intro-shiny-r/  301!
+/es/talk/inteligencia-artificial-avances-y-desafios/  /es/talk/introduction-ai/  301!
+/es/talk/sistemas-agenticos-con-inteligencia-artificial-ia-tecnologias-emergentes-y-disruptivas/  /es/talk/sistemas-agenticos-ia-2025/  301!
+/es/talk/agentic-systems-with-artificial-intelligence-transforming-software-development-and-its-application-in-agriculture/  /es/talk/sistemas-agenticos-ia-agrosavia-2025/  301!
+/en/talk/data-analysis-and-emerging-technologies/  /en/talk/analisis-datos-tecnologias-emergentes-2025/  301!
+/en/talk/artificial-intelligence-applications-and-challenges/  /en/talk/charla-ia-udea-2024/  301!
+/en/talk/data-science-with-r-uses-in-the-agricultural-sector-example-in-plant-tissue-culture/  /en/talk/data-science-r-plant-tissue/  301!
+/en/talk/design-and-statistical-analysis-of-experiments-in-cannabis/  /en/talk/experiments-cannabis/  301!
+/en/talk/creating-applications-with-shiny/  /en/talk/intro-shiny-r/  301!
+/en/talk/artificial-intelligence-advances-and-challenges/  /en/talk/introduction-ai/  301!
+/en/talk/agentic-systems-with-artificial-intelligence-ai-emerging-and-disruptive-technologies/  /en/talk/sistemas-agenticos-ia-2025/  301!
+/en/talk/agentic-systems-with-artificial-intelligence-transforming-software-development-and-its-application-in-agriculture/  /en/talk/sistemas-agenticos-ia-agrosavia-2025/  301!
 
