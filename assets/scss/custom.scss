@@ -1,0 +1,21 @@
+// Estilos propios del sitio (este archivo reemplaza el custom.scss vacío del tema).
+
+// Página de cada charla: imagen destacada más pequeña, centrada y con proporciones
+// parecidas entre charlas (cuadradas o apaisadas), en lugar de ocupar todo el ancho.
+.talk-page .featured-image-wrapper {
+  max-width: 460px !important; // el tema fija max-width en línea con el ancho de la imagen
+  max-height: none !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.talk-page .featured-image {
+  width: auto !important;
+  height: auto;
+  max-width: 100%;
+  max-height: 340px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
