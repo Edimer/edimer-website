@@ -6,8 +6,8 @@ event_url: "https://www.agrosavia.co/"
 location: "AGROSAVIA"
 address:
   street: ""
-  city: ""
-  region: ""
+  city: "Medellín"
+  region: "Antioquia"
   postcode: ""
   country: Colombia
 summary: "Fundamentos de la IA moderna, sistemas agénticos y casos de uso con potencial en la agricultura."

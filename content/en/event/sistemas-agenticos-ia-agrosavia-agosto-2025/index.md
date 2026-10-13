@@ -6,8 +6,8 @@ event_url: "https://www.agrosavia.co/"
 location: "AGROSAVIA"
 address:
   street: ""
-  city: ""
-  region: ""
+  city: "Medellín"
+  region: "Antioquia"
   postcode: ""
   country: Colombia
 summary: "Foundations of modern AI, agentic systems and use cases with potential in agriculture."
