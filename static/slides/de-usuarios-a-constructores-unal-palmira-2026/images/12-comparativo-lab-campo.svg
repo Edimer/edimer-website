@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 700" font-family="Helvetica Neue, Arial, sans-serif">
+  <!-- Construimos el diagrama síntesis: dos contextos, un mismo principio agéntico -->
+
+  <!-- Fondo -->
+  <rect width="1050" height="700" fill="#ffffff"/>
+
+  <!-- ============ TÍTULO ============ -->
+  <text x="525" y="55" text-anchor="middle" fill="#34495e" font-size="28" font-weight="600">Un mismo principio, dos contextos</text>
+  <text x="525" y="86" text-anchor="middle" fill="#7f8c8d" font-size="15" font-weight="300" font-style="italic">Del laboratorio al campo, los agentes orquestan herramientas para problemas reales</text>
+
+  <!-- ============ BLOQUE IZQUIERDO: LABORATORIO ============ -->
+  <g>
+    <rect x="50" y="135" width="430" height="430" rx="8" fill="#ffffff" stroke="#3498db" stroke-width="2"/>
+    <!-- Banda superior -->
+    <rect x="50" y="135" width="430" height="48" rx="8" fill="#3498db"/>
+    <rect x="50" y="175" width="430" height="8" fill="#3498db"/>
+
+    <!-- Etiqueta de número -->
+    <text x="80" y="166" fill="#ffffff" font-size="13" font-weight="700" letter-spacing="1.5">01</text>
+    <!-- Título -->
+    <text x="265" y="166" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="600">El laboratorio que habla</text>
+
+    <!-- Subtítulo de contexto -->
+    <text x="265" y="208" text-anchor="middle" fill="#7f8c8d" font-size="13" font-weight="400" font-style="italic">fenotipado vegetal con un LLM orquestador</text>
+
+    <!-- Atributos en líneas -->
+    <g>
+      <text x="80" y="255" fill="#95a5a6" font-size="11" font-weight="400" letter-spacing="1">CONTEXTO</text>
+      <text x="80" y="278" fill="#34495e" font-size="14" font-weight="500">laboratorio · invernadero</text>
+    </g>
+    <line x1="80" y1="298" x2="450" y2="298" stroke="#ecf0f1" stroke-width="1"/>
+
+    <g>
+      <text x="80" y="320" fill="#95a5a6" font-size="11" font-weight="400" letter-spacing="1">ACTOR HUMANO</text>
+      <text x="80" y="343" fill="#34495e" font-size="14" font-weight="500">investigador que conversa</text>
+    </g>
+    <line x1="80" y1="363" x2="450" y2="363" stroke="#ecf0f1" stroke-width="1"/>
+
+    <g>
+      <text x="80" y="385" fill="#95a5a6" font-size="11" font-weight="400" letter-spacing="1">ARQUITECTURA</text>
+      <text x="80" y="408" fill="#34495e" font-size="14" font-weight="500">orquestador + toolkit curado</text>
+    </g>
+    <line x1="80" y1="428" x2="450" y2="428" stroke="#ecf0f1" stroke-width="1"/>
+
+    <g>
+      <text x="80" y="450" fill="#95a5a6" font-size="11" font-weight="400" letter-spacing="1">SALIDA</text>
+      <text x="80" y="473" fill="#34495e" font-size="14" font-weight="500">análisis · gráficos · modelos</text>
+    </g>
+    <line x1="80" y1="493" x2="450" y2="493" stroke="#ecf0f1" stroke-width="1"/>
+
+    <g>
+      <text x="80" y="515" fill="#95a5a6" font-size="11" font-weight="400" letter-spacing="1">REFERENCIA</text>
+      <text x="80" y="538" fill="#34495e" font-size="13" font-weight="500" font-style="italic">PhenoAssistant</text>
+      <text x="80" y="555" fill="#7f8c8d" font-size="11" font-weight="400">Chen et al., Nature Comm., 2026</text>
+    </g>
+  </g>
+
+  <!-- ============ CONECTOR CENTRAL ============ -->
+  <g>
+    <circle cx="525" cy="350" r="34" fill="#ffffff" stroke="#2c3e50" stroke-width="2"/>
+    <text x="525" y="346" text-anchor="middle" fill="#34495e" font-size="11" font-weight="700" letter-spacing="1">MISMO</text>
+    <text x="525" y="362" text-anchor="middle" fill="#34495e" font-size="11" font-weight="700" letter-spacing="1">PRINCIPIO</text>
+  </g>
+
+  <!-- Líneas conectoras al centro -->
+  <line x1="482" y1="350" x2="491" y2="350" stroke="#bdc3c7" stroke-width="2"/>
+  <line x1="559" y1="350" x2="568" y2="350" stroke="#bdc3c7" stroke-width="2"/>
+
+  <!-- ============ BLOQUE DERECHO: CAMPO ============ -->
+  <g>
+    <rect x="570" y="135" width="430" height="430" rx="8" fill="#ffffff" stroke="#16a085" stroke-width="2"/>
+    <!-- Banda superior -->
+    <rect x="570" y="135" width="430" height="48" rx="8" fill="#16a085"/>
+    <rect x="570" y="175" width="430" height="8" fill="#16a085"/>
+
+    <text x="600" y="166" fill="#ffffff" font-size="13" font-weight="700" letter-spacing="1.5">02</text>
+    <text x="785" y="166" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="600">El campo que coopera</text>
+
+    <text x="785" y="208" text-anchor="middle" fill="#7f8c8d" font-size="13" font-weight="400" font-style="italic">producción agrícola con agentes coordinados</text>
+
+    <g>
+      <text x="600" y="255" fill="#95a5a6" font-size="11" font-weight="400" letter-spacing="1">CONTEXTO</text>
+      <text x="600" y="278" fill="#34495e" font-size="14" font-weight="500">finca · campo abierto</text>
+    </g>
+    <line x1="600" y1="298" x2="970" y2="298" stroke="#ecf0f1" stroke-width="1"/>
+
+    <g>
+      <text x="600" y="320" fill="#95a5a6" font-size="11" font-weight="400" letter-spacing="1">ACTOR HUMANO</text>
+      <text x="600" y="343" fill="#34495e" font-size="14" font-weight="500">productor que supervisa</text>
+    </g>
+    <line x1="600" y1="363" x2="970" y2="363" stroke="#ecf0f1" stroke-width="1"/>
+
+    <g>
+      <text x="600" y="385" fill="#95a5a6" font-size="11" font-weight="400" letter-spacing="1">ARQUITECTURA</text>
+      <text x="600" y="408" fill="#34495e" font-size="14" font-weight="500">cinco capas · multi-agente</text>
+    </g>
+    <line x1="600" y1="428" x2="970" y2="428" stroke="#ecf0f1" stroke-width="1"/>
+
+    <g>
+      <text x="600" y="450" fill="#95a5a6" font-size="11" font-weight="400" letter-spacing="1">SALIDA</text>
+      <text x="600" y="473" fill="#34495e" font-size="14" font-weight="500">acciones físicas en campo</text>
+    </g>
+    <line x1="600" y1="493" x2="970" y2="493" stroke="#ecf0f1" stroke-width="1"/>
+
+    <g>
+      <text x="600" y="515" fill="#95a5a6" font-size="11" font-weight="400" letter-spacing="1">REFERENCIA</text>
+      <text x="600" y="538" fill="#34495e" font-size="13" font-weight="500" font-style="italic">AAI Framework</text>
+      <text x="600" y="555" fill="#7f8c8d" font-size="11" font-weight="400">Srinivasu et al., Front. Plant Sci., 2026</text>
+    </g>
+  </g>
+
+  <!-- ============ MENSAJE INFERIOR ============ -->
+  <g>
+    <rect x="100" y="595" width="850" height="55" rx="6" fill="#f8f9fa" stroke="#ecf0f1" stroke-width="1"/>
+    <text x="525" y="620" text-anchor="middle" fill="#34495e" font-size="14" font-weight="500">
+      <tspan fill="#7f8c8d" font-style="italic">en ambos casos, un humano formula la pregunta y supervisa el resultado · </tspan>
+    </text>
+    <text x="525" y="640" text-anchor="middle" fill="#e74c3c" font-size="14" font-weight="700">la agencia es del sistema, la responsabilidad sigue siendo nuestra</text>
+  </g>
+
+  <!-- Atribución -->
+  <text x="525" y="685" text-anchor="middle" fill="#95a5a6" font-size="11" font-weight="300" font-style="italic">síntesis propia · construida sobre los dos papers referenciados</text>
+</svg>

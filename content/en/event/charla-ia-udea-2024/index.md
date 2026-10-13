@@ -24,7 +24,7 @@ image:
   focal_point: Center
   preview_only: false
 links: []
-url_slides: "https://edimer.quarto.pub/ia-aplicaciones-desafios/"
+url_slides: "/slides/charla-ia-udea-2024/index.html"
 url_code: ""
 url_pdf: ""
 url_video: ""

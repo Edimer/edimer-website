@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 700" font-family="Helvetica Neue, Arial, sans-serif">
+  <!-- Construimos el mapa de frameworks agénticos agrupados por filosofía de orquestación -->
+
+  <!-- Fondo -->
+  <rect width="1050" height="700" fill="#ffffff"/>
+
+  <!-- ============ TÍTULO ============ -->
+  <text x="525" y="55" text-anchor="middle" fill="#34495e" font-size="28" font-weight="600">El paisaje de frameworks agénticos</text>
+  <text x="525" y="86" text-anchor="middle" fill="#7f8c8d" font-size="15" font-weight="300" font-style="italic">Cinco filosofías, una misma capa</text>
+
+  <!-- ============ CLUSTER 1: GRAFO (arriba izquierda) ============ -->
+  <g>
+    <rect x="50" y="120" width="290" height="180" rx="6" fill="#ffffff" stroke="#2c3e50" stroke-width="1.5"/>
+    <rect x="50" y="120" width="290" height="34" rx="6" fill="#2c3e50"/>
+    <rect x="50" y="148" width="290" height="6" fill="#2c3e50"/>
+    <text x="195" y="143" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="600" letter-spacing="1">ORQUESTACIÓN POR GRAFO</text>
+
+    <text x="195" y="180" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="300" font-style="italic">"nodos, aristas, estado persistente"</text>
+
+    <!-- Item: LangGraph -->
+    <rect x="70" y="200" width="250" height="40" rx="4" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+    <text x="85" y="226" fill="#e74c3c" font-size="16" font-weight="700">LangGraph</text>
+    <text x="305" y="226" text-anchor="end" fill="#95a5a6" font-size="11" font-style="italic">~47M downloads</text>
+
+    <text x="195" y="265" text-anchor="middle" fill="#34495e" font-size="12" font-weight="400">durabilidad · checkpoints · human-in-the-loop</text>
+    <text x="195" y="283" text-anchor="middle" fill="#7f8c8d" font-size="11" font-weight="300" font-style="italic">líder en producción enterprise</text>
+  </g>
+
+  <!-- ============ CLUSTER 2: ROLES (arriba centro) ============ -->
+  <g>
+    <rect x="360" y="120" width="290" height="180" rx="6" fill="#ffffff" stroke="#2c3e50" stroke-width="1.5"/>
+    <rect x="360" y="120" width="290" height="34" rx="6" fill="#2c3e50"/>
+    <rect x="360" y="148" width="290" height="6" fill="#2c3e50"/>
+    <text x="505" y="143" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="600" letter-spacing="1">EQUIPOS POR ROLES</text>
+
+    <text x="505" y="180" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="300" font-style="italic">"un crew con un investigador, un escritor..."</text>
+
+    <!-- Item: CrewAI -->
+    <rect x="380" y="200" width="250" height="40" rx="4" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+    <text x="395" y="226" fill="#e74c3c" font-size="16" font-weight="700">CrewAI</text>
+    <text x="615" y="226" text-anchor="end" fill="#95a5a6" font-size="11" font-style="italic">~5,2M downloads</text>
+
+    <text x="505" y="265" text-anchor="middle" fill="#34495e" font-size="12" font-weight="400">prototipado rápido · 20 líneas para empezar</text>
+    <text x="505" y="283" text-anchor="middle" fill="#7f8c8d" font-size="11" font-weight="300" font-style="italic">la curva más amable</text>
+  </g>
+
+  <!-- ============ CLUSTER 3: CONVERSACIÓN (arriba derecha) ============ -->
+  <g>
+    <rect x="670" y="120" width="290" height="180" rx="6" fill="#ffffff" stroke="#2c3e50" stroke-width="1.5"/>
+    <rect x="670" y="120" width="290" height="34" rx="6" fill="#2c3e50"/>
+    <rect x="670" y="148" width="290" height="6" fill="#2c3e50"/>
+    <text x="815" y="143" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="600" letter-spacing="1">CONVERSACIÓN MULTI-AGENTE</text>
+
+    <text x="815" y="180" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="300" font-style="italic">"agentes que debaten y deciden por turnos"</text>
+
+    <!-- Item: AutoGen / AG2 -->
+    <rect x="690" y="200" width="250" height="40" rx="4" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+    <text x="705" y="226" fill="#e74c3c" font-size="16" font-weight="700">AutoGen / AG2</text>
+    <text x="925" y="226" text-anchor="end" fill="#95a5a6" font-size="11" font-style="italic">Microsoft</text>
+
+    <text x="815" y="265" text-anchor="middle" fill="#34495e" font-size="12" font-weight="400">group chat · debate · selector dinámico</text>
+    <text x="815" y="283" text-anchor="middle" fill="#7f8c8d" font-size="11" font-weight="300" font-style="italic">fuerte en investigación y R&amp;D</text>
+  </g>
+
+  <!-- ============ CLUSTER 4: SDK NATIVOS (medio centro, más ancho) ============ -->
+  <g>
+    <rect x="50" y="335" width="600" height="200" rx="6" fill="#ffffff" stroke="#3498db" stroke-width="1.5"/>
+    <rect x="50" y="335" width="600" height="34" rx="6" fill="#3498db"/>
+    <rect x="50" y="363" width="600" height="6" fill="#3498db"/>
+    <text x="350" y="358" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="600" letter-spacing="1">SDK NATIVOS DE PROVEEDOR</text>
+
+    <text x="350" y="394" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="300" font-style="italic">"profunda integración a costa de portabilidad"</text>
+
+    <!-- OpenAI Agents SDK -->
+    <rect x="70" y="415" width="180" height="50" rx="4" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+    <text x="160" y="437" text-anchor="middle" fill="#e74c3c" font-size="14" font-weight="700">OpenAI Agents SDK</text>
+    <text x="160" y="455" text-anchor="middle" fill="#7f8c8d" font-size="11" font-weight="300" font-style="italic">handoffs explícitos</text>
+
+    <!-- Claude Agent SDK -->
+    <rect x="260" y="415" width="180" height="50" rx="4" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+    <text x="350" y="437" text-anchor="middle" fill="#e74c3c" font-size="14" font-weight="700">Claude Agent SDK</text>
+    <text x="350" y="455" text-anchor="middle" fill="#7f8c8d" font-size="11" font-weight="300" font-style="italic">subagents · skills · MCP</text>
+
+    <!-- Google ADK -->
+    <rect x="450" y="415" width="180" height="50" rx="4" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+    <text x="540" y="437" text-anchor="middle" fill="#e74c3c" font-size="14" font-weight="700">Google ADK</text>
+    <text x="540" y="455" text-anchor="middle" fill="#7f8c8d" font-size="11" font-weight="300" font-style="italic">jerarquía + A2A nativo</text>
+
+    <!-- Microsoft Agent Framework -->
+    <rect x="170" y="480" width="360" height="40" rx="4" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+    <text x="350" y="506" text-anchor="middle" fill="#e74c3c" font-size="14" font-weight="700">Microsoft Agent Framework</text>
+  </g>
+
+  <!-- ============ CLUSTER 5: INTEROP / OPEN (derecha media) ============ -->
+  <g>
+    <rect x="670" y="335" width="290" height="200" rx="6" fill="#ffffff" stroke="#16a085" stroke-width="1.5"/>
+    <rect x="670" y="335" width="290" height="34" rx="6" fill="#16a085"/>
+    <rect x="670" y="363" width="290" height="6" fill="#16a085"/>
+    <text x="815" y="358" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="600" letter-spacing="1">INTEROPERABILIDAD / OPEN</text>
+
+    <text x="815" y="394" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="300" font-style="italic">"que agentes de mundos distintos se hablen"</text>
+
+    <!-- Smolagents -->
+    <rect x="690" y="415" width="250" height="40" rx="4" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+    <text x="705" y="441" fill="#e74c3c" font-size="14" font-weight="700">Smolagents</text>
+    <text x="925" y="441" text-anchor="end" fill="#95a5a6" font-size="11" font-style="italic">Hugging Face</text>
+
+    <!-- OpenAgents -->
+    <rect x="690" y="465" width="250" height="40" rx="4" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+    <text x="705" y="491" fill="#e74c3c" font-size="14" font-weight="700">OpenAgents</text>
+    <text x="925" y="491" text-anchor="end" fill="#95a5a6" font-size="11" font-style="italic">A2A protocol</text>
+  </g>
+
+  <!-- ============ MENSAJE INFERIOR ============ -->
+  <g>
+    <rect x="50" y="570" width="910" height="60" rx="6" fill="#f8f9fa" stroke="#ecf0f1" stroke-width="1"/>
+    <text x="505" y="595" text-anchor="middle" fill="#34495e" font-size="14" font-weight="500">
+      <tspan fill="#7f8c8d" font-style="italic">la pregunta no es </tspan>
+      <tspan fill="#34495e" font-weight="600">"¿cuál es el mejor?"</tspan>
+      <tspan fill="#7f8c8d" font-style="italic">, sino </tspan>
+      <tspan fill="#e74c3c" font-weight="700">"¿cuál encaja con mi equipo y mi problema?"</tspan>
+    </text>
+    <text x="505" y="617" text-anchor="middle" fill="#95a5a6" font-size="12" font-weight="300" font-style="italic">la mayoría son combinables entre sí</text>
+  </g>
+
+  <!-- Atribución -->
+  <text x="525" y="685" text-anchor="middle" fill="#95a5a6" font-size="11" font-weight="300" font-style="italic">datos consolidados de PyPI, GitHub y reviews de la comunidad · abril 2026</text>
+</svg>

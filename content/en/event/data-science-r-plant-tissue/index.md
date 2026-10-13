@@ -25,10 +25,10 @@ image:
   preview_only: false
 links:
   - name: "R installation guide"
-    url: "https://rpubs.com/Edimer/675756"
+    url: "/slides/guia-instalacion-r/index.html"
     icon_pack: fab
     icon: r-project
-url_slides: "https://edimer.github.io/talks/R-Unal-Palmira/diapositivas/slides-unal-palmira.html#1"
+url_slides: "/slides/data-science-r-plant-tissue/index.html"
 url_code: "https://github.com/Edimer/Unal-Palmira-Data-Science"
 url_pdf: ""
 url_video: ""

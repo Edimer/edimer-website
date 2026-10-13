@@ -25,10 +25,10 @@ image:
   preview_only: false
 links:
   - name: "Ejemplo en R: la ley de las plantas con flores"
-    url: "https://edimer.quarto.pub/la-ley-de-las-plantas-con-flores/"
+    url: "/slides/la-ley-de-las-plantas-con-flores/index.html"
     icon_pack: fas
     icon: seedling
-url_slides: "https://edimer.quarto.pub/inteligencia-artificial/"
+url_slides: "/slides/introduction-ai/index.html"
 url_code: "https://github.com/Edimer/charla-ctv-unal-palmira"
 url_pdf: ""
 url_video: ""

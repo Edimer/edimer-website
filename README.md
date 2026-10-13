@@ -13,32 +13,39 @@ content/en/event/<slug>/index.md   + featured.png
 
 La página queda en `/es/talk/<slug>/` y `/en/talk/<slug>/` (el `slug:` del front matter fija la URL). El inicio muestra las 6 charlas más recientes con el enlace "Ver todas las charlas"; la lista completa, agrupada por año, está en `/es/event/`.
 
-Las charlas se construyen en `D:/Github/charlas-eventos` (Quarto + RevealJS) y se publican en <https://edimer.quarto.pub/>.
+Las charlas se construyen en `D:/Github/charlas-eventos` (Quarto + RevealJS). **Todas las diapositivas se alojan en este sitio**, en `static/slides/<slug>/`, y las fichas enlazan a `/slides/<slug>/index.html`. Así no dependen de servicios externos: Posit deja de permitir publicar en quarto.pub el 31 de diciembre de 2026 (lo ya publicado sigue en línea hasta el 31 de diciembre de 2031), y RPubs deja de publicar el 30 de junio de 2027.
 
 ### Agregar una charla nueva
 
-1. Publicar las slides desde su carpeta en `charlas-eventos` (`quarto publish quarto-pub`), lo que deja la URL en `_publish.yml`.
+1. Renderizar la charla en su carpeta de `charlas-eventos` (`quarto render`).
 2. Desde la raíz de este sitio:
 
    ```bash
    python scripts/nueva_charla.py D:/Github/charlas-eventos/<carpeta-de-la-charla>
    ```
 
-   El script lee título, subtítulo y fecha del `.qmd`, toma la URL de `_publish.yml`, crea los dos `index.md` y copia la portada (`images/logo.png` por defecto, o la que indiques con `--imagen`). Opciones útiles: `--slug`, `--fuente` (si hay varios `.qmd`), `--fecha` (si el `.qmd` dice `date: today`), `--evento`, `--ciudad`, `--region`.
+   El script lee título, subtítulo y fecha del `.qmd`, copia el HTML renderizado con sus librerías e imágenes a `static/slides/<slug>/` (y reduce las imágenes muy pesadas), crea los dos `index.md` y copia la portada (`images/logo.png` por defecto, o la que indiques con `--imagen`). Si la charla no está renderizada pero sí publicada en quarto.pub, descarga la versión publicada.
+
+   Opciones útiles:
+   - `--slug`
+   - `--fuente`, si hay varios `.qmd`
+   - `--fecha`, si el `.qmd` dice `date: today`
+   - `--evento`, `--ciudad`, `--region`
+   - `--externo`, para enlazar quarto.pub en vez de alojar
 3. Completar en ambos `index.md`: `summary`, `abstract`, `tags`, `event_url` y la traducción al inglés (los campos pendientes dicen `TODO`).
 4. Revisar con `hugo server` y hacer commit.
 
 Sin el script: `hugo new --kind event content/es/event/<slug>` (y lo mismo con `en`) usa la plantilla `archetypes/event/index.md`.
 
-### Charlas sin publicación en quarto.pub
+### Respaldar una presentación ya publicada
 
-Si una charla no está publicada, sus slides renderizadas se pueden alojar en el propio sitio:
+Para traer al sitio cualquier presentación o documento publicado (quarto.pub, GitHub Pages, RPubs):
 
 ```bash
-python scripts/nueva_charla.py D:/Github/charlas-eventos/<carpeta> --alojar
+python scripts/respaldar_slides.py <url-publicada> <slug>
 ```
 
-Esto copia el HTML y los recursos que usa a `static/slides/<slug>/` y deja `url_slides: /slides/<slug>/index.html`. Los PDF van en `static/uploads/charlas/` y se enlazan con `url_pdf: /uploads/charlas/<archivo>.pdf`.
+Descarga el HTML y todos los recursos que usa (librerías de reveal.js, imágenes, fuentes, remark.js de xaringan) a `static/slides/<slug>/`. Para RPubs resuelve el documento real dentro del iframe. Los PDF van en `static/uploads/charlas/` y se enlazan con `url_pdf: /uploads/charlas/<archivo>.pdf`.
 
 ### Convenciones
 

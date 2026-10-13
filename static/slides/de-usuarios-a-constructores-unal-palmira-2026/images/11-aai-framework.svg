@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 700" font-family="Helvetica Neue, Arial, sans-serif">
+  <!-- Construimos el diagrama del framework AAI agrícola por capas del paper de Frontiers -->
+
+  <!-- Definimos un marcador de flecha que se orienta tangente al path -->
+  <defs>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#95a5a6"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a085"/>
+    </marker>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="1050" height="700" fill="#ffffff"/>
+
+  <!-- ============ TÍTULO ============ -->
+  <text x="525" y="50" text-anchor="middle" fill="#34495e" font-size="28" font-weight="600">El campo que coopera</text>
+  <text x="525" y="80" text-anchor="middle" fill="#7f8c8d" font-size="15" font-weight="300" font-style="italic">Un framework agéntico de cinco capas para agricultura de precisión</text>
+
+  <!-- ============ FINCA (ARRIBA, FUERA DE CAPAS) ============ -->
+  <g transform="translate(380, 115)">
+    <!-- Plantas -->
+    <g transform="translate(20, 18)">
+      <line x1="0" y1="0" x2="0" y2="-22" stroke="#16a085" stroke-width="2"/>
+      <path d="M 0 -10 Q -10 -16 -14 -22 Q -6 -18 0 -10 z" fill="#16a085"/>
+      <path d="M 0 -14 Q 10 -20 14 -26 Q 6 -22 0 -14 z" fill="#16a085"/>
+    </g>
+    <g transform="translate(60, 18)">
+      <line x1="0" y1="0" x2="0" y2="-26" stroke="#16a085" stroke-width="2"/>
+      <path d="M 0 -12 Q -12 -20 -16 -26 Q -8 -22 0 -12 z" fill="#16a085"/>
+      <path d="M 0 -18 Q 12 -24 16 -30 Q 8 -26 0 -18 z" fill="#16a085"/>
+    </g>
+    <!-- Tierra -->
+    <line x1="0" y1="20" x2="100" y2="20" stroke="#34495e" stroke-width="2"/>
+    <!-- Drone -->
+    <g transform="translate(160, 0)">
+      <rect x="-8" y="-3" width="16" height="6" rx="1" fill="#34495e"/>
+      <circle cx="-12" cy="0" r="3" fill="#3498db"/>
+      <circle cx="12" cy="0" r="3" fill="#3498db"/>
+      <line x1="0" y1="3" x2="0" y2="18" stroke="#34495e" stroke-width="1" stroke-dasharray="2,2"/>
+    </g>
+    <!-- Sensor / antena -->
+    <g transform="translate(230, 5)">
+      <line x1="0" y1="0" x2="0" y2="15" stroke="#34495e" stroke-width="2"/>
+      <circle cx="0" cy="-2" r="3" fill="#e74c3c"/>
+      <path d="M -6 -6 Q 0 -10 6 -6" fill="none" stroke="#e74c3c" stroke-width="1.2"/>
+      <path d="M -10 -10 Q 0 -16 10 -10" fill="none" stroke="#e74c3c" stroke-width="1"/>
+    </g>
+  </g>
+  <text x="525" y="170" text-anchor="middle" fill="#7f8c8d" font-size="11" font-weight="400" letter-spacing="2">FINCA</text>
+
+  <!-- ============ STACK DE CAPAS (CENTRO) ============ -->
+  <!-- Posición y altura comunes para las cuatro capas verticales -->
+
+  <!-- Capa 1: PERCEPTION -->
+  <g>
+    <rect x="240" y="190" width="570" height="55" rx="4" fill="#ffffff" stroke="#2c3e50" stroke-width="1.5"/>
+    <rect x="240" y="190" width="8" height="55" fill="#3498db"/>
+    <text x="270" y="218" fill="#34495e" font-size="15" font-weight="600">Perception</text>
+    <text x="270" y="236" fill="#7f8c8d" font-size="11" font-style="italic">sensores · IoT gateways · preprocesado</text>
+    <!-- Mini-iconos a la derecha -->
+    <g transform="translate(620, 217)">
+      <rect x="0" y="-6" width="22" height="12" rx="2" fill="none" stroke="#3498db" stroke-width="1.5"/>
+      <circle cx="11" cy="0" r="2" fill="#3498db"/>
+    </g>
+    <text x="660" y="221" fill="#7f8c8d" font-size="11" font-weight="400">humedad · pH · clima</text>
+  </g>
+
+  <!-- Capa 2: COGNITIVE (la más grande, con agentes especializados) -->
+  <g>
+    <rect x="240" y="260" width="570" height="160" rx="4" fill="#ffffff" stroke="#2c3e50" stroke-width="1.5"/>
+    <rect x="240" y="260" width="8" height="160" fill="#e74c3c"/>
+    <text x="270" y="285" fill="#34495e" font-size="15" font-weight="600">Cognitive</text>
+    <text x="270" y="303" fill="#7f8c8d" font-size="11" font-style="italic">razonamiento · decisión · aprendizaje (Q-Learning, DQN, PPO)</text>
+
+    <!-- Agentes especializados como pastillas -->
+    <g>
+      <rect x="270" y="330" width="120" height="34" rx="17" fill="#ffffff" stroke="#e74c3c" stroke-width="1.5"/>
+      <text x="330" y="352" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">Agente irrigación</text>
+    </g>
+    <g>
+      <rect x="405" y="330" width="120" height="34" rx="17" fill="#ffffff" stroke="#e74c3c" stroke-width="1.5"/>
+      <text x="465" y="352" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">Agente plagas</text>
+    </g>
+    <g>
+      <rect x="540" y="330" width="120" height="34" rx="17" fill="#ffffff" stroke="#e74c3c" stroke-width="1.5"/>
+      <text x="600" y="352" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">Agente nutrientes</text>
+    </g>
+    <g>
+      <rect x="675" y="330" width="120" height="34" rx="17" fill="#ffffff" stroke="#e74c3c" stroke-width="1.5"/>
+      <text x="735" y="352" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">Agente clima</text>
+    </g>
+
+    <!-- Líneas de cooperación entre agentes -->
+    <g stroke="#bdc3c7" stroke-width="1" stroke-dasharray="3,3">
+      <line x1="390" y1="385" x2="405" y2="385"/>
+      <line x1="525" y1="385" x2="540" y2="385"/>
+      <line x1="660" y1="385" x2="675" y2="385"/>
+    </g>
+    <text x="525" y="406" text-anchor="middle" fill="#95a5a6" font-size="11" font-weight="400" font-style="italic">cooperan en tiempo real</text>
+  </g>
+
+  <!-- Capa 3: ACTUATION -->
+  <g>
+    <rect x="240" y="435" width="570" height="55" rx="4" fill="#ffffff" stroke="#2c3e50" stroke-width="1.5"/>
+    <rect x="240" y="435" width="8" height="55" fill="#16a085"/>
+    <text x="270" y="463" fill="#34495e" font-size="15" font-weight="600">Actuation</text>
+    <text x="270" y="481" fill="#7f8c8d" font-size="11" font-style="italic">drones · aspersores · sistemas de irrigación · máquinas autónomas</text>
+    <!-- Mini-iconos a la derecha -->
+    <g transform="translate(665, 462)">
+      <circle cx="0" cy="0" r="3" fill="#16a085"/>
+      <line x1="0" y1="3" x2="0" y2="10" stroke="#16a085" stroke-width="1.5"/>
+    </g>
+    <text x="685" y="466" fill="#7f8c8d" font-size="11" font-weight="400">acción en el campo</text>
+  </g>
+
+  <!-- ============ CAPA LATERAL IZQUIERDA: KNOWLEDGE BASE ============ -->
+  <g>
+    <rect x="60" y="190" width="160" height="300" rx="4" fill="#ffffff" stroke="#2c3e50" stroke-width="1.5"/>
+    <rect x="60" y="190" width="160" height="34" rx="4" fill="#2c3e50"/>
+    <rect x="60" y="218" width="160" height="6" fill="#2c3e50"/>
+    <text x="140" y="212" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="600">Knowledge base</text>
+
+    <text x="140" y="255" text-anchor="middle" fill="#7f8c8d" font-size="11" font-style="italic">memoria del sistema</text>
+
+    <g>
+      <circle cx="80" cy="295" r="3" fill="#e74c3c"/>
+      <text x="95" y="299" fill="#34495e" font-size="11" font-weight="400">ontología</text>
+      <text x="95" y="314" fill="#34495e" font-size="11" font-weight="400">agronómica</text>
+    </g>
+    <g>
+      <circle cx="80" cy="350" r="3" fill="#e74c3c"/>
+      <text x="95" y="354" fill="#34495e" font-size="11" font-weight="400">datos</text>
+      <text x="95" y="369" fill="#34495e" font-size="11" font-weight="400">espaciotemporales</text>
+    </g>
+    <g>
+      <circle cx="80" cy="405" r="3" fill="#e74c3c"/>
+      <text x="95" y="409" fill="#34495e" font-size="11" font-weight="400">reglas y</text>
+      <text x="95" y="424" fill="#34495e" font-size="11" font-weight="400">políticas</text>
+    </g>
+
+    <text x="140" y="475" text-anchor="middle" fill="#95a5a6" font-size="10" font-style="italic">se actualiza con cada acción</text>
+  </g>
+
+  <!-- ============ CAPA LATERAL DERECHA: COMMUNICATION ============ -->
+  <g>
+    <rect x="830" y="190" width="160" height="300" rx="4" fill="#ffffff" stroke="#2c3e50" stroke-width="1.5"/>
+    <rect x="830" y="190" width="160" height="34" rx="4" fill="#2c3e50"/>
+    <rect x="830" y="218" width="160" height="6" fill="#2c3e50"/>
+    <text x="910" y="212" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="600">Communication</text>
+
+    <text x="910" y="255" text-anchor="middle" fill="#7f8c8d" font-size="11" font-style="italic">coordinación entre capas</text>
+
+    <g>
+      <circle cx="850" cy="295" r="3" fill="#16a085"/>
+      <text x="865" y="299" fill="#34495e" font-size="11" font-weight="400">MQTT</text>
+    </g>
+    <g>
+      <circle cx="850" cy="335" r="3" fill="#16a085"/>
+      <text x="865" y="339" fill="#34495e" font-size="11" font-weight="400">LoRaWAN</text>
+    </g>
+    <g>
+      <circle cx="850" cy="375" r="3" fill="#16a085"/>
+      <text x="865" y="379" fill="#34495e" font-size="11" font-weight="400">Wi-Fi</text>
+    </g>
+    <g>
+      <circle cx="850" cy="415" r="3" fill="#16a085"/>
+      <text x="865" y="419" fill="#34495e" font-size="11" font-weight="400">edge nodes</text>
+    </g>
+
+    <text x="910" y="475" text-anchor="middle" fill="#95a5a6" font-size="10" font-style="italic">decisiones sincronizadas</text>
+  </g>
+
+  <!-- ============ FLECHAS DE FLUJO ENTRE CAPAS PRINCIPALES ============ -->
+  <!-- El stack vertical tiene tres capas: Perception (190-245), Cognitive (260-420), Actuation (435-490). El retorno desde Actuation va hacia la finca rodeando por fuera de la capa lateral Communication (que termina en x=990) -->
+  <g fill="none" stroke="#95a5a6" stroke-width="2" marker-end="url(#arrow-gray)">
+    <!-- Finca → Perception (descendente, espacio amplio) -->
+    <line x1="525" y1="168" x2="525" y2="186"/>
+
+    <!-- Perception → Cognitive (las dos capas se tocan, así que dibujamos una flecha lateral más legible: del centro-derecha de Perception hacia el centro-derecha de Cognitive) -->
+    <path d="M 810 220 Q 825 220 825 280 L 810 280"/>
+
+    <!-- Cognitive → Actuation (mismo patrón en el lado opuesto para no recargar un solo flanco) -->
+    <path d="M 240 395 Q 225 395 225 460 L 240 460"/>
+  </g>
+
+  <!-- Retorno Actuation → Finca: una curva larga y limpia que rodea Communication por fuera, llega arriba y baja hacia la finca -->
+  <g fill="none" stroke="#16a085" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow-green)">
+    <path d="M 810 462 Q 1015 462 1015 130 Q 1015 105 590 105 L 590 115"/>
+  </g>
+  <text x="1030" y="295" text-anchor="middle" fill="#16a085" font-size="10" font-weight="500" font-style="italic" transform="rotate(-90 1030 295)">acción en el campo</text>
+
+  <!-- Flechas laterales bidireccionales: Knowledge base ↔ Cognitive y Cognitive ↔ Communication -->
+  <g fill="none" stroke="#bdc3c7" stroke-width="1.5" stroke-dasharray="4,3">
+    <line x1="220" y1="340" x2="240" y2="340"/>
+    <line x1="810" y1="340" x2="830" y2="340"/>
+  </g>
+  <!-- Indicadores de bidireccionalidad (pequeños triángulos a cada lado) -->
+  <g fill="#95a5a6">
+    <polygon points="220,340 225,337 225,343"/>
+    <polygon points="240,340 235,337 235,343"/>
+    <polygon points="810,340 815,337 815,343"/>
+    <polygon points="830,340 825,337 825,343"/>
+  </g>
+
+  <!-- ============ DATO AL PIE ============ -->
+  <g>
+    <rect x="100" y="525" width="850" height="50" rx="6" fill="#f8f9fa" stroke="#ecf0f1" stroke-width="1"/>
+    <text x="525" y="547" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="400" letter-spacing="1">VALIDACIÓN CON FEDERATED LEARNING</text>
+    <text x="525" y="566" text-anchor="middle" fill="#34495e" font-size="13" font-weight="500">
+      <tspan>modelo global federado · </tspan>
+      <tspan fill="#e74c3c" font-weight="700">96,4% accuracy</tspan>
+      <tspan> · enfermedad de tomate y detección de malezas</tspan>
+    </text>
+  </g>
+
+  <!-- Atribución -->
+  <text x="525" y="685" text-anchor="middle" fill="#95a5a6" font-size="11" font-weight="300" font-style="italic">Srinivasu et al. · Frontiers in Plant Science · enero 2026 · DOI: 10.3389/fpls.2025.1706428</text>
+</svg>

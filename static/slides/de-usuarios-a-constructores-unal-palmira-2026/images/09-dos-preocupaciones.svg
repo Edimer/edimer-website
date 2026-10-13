@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 700" font-family="Helvetica Neue, Arial, sans-serif">
+  <!-- Construimos el diagrama de las dos preocupaciones antagónicas que comparten una sola salida -->
+
+  <!-- Definimos un marcador de flecha que se orienta tangente al path -->
+  <defs>
+    <marker id="arrow-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34495e"/>
+    </marker>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="1050" height="700" fill="#ffffff"/>
+
+  <!-- ============ TÍTULO ============ -->
+  <text x="525" y="55" text-anchor="middle" fill="#34495e" font-size="28" font-weight="600">Dos preocupaciones que parecen antagónicas</text>
+  <text x="525" y="86" text-anchor="middle" fill="#7f8c8d" font-size="15" font-weight="300" font-style="italic">Y la salida que comparten</text>
+
+  <!-- ============ BLOQUE IZQUIERDO: APOCALIPSIS ============ -->
+  <g>
+    <rect x="60" y="120" width="420" height="290" rx="8" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+    <!-- Banda superior -->
+    <rect x="60" y="120" width="420" height="48" rx="8" fill="#e74c3c"/>
+    <rect x="60" y="160" width="420" height="8" fill="#e74c3c"/>
+
+    <!-- Etiqueta de número -->
+    <text x="90" y="151" fill="#ffffff" font-size="13" font-weight="700" letter-spacing="1.5">01</text>
+    <!-- Título -->
+    <text x="270" y="151" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="600">La sustitución apocalíptica</text>
+
+    <!-- Subtítulo / línea de contexto -->
+    <text x="270" y="195" text-anchor="middle" fill="#7f8c8d" font-size="13" font-weight="400" font-style="italic">el escenario de Hinton, Tegmark, Bengio</text>
+
+    <!-- Sub-bullets -->
+    <g>
+      <circle cx="100" cy="240" r="4" fill="#e74c3c"/>
+      <text x="115" y="245" fill="#34495e" font-size="14" font-weight="400">monopolización de la tecnología</text>
+    </g>
+    <g>
+      <circle cx="100" cy="280" r="4" fill="#e74c3c"/>
+      <text x="115" y="285" fill="#34495e" font-size="14" font-weight="400">uso malicioso deliberado</text>
+    </g>
+    <g>
+      <circle cx="100" cy="320" r="4" fill="#e74c3c"/>
+      <text x="115" y="325" fill="#34495e" font-size="14" font-weight="400">concentración del poder</text>
+    </g>
+    <g>
+      <circle cx="100" cy="360" r="4" fill="#e74c3c"/>
+      <text x="115" y="365" fill="#34495e" font-size="14" font-weight="400">decisiones sin supervisión humana</text>
+    </g>
+  </g>
+
+  <!-- ============ "VS" CENTRAL ============ -->
+  <g>
+    <circle cx="525" cy="265" r="26" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+    <text x="525" y="271" text-anchor="middle" fill="#34495e" font-size="14" font-weight="700" letter-spacing="1.5">VS</text>
+  </g>
+
+  <!-- ============ BLOQUE DERECHO: ANALFABETISMO ============ -->
+  <g>
+    <rect x="570" y="120" width="420" height="290" rx="8" fill="#ffffff" stroke="#34495e" stroke-width="2"/>
+    <!-- Banda superior -->
+    <rect x="570" y="120" width="420" height="48" rx="8" fill="#34495e"/>
+    <rect x="570" y="160" width="420" height="8" fill="#34495e"/>
+
+    <!-- Etiqueta de número -->
+    <text x="600" y="151" fill="#ffffff" font-size="13" font-weight="700" letter-spacing="1.5">02</text>
+    <!-- Título -->
+    <text x="780" y="151" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="600">El analfabetismo tecnológico</text>
+
+    <!-- Subtítulo -->
+    <text x="780" y="195" text-anchor="middle" fill="#7f8c8d" font-size="13" font-weight="400" font-style="italic">el escenario que más me preocupa</text>
+
+    <!-- Sub-bullets -->
+    <g>
+      <circle cx="610" cy="240" r="4" fill="#34495e"/>
+      <text x="625" y="245" fill="#34495e" font-size="14" font-weight="400">show mediático sin sustancia</text>
+    </g>
+    <g>
+      <circle cx="610" cy="280" r="4" fill="#34495e"/>
+      <text x="625" y="285" fill="#34495e" font-size="14" font-weight="400">tecnología como fin, no medio</text>
+    </g>
+    <g>
+      <circle cx="610" cy="320" r="4" fill="#34495e"/>
+      <text x="625" y="325" fill="#34495e" font-size="14" font-weight="400">dependencia ciega y superficial</text>
+    </g>
+    <g>
+      <circle cx="610" cy="360" r="4" fill="#34495e"/>
+      <text x="625" y="365" fill="#34495e" font-size="14" font-weight="400">universidades rezagadas</text>
+    </g>
+  </g>
+
+  <!-- ============ FLECHAS QUE CONVERGEN AL PUENTE ============ -->
+  <g fill="none" stroke="#34495e" stroke-width="2" marker-end="url(#arrow-dark)">
+    <!-- Bloque izquierdo → puente -->
+    <path d="M 270 412 Q 320 460 410 478"/>
+    <!-- Bloque derecho → puente -->
+    <path d="M 780 412 Q 730 460 640 478"/>
+  </g>
+
+  <!-- ============ PUENTE / SALIDA COMÚN ============ -->
+  <g>
+    <rect x="200" y="480" width="650" height="170" rx="8" fill="#16a085"/>
+
+    <!-- Etiqueta superior (usamos contraste por línea blanca, no por color nuevo) -->
+    <text x="525" y="510" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" letter-spacing="2">UNA SOLA SALIDA</text>
+    <line x1="430" y1="520" x2="620" y2="520" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+
+    <!-- Tres elementos de la salida -->
+    <g>
+      <text x="290" y="565" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="700">Democratizar</text>
+      <text x="290" y="590" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="400" font-style="italic">hablar de IA</text>
+      <text x="290" y="608" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="400" font-style="italic">con todo el mundo</text>
+    </g>
+
+    <g>
+      <text x="525" y="565" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="700">Conocer</text>
+      <text x="525" y="590" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="400" font-style="italic">no usar sin entender</text>
+      <text x="525" y="608" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="400" font-style="italic">lo básico de la herramienta</text>
+    </g>
+
+    <g>
+      <text x="760" y="565" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="700">Sincronizarnos</text>
+      <text x="760" y="590" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="400" font-style="italic">trabajar como equipos</text>
+      <text x="760" y="608" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="400" font-style="italic">no como individuos</text>
+    </g>
+  </g>
+
+</svg>

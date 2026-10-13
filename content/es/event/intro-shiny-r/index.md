@@ -24,7 +24,7 @@ image:
   focal_point: Center
   preview_only: false
 links: []
-url_slides: "https://edimer.github.io/talks/IntroShiny_Unal2020/01_Diapositivas.html#1"
+url_slides: "/slides/intro-shiny-r/index.html"
 url_code: "https://github.com/Edimer/edimer.github.io/tree/master/talks/IntroShiny_Unal2020"
 url_pdf: ""
 url_video: ""

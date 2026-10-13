@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 700" font-family="Helvetica Neue, Arial, sans-serif">
+  <!-- Construimos el mapa visual de la charla: tres preguntas que estructuran las dos horas -->
+
+  <!-- Definimos un marcador de flecha que se orienta tangente al path -->
+  <defs>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#95a5a6"/>
+    </marker>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="1050" height="700" fill="#ffffff"/>
+
+  <!-- ============ TÍTULO ============ -->
+  <text x="525" y="60" text-anchor="middle" fill="#34495e" font-size="28" font-weight="600">Tres preguntas para hoy</text>
+  <text x="525" y="92" text-anchor="middle" fill="#7f8c8d" font-size="16" font-weight="300" font-style="italic">El recorrido de las próximas dos horas</text>
+
+  <!-- ============ TARJETA 1: ¿QUÉ ESTÁ PASANDO? ============ -->
+  <g>
+    <rect x="45" y="150" width="280" height="440" rx="8" fill="#ffffff" stroke="#2c3e50" stroke-width="2"/>
+
+    <!-- Número grande -->
+    <text x="185" y="215" text-anchor="middle" fill="#e74c3c" font-size="42" font-weight="700">01</text>
+
+    <!-- Ícono: globo terráqueo (meridianos y paralelos) -->
+    <g transform="translate(185, 295)">
+      <circle cx="0" cy="0" r="42" fill="none" stroke="#2c3e50" stroke-width="2"/>
+      <ellipse cx="0" cy="0" rx="16" ry="42" fill="none" stroke="#2c3e50" stroke-width="1.5"/>
+      <line x1="-42" y1="0" x2="42" y2="0" stroke="#2c3e50" stroke-width="1.5"/>
+      <ellipse cx="0" cy="0" rx="42" ry="16" fill="none" stroke="#2c3e50" stroke-width="1.5" stroke-dasharray="3,3"/>
+    </g>
+
+    <!-- Título de la pregunta -->
+    <text x="185" y="395" text-anchor="middle" fill="#34495e" font-size="19" font-weight="600">¿Qué está pasando?</text>
+
+    <!-- Línea divisora interna -->
+    <line x1="85" y1="415" x2="285" y2="415" stroke="#ecf0f1" stroke-width="1.5"/>
+
+    <!-- Sub-bullets -->
+    <text x="185" y="445" text-anchor="middle" fill="#7f8c8d" font-size="13" font-weight="400">software 3.0</text>
+    <text x="185" y="468" text-anchor="middle" fill="#7f8c8d" font-size="13" font-weight="400">MCP · Skills · SDKs</text>
+    <text x="185" y="491" text-anchor="middle" fill="#7f8c8d" font-size="13" font-weight="400">frameworks · open source</text>
+
+    <!-- Referencia de slides -->
+    <text x="185" y="560" text-anchor="middle" fill="#bdc3c7" font-size="11" font-style="italic">slides 4-11</text>
+  </g>
+
+  <!-- Flecha 1 → 2 -->
+  <line x1="333" y1="370" x2="378" y2="370" stroke="#95a5a6" stroke-width="2.5" marker-end="url(#arrow-gray)"/>
+
+  <!-- ============ TARJETA 2: ¿CÓMO ATERRIZA? ============ -->
+  <g>
+    <rect x="385" y="150" width="280" height="440" rx="8" fill="#ffffff" stroke="#2c3e50" stroke-width="2"/>
+
+    <text x="525" y="215" text-anchor="middle" fill="#e74c3c" font-size="42" font-weight="700">02</text>
+
+    <!-- Ícono: planta germinando (tallo + 2 hojas) -->
+    <g transform="translate(525, 295)">
+      <!-- Tallo -->
+      <line x1="0" y1="38" x2="0" y2="-18" stroke="#16a085" stroke-width="3"/>
+      <!-- Hoja izquierda -->
+      <path d="M 0 -8 Q -28 -18 -34 -34 Q -16 -28 0 -8 z" fill="#16a085"/>
+      <!-- Hoja derecha -->
+      <path d="M 0 -18 Q 28 -28 34 -42 Q 16 -38 0 -18 z" fill="#16a085"/>
+      <!-- Tierra / base -->
+      <ellipse cx="0" cy="38" rx="20" ry="5" fill="#34495e"/>
+    </g>
+
+    <text x="525" y="395" text-anchor="middle" fill="#34495e" font-size="19" font-weight="600">¿Cómo aterriza esto?</text>
+
+    <line x1="425" y1="415" x2="625" y2="415" stroke="#ecf0f1" stroke-width="1.5"/>
+
+    <text x="525" y="445" text-anchor="middle" fill="#7f8c8d" font-size="13" font-weight="400">panorama global</text>
+    <text x="525" y="468" text-anchor="middle" fill="#7f8c8d" font-size="13" font-weight="400">Latinoamérica · Colombia</text>
+    <text x="525" y="491" text-anchor="middle" fill="#7f8c8d" font-size="13" font-weight="400">ejemplos en agronomía</text>
+
+    <text x="525" y="560" text-anchor="middle" fill="#bdc3c7" font-size="11" font-style="italic">slides 12-16</text>
+  </g>
+
+  <!-- Flecha 2 → 3 -->
+  <line x1="673" y1="370" x2="718" y2="370" stroke="#95a5a6" stroke-width="2.5" marker-end="url(#arrow-gray)"/>
+
+  <!-- ============ TARJETA 3: ¿CÓMO NOS PREPARAMOS? ============ -->
+  <g>
+    <!-- Borde rojo más grueso para destacar el destino del viaje -->
+    <rect x="725" y="150" width="280" height="440" rx="8" fill="#ffffff" stroke="#e74c3c" stroke-width="3"/>
+
+    <text x="865" y="215" text-anchor="middle" fill="#e74c3c" font-size="42" font-weight="700">03</text>
+
+    <!-- Ícono: red de personas (tres nodos conectados) -->
+    <g transform="translate(865, 295)">
+      <!-- Líneas de conexión -->
+      <line x1="-32" y1="18" x2="0" y2="-28" stroke="#34495e" stroke-width="2"/>
+      <line x1="32" y1="18" x2="0" y2="-28" stroke="#34495e" stroke-width="2"/>
+      <line x1="-32" y1="18" x2="32" y2="18" stroke="#34495e" stroke-width="2"/>
+      <!-- Nodos -->
+      <circle cx="0" cy="-28" r="13" fill="#e74c3c"/>
+      <circle cx="-32" cy="18" r="13" fill="#3498db"/>
+      <circle cx="32" cy="18" r="13" fill="#16a085"/>
+    </g>
+
+    <text x="865" y="395" text-anchor="middle" fill="#34495e" font-size="19" font-weight="600">¿Cómo nos preparamos?</text>
+
+    <line x1="765" y1="415" x2="965" y2="415" stroke="#ecf0f1" stroke-width="1.5"/>
+
+    <text x="865" y="445" text-anchor="middle" fill="#7f8c8d" font-size="13" font-weight="400">dos preocupaciones</text>
+    <text x="865" y="468" text-anchor="middle" fill="#7f8c8d" font-size="13" font-weight="400">una nueva capa</text>
+    <text x="865" y="491" text-anchor="middle" fill="#7f8c8d" font-size="13" font-weight="400">humanos sincronizados</text>
+
+    <text x="865" y="560" text-anchor="middle" fill="#bdc3c7" font-size="11" font-style="italic">slides 17-20</text>
+  </g>
+
+  <!-- Mensaje al pie -->
+  <text x="525" y="650" text-anchor="middle" fill="#7f8c8d" font-size="13" font-weight="400" font-style="italic">Tres preguntas, una sola tesis: somos constructores, no espectadores</text>
+</svg>

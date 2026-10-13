@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Círculo central -->
+  <circle cx="400" cy="300" r="100" fill="#286343" fill-opacity="0.2" stroke="#286343" stroke-width="2"/>
+  <text x="400" y="305" text-anchor="middle" font-family="Arial" font-size="16" fill="#333">Datos</text>
+  <text x="400" y="325" text-anchor="middle" font-family="Arial" font-size="16" fill="#333">Digitales</text>
+
+  <!-- IoT y Sensores -->
+  <circle cx="250" cy="150" r="60" fill="#4a90e2" fill-opacity="0.2" stroke="#4a90e2" stroke-width="2"/>
+  <text x="250" y="145" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">IoT</text>
+  <text x="250" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">Sensores</text>
+
+  <!-- Imágenes Satelitales -->
+  <circle cx="550" cy="150" r="60" fill="#f5a623" fill-opacity="0.2" stroke="#f5a623" stroke-width="2"/>
+  <text x="550" y="145" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Satélites</text>
+  <text x="550" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">Imágenes</text>
+
+  <!-- Secuenciación Genómica -->
+  <circle cx="200" cy="300" r="60" fill="#7ed321" fill-opacity="0.2" stroke="#7ed321" stroke-width="2"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Genómica</text>
+  <text x="200" y="315" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">ADN</text>
+
+  <!-- Imágenes -->
+  <circle cx="600" cy="300" r="60" fill="#bd10e0" fill-opacity="0.2" stroke="#bd10e0" stroke-width="2"/>
+  <text x="600" y="295" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Imágenes</text>
+  <text x="600" y="315" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">Fotos</text>
+
+  <!-- Videos -->
+  <circle cx="250" cy="450" r="60" fill="#d0021b" fill-opacity="0.2" stroke="#d0021b" stroke-width="2"/>
+  <text x="250" y="445" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Videos</text>
+  <text x="250" y="465" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">Multimedia</text>
+
+  <!-- Texto -->
+  <circle cx="400" cy="500" r="60" fill="#9013fe" fill-opacity="0.2" stroke="#9013fe" stroke-width="2"/>
+  <text x="400" y="495" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Texto</text>
+  <text x="400" y="515" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">Documentos</text>
+
+  <!-- Sonido -->
+  <circle cx="550" cy="450" r="60" fill="#50e3c2" fill-opacity="0.2" stroke="#50e3c2" stroke-width="2"/>
+  <text x="550" y="445" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Sonido</text>
+  <text x="550" y="465" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">Audio</text>
+
+  <!-- Líneas conectoras -->
+  <line x1="330" y1="300" x2="470" y2="300" stroke="#286343" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="400" y1="200" x2="400" y2="400" stroke="#286343" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="320" y1="220" x2="480" y2="380" stroke="#286343" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="320" y1="380" x2="480" y2="220" stroke="#286343" stroke-width="1" stroke-dasharray="5,5"/>
+</svg>

@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 700" font-family="Helvetica Neue, Arial, sans-serif">
+  <!-- Construimos el diagrama de MCP como protocolo universal -->
+
+  <!-- Fondo -->
+  <rect width="1050" height="700" fill="#ffffff"/>
+
+  <!-- ============ TÍTULO / SUBTÍTULO ============ -->
+  <text x="525" y="60" text-anchor="middle" fill="#34495e" font-size="28" font-weight="600">MCP: un protocolo, muchas conexiones</text>
+  <text x="525" y="92" text-anchor="middle" fill="#7f8c8d" font-size="16" font-weight="300" font-style="italic">Antes: integración M×N · ahora: M+N</text>
+
+  <!-- ============ NODO CENTRAL: MCP ============ -->
+  <g>
+    <!-- Círculo central destacado -->
+    <circle cx="525" cy="370" r="95" fill="#ffffff" stroke="#e74c3c" stroke-width="3"/>
+    <circle cx="525" cy="370" r="78" fill="#e74c3c"/>
+
+    <!-- Texto central -->
+    <text x="525" y="362" text-anchor="middle" fill="#ffffff" font-size="32" font-weight="700">MCP</text>
+    <text x="525" y="388" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="400" letter-spacing="1.5">PROTOCOLO</text>
+    <text x="525" y="405" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="400" letter-spacing="1.5">ABIERTO</text>
+  </g>
+
+  <!-- Etiqueta debajo del nodo central -->
+  <text x="525" y="510" text-anchor="middle" fill="#34495e" font-size="14" font-weight="400" font-style="italic">"El USB-C de los modelos"</text>
+
+  <!-- ============ LADO IZQUIERDO: MODELOS (CLIENTES) ============ -->
+  <g>
+    <!-- Etiqueta de columna -->
+    <text x="140" y="135" text-anchor="middle" fill="#7f8c8d" font-size="13" font-weight="400" letter-spacing="2">MODELOS / CLIENTES</text>
+    <line x1="60" y1="150" x2="220" y2="150" stroke="#bdc3c7" stroke-width="1"/>
+
+    <!-- Modelo 1: Claude -->
+    <g>
+      <rect x="60" y="180" width="160" height="48" rx="4" fill="#ffffff" stroke="#2c3e50" stroke-width="1.5"/>
+      <text x="140" y="210" text-anchor="middle" fill="#2c3e50" font-size="15" font-weight="500">Claude</text>
+    </g>
+
+    <!-- Modelo 2: ChatGPT -->
+    <g>
+      <rect x="60" y="245" width="160" height="48" rx="4" fill="#ffffff" stroke="#2c3e50" stroke-width="1.5"/>
+      <text x="140" y="275" text-anchor="middle" fill="#2c3e50" font-size="15" font-weight="500">ChatGPT</text>
+    </g>
+
+    <!-- Modelo 3: Gemini -->
+    <g>
+      <rect x="60" y="310" width="160" height="48" rx="4" fill="#ffffff" stroke="#2c3e50" stroke-width="1.5"/>
+      <text x="140" y="340" text-anchor="middle" fill="#2c3e50" font-size="15" font-weight="500">Gemini</text>
+    </g>
+
+    <!-- Modelo 4: Llama / open -->
+    <g>
+      <rect x="60" y="375" width="160" height="48" rx="4" fill="#ffffff" stroke="#2c3e50" stroke-width="1.5"/>
+      <text x="140" y="400" text-anchor="middle" fill="#2c3e50" font-size="15" font-weight="500">Llama / open</text>
+      <text x="140" y="415" text-anchor="middle" fill="#95a5a6" font-size="11" font-style="italic">vía Ollama, vLLM...</text>
+    </g>
+
+    <!-- Modelo 5: IDE / editor -->
+    <g>
+      <rect x="60" y="440" width="160" height="48" rx="4" fill="#ffffff" stroke="#2c3e50" stroke-width="1.5"/>
+      <text x="140" y="465" text-anchor="middle" fill="#2c3e50" font-size="15" font-weight="500">IDE / editor</text>
+      <text x="140" y="480" text-anchor="middle" fill="#95a5a6" font-size="11" font-style="italic">Cursor, VS Code...</text>
+    </g>
+
+    <!-- "y más" -->
+    <text x="140" y="520" text-anchor="middle" fill="#95a5a6" font-size="13" font-weight="300" font-style="italic">y más...</text>
+  </g>
+
+  <!-- ============ LADO DERECHO: HERRAMIENTAS (SERVIDORES) ============ -->
+  <g>
+    <!-- Etiqueta de columna -->
+    <text x="910" y="135" text-anchor="middle" fill="#7f8c8d" font-size="13" font-weight="400" letter-spacing="2">HERRAMIENTAS / SERVIDORES</text>
+    <line x1="830" y1="150" x2="990" y2="150" stroke="#bdc3c7" stroke-width="1"/>
+
+    <!-- Tool 1: GitHub -->
+    <g>
+      <rect x="830" y="180" width="160" height="48" rx="4" fill="#ffffff" stroke="#3498db" stroke-width="1.5"/>
+      <text x="910" y="210" text-anchor="middle" fill="#34495e" font-size="15" font-weight="500">GitHub</text>
+    </g>
+
+    <!-- Tool 2: Filesystem -->
+    <g>
+      <rect x="830" y="245" width="160" height="48" rx="4" fill="#ffffff" stroke="#3498db" stroke-width="1.5"/>
+      <text x="910" y="275" text-anchor="middle" fill="#34495e" font-size="15" font-weight="500">Filesystem</text>
+    </g>
+
+    <!-- Tool 3: Gmail -->
+    <g>
+      <rect x="830" y="310" width="160" height="48" rx="4" fill="#ffffff" stroke="#3498db" stroke-width="1.5"/>
+      <text x="910" y="340" text-anchor="middle" fill="#34495e" font-size="15" font-weight="500">Gmail</text>
+    </g>
+
+    <!-- Tool 4: WhatsApp -->
+    <g>
+      <rect x="830" y="375" width="160" height="48" rx="4" fill="#ffffff" stroke="#3498db" stroke-width="1.5"/>
+      <text x="910" y="405" text-anchor="middle" fill="#34495e" font-size="15" font-weight="500">WhatsApp</text>
+    </g>
+
+    <!-- Tool 5: APIs -->
+    <g>
+      <rect x="830" y="440" width="160" height="48" rx="4" fill="#ffffff" stroke="#3498db" stroke-width="1.5"/>
+      <text x="910" y="465" text-anchor="middle" fill="#34495e" font-size="15" font-weight="500">APIs propias</text>
+      <text x="910" y="480" text-anchor="middle" fill="#95a5a6" font-size="11" font-style="italic">de tu organización</text>
+    </g>
+
+    <!-- "y miles más" -->
+    <text x="910" y="520" text-anchor="middle" fill="#95a5a6" font-size="13" font-weight="300" font-style="italic">y miles más...</text>
+  </g>
+
+  <!-- ============ CONEXIONES IZQUIERDA → CENTRO ============ -->
+  <g stroke="#bdc3c7" stroke-width="1.5" fill="none">
+    <path d="M 220 204 Q 360 230 432 340"/>
+    <path d="M 220 269 Q 360 290 432 350"/>
+    <path d="M 220 334 L 432 365"/>
+    <path d="M 220 399 Q 360 400 432 385"/>
+    <path d="M 220 464 Q 360 440 432 405"/>
+  </g>
+
+  <!-- ============ CONEXIONES CENTRO → DERECHA ============ -->
+  <g stroke="#bdc3c7" stroke-width="1.5" fill="none">
+    <path d="M 618 340 Q 720 230 830 204"/>
+    <path d="M 618 350 Q 720 290 830 269"/>
+    <path d="M 618 365 L 830 334"/>
+    <path d="M 618 385 Q 720 400 830 399"/>
+    <path d="M 618 405 Q 720 440 830 464"/>
+  </g>
+
+  <!-- ============ DATO LATERAL (BADGE) ============ -->
+  <g>
+    <rect x="370" y="565" width="310" height="60" rx="6" fill="#f8f9fa" stroke="#ecf0f1" stroke-width="1"/>
+    <text x="525" y="588" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="400" letter-spacing="1">DEL ECOSISTEMA</text>
+    <text x="525" y="612" text-anchor="middle" fill="#e74c3c" font-size="18" font-weight="700">de 1.200 servidores a más de 9.400</text>
+  </g>
+  <text x="525" y="650" text-anchor="middle" fill="#95a5a6" font-size="12" font-weight="300" font-style="italic">Crecimiento del registro público de MCP entre Q1 2025 y abril 2026</text>
+
+  <!-- Atribución -->
+  <text x="525" y="685" text-anchor="middle" fill="#95a5a6" font-size="11" font-weight="300" font-style="italic">Protocolo propuesto por Anthropic en noviembre 2024 · estándar bajo la Linux Foundation desde diciembre 2025</text>
+</svg>

@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 700" font-family="Helvetica Neue, Arial, sans-serif">
+  <!-- Construimos el diagrama del loop agéntico básico -->
+
+  <!-- Definimos un marcador de flecha que se orienta automáticamente con la tangente del path -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#95a5a6"/>
+    </marker>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="1050" height="700" fill="#ffffff"/>
+
+  <!-- ============ TÍTULO ============ -->
+  <text x="525" y="60" text-anchor="middle" fill="#34495e" font-size="28" font-weight="600">¿Qué es realmente un agente?</text>
+  <text x="525" y="92" text-anchor="middle" fill="#7f8c8d" font-size="16" font-weight="300" font-style="italic">Un loop de generar, actuar, observar, adaptar</text>
+
+  <!-- ============ NODO CENTRAL: LLM ============ -->
+  <g>
+    <circle cx="525" cy="380" r="80" fill="#ffffff" stroke="#e74c3c" stroke-width="3"/>
+    <circle cx="525" cy="380" r="64" fill="#e74c3c"/>
+    <text x="525" y="378" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="700">LLM</text>
+    <text x="525" y="402" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="400" letter-spacing="1.5">EL CEREBRO</text>
+  </g>
+
+  <!-- ============ NODO 1: PLAN (arriba) ============ -->
+  <g>
+    <circle cx="525" cy="180" r="58" fill="#ffffff" stroke="#2c3e50" stroke-width="2"/>
+    <text x="525" y="173" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="600">Plan</text>
+    <text x="525" y="195" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="300" font-style="italic">¿qué hago?</text>
+  </g>
+
+  <!-- ============ NODO 2: ACT (derecha) ============ -->
+  <g>
+    <circle cx="800" cy="380" r="58" fill="#ffffff" stroke="#3498db" stroke-width="2"/>
+    <text x="800" y="373" text-anchor="middle" fill="#34495e" font-size="16" font-weight="600">Act</text>
+    <text x="800" y="395" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="300" font-style="italic">uso una tool</text>
+  </g>
+
+  <!-- ============ NODO 3: OBSERVE (abajo) ============ -->
+  <g>
+    <circle cx="525" cy="580" r="58" fill="#ffffff" stroke="#16a085" stroke-width="2"/>
+    <text x="525" y="573" text-anchor="middle" fill="#16a085" font-size="16" font-weight="600">Observe</text>
+    <text x="525" y="595" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="300" font-style="italic">¿qué pasó?</text>
+  </g>
+
+  <!-- ============ NODO 4: REFLECT (izquierda) ============ -->
+  <g>
+    <circle cx="250" cy="380" r="58" fill="#ffffff" stroke="#2c3e50" stroke-width="2"/>
+    <text x="250" y="373" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="600">Reflect</text>
+    <text x="250" y="395" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="300" font-style="italic">¿qué aprendí?</text>
+  </g>
+
+  <!-- ============ FLECHAS CIRCULARES EN SENTIDO HORARIO ============ -->
+  <!-- Cada path sale del borde de un nodo y llega al borde del siguiente. El marcador 'arrow' orienta la punta tangente al final del path. -->
+  <g fill="none" stroke="#95a5a6" stroke-width="2.5" marker-end="url(#arrow)">
+    <!-- Plan (arriba) → Act (derecha): curva por el NE -->
+    <path d="M 572 214 Q 715 235 753 346"/>
+
+    <!-- Act (derecha) → Observe (abajo): curva por el SE -->
+    <path d="M 753 414 Q 715 525 572 546"/>
+
+    <!-- Observe (abajo) → Reflect (izquierda): curva por el SO -->
+    <path d="M 478 546 Q 335 525 297 414"/>
+
+    <!-- Reflect (izquierda) → Plan (arriba): curva por el NO -->
+    <path d="M 297 346 Q 335 235 478 214"/>
+  </g>
+
+  <!-- ============ HERRAMIENTAS EXTERNAS (DERECHA EXTREMA) ============ -->
+  <g>
+    <text x="930" y="290" text-anchor="middle" fill="#7f8c8d" font-size="11" font-weight="400" letter-spacing="1.5">TOOLS</text>
+    <rect x="880" y="305" width="100" height="32" rx="4" fill="#ffffff" stroke="#3498db" stroke-width="1.5"/>
+    <text x="930" y="325" text-anchor="middle" fill="#34495e" font-size="13" font-weight="400">search</text>
+
+    <rect x="880" y="345" width="100" height="32" rx="4" fill="#ffffff" stroke="#3498db" stroke-width="1.5"/>
+    <text x="930" y="365" text-anchor="middle" fill="#34495e" font-size="13" font-weight="400">read file</text>
+
+    <rect x="880" y="385" width="100" height="32" rx="4" fill="#ffffff" stroke="#3498db" stroke-width="1.5"/>
+    <text x="930" y="405" text-anchor="middle" fill="#34495e" font-size="13" font-weight="400">execute</text>
+
+    <rect x="880" y="425" width="100" height="32" rx="4" fill="#ffffff" stroke="#3498db" stroke-width="1.5"/>
+    <text x="930" y="445" text-anchor="middle" fill="#34495e" font-size="13" font-weight="400">API call</text>
+
+    <!-- Línea conectora desde Act -->
+    <line x1="858" y1="380" x2="880" y2="380" stroke="#bdc3c7" stroke-width="1.5" stroke-dasharray="3,3"/>
+  </g>
+
+  <!-- ============ ENTRADA HUMANA (IZQUIERDA EXTREMA) ============ -->
+  <g>
+    <text x="120" y="290" text-anchor="middle" fill="#7f8c8d" font-size="11" font-weight="400" letter-spacing="1.5">HUMANO</text>
+    <rect x="60" y="305" width="120" height="50" rx="4" fill="#ffffff" stroke="#2c3e50" stroke-width="1.5"/>
+    <text x="120" y="325" text-anchor="middle" fill="#34495e" font-size="13" font-weight="400">objetivo,</text>
+    <text x="120" y="343" text-anchor="middle" fill="#34495e" font-size="13" font-weight="400">contexto</text>
+
+    <rect x="60" y="365" width="120" height="50" rx="4" fill="#ffffff" stroke="#2c3e50" stroke-width="1.5"/>
+    <text x="120" y="385" text-anchor="middle" fill="#34495e" font-size="13" font-weight="400">revisión,</text>
+    <text x="120" y="403" text-anchor="middle" fill="#34495e" font-size="13" font-weight="400">aprobación</text>
+
+    <!-- Línea conectora hacia Reflect -->
+    <line x1="180" y1="380" x2="192" y2="380" stroke="#bdc3c7" stroke-width="1.5" stroke-dasharray="3,3"/>
+  </g>
+
+  <!-- ============ CALLOUT: INTELIGENCIA IRREGULAR ============ -->
+  <g>
+    <rect x="280" y="635" width="490" height="40" rx="4" fill="#f8f9fa" stroke="#ecf0f1" stroke-width="1"/>
+    <text x="525" y="660" text-anchor="middle" fill="#34495e" font-size="13" font-weight="400">
+      <tspan font-style="italic" fill="#7f8c8d">inteligencia irregular:</tspan>
+      <tspan font-weight="500" fill="#34495e"> medalla de oro en IMO,</tspan>
+      <tspan font-weight="500" fill="#e74c3c"> 50,1%</tspan>
+      <tspan fill="#34495e"> leyendo un reloj analógico</tspan>
+    </text>
+  </g>
+
+  <!-- Atribución -->
+  <text x="525" y="690" text-anchor="middle" fill="#95a5a6" font-size="11" font-weight="300" font-style="italic">Stanford HAI · AI Index Report 2026 · capítulo 2</text>
+</svg>

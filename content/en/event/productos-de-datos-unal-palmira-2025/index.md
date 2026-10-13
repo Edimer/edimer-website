@@ -24,7 +24,7 @@ image:
   focal_point: Center
   preview_only: false
 links: []
-url_slides: "https://edimer.quarto.pub/productos-de-datos-2025/"
+url_slides: "/slides/productos-de-datos-unal-palmira-2025/index.html"
 url_code: ""
 url_pdf: ""
 url_video: ""

@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 700" font-family="Helvetica Neue, Arial, sans-serif">
+  <!-- Construimos la línea de tiempo de hitos clave entre noviembre 2024 y mayo 2026 -->
+
+  <!-- Fondo -->
+  <rect width="1050" height="700" fill="#ffffff"/>
+
+  <!-- ============ TÍTULO ============ -->
+  <text x="525" y="60" text-anchor="middle" fill="#34495e" font-size="28" font-weight="600">El año vertiginoso</text>
+  <text x="525" y="92" text-anchor="middle" fill="#7f8c8d" font-size="16" font-weight="300" font-style="italic">Hitos entre noviembre 2024 y mayo 2026</text>
+
+  <!-- ============ LÍNEA HORIZONTAL DEL TIEMPO ============ -->
+  <line x1="80" y1="400" x2="970" y2="400" stroke="#34495e" stroke-width="2.5"/>
+
+  <!-- Etiquetas de inicio y fin del riel -->
+  <text x="80" y="430" text-anchor="middle" fill="#bdc3c7" font-size="11" letter-spacing="1">2024</text>
+  <text x="970" y="430" text-anchor="middle" fill="#bdc3c7" font-size="11" letter-spacing="1">2026</text>
+
+  <!-- ============ HITO 1: NOV 2024 — MCP (ARRIBA) ============ -->
+  <g>
+    <line x1="80" y1="395" x2="80" y2="345" stroke="#bdc3c7" stroke-width="1.5"/>
+    <circle cx="80" cy="400" r="10" fill="#ffffff" stroke="#3498db" stroke-width="2.5"/>
+    <circle cx="80" cy="400" r="5" fill="#3498db"/>
+    <text x="80" y="330" text-anchor="middle" fill="#e74c3c" font-size="13" font-weight="600">Nov 2024</text>
+    <text x="80" y="305" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">Anthropic</text>
+    <text x="80" y="287" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">propone MCP</text>
+  </g>
+
+  <!-- ============ HITO 2: FEB 2025 — CLAUDE CODE (ABAJO) ============ -->
+  <g>
+    <line x1="207" y1="405" x2="207" y2="455" stroke="#bdc3c7" stroke-width="1.5"/>
+    <circle cx="207" cy="400" r="10" fill="#ffffff" stroke="#3498db" stroke-width="2.5"/>
+    <circle cx="207" cy="400" r="5" fill="#3498db"/>
+    <text x="207" y="475" text-anchor="middle" fill="#e74c3c" font-size="13" font-weight="600">Feb 2025</text>
+    <text x="207" y="498" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">Claude Code</text>
+    <text x="207" y="516" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">(Anthropic)</text>
+  </g>
+
+  <!-- ============ HITO 3: JUN 2025 — KARPATHY (ARRIBA) ============ -->
+  <g>
+    <line x1="334" y1="395" x2="334" y2="345" stroke="#bdc3c7" stroke-width="1.5"/>
+    <circle cx="334" cy="400" r="10" fill="#ffffff" stroke="#3498db" stroke-width="2.5"/>
+    <circle cx="334" cy="400" r="5" fill="#3498db"/>
+    <text x="334" y="330" text-anchor="middle" fill="#e74c3c" font-size="13" font-weight="600">Jun 2025</text>
+    <text x="334" y="305" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">Karpathy:</text>
+    <text x="334" y="287" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">software 3.0</text>
+  </g>
+
+  <!-- ============ HITO 4: SEP 2025 — CLAUDE AGENT SDK (ABAJO) ============ -->
+  <g>
+    <line x1="461" y1="405" x2="461" y2="455" stroke="#bdc3c7" stroke-width="1.5"/>
+    <circle cx="461" cy="400" r="10" fill="#ffffff" stroke="#3498db" stroke-width="2.5"/>
+    <circle cx="461" cy="400" r="5" fill="#3498db"/>
+    <text x="461" y="475" text-anchor="middle" fill="#e74c3c" font-size="13" font-weight="600">Sep 2025</text>
+    <text x="461" y="498" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">Claude Agent SDK</text>
+    <text x="461" y="516" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">+ Sonnet 4.5</text>
+  </g>
+
+  <!-- ============ HITO 5: NOV 2025 — OPENCLAW (ARRIBA) ============ -->
+  <g>
+    <line x1="588" y1="395" x2="588" y2="345" stroke="#bdc3c7" stroke-width="1.5"/>
+    <circle cx="588" cy="400" r="10" fill="#ffffff" stroke="#3498db" stroke-width="2.5"/>
+    <circle cx="588" cy="400" r="5" fill="#3498db"/>
+    <text x="588" y="330" text-anchor="middle" fill="#e74c3c" font-size="13" font-weight="600">Nov 2025</text>
+    <text x="588" y="305" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">OpenClaw</text>
+    <text x="588" y="287" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">(Steinberger)</text>
+  </g>
+
+  <!-- ============ HITO 6: DIC 2025 — SKILLS + MCP STD (ABAJO) ============ -->
+  <g>
+    <line x1="715" y1="405" x2="715" y2="455" stroke="#bdc3c7" stroke-width="1.5"/>
+    <circle cx="715" cy="400" r="10" fill="#ffffff" stroke="#3498db" stroke-width="2.5"/>
+    <circle cx="715" cy="400" r="5" fill="#3498db"/>
+    <text x="715" y="475" text-anchor="middle" fill="#e74c3c" font-size="13" font-weight="600">Dic 2025</text>
+    <text x="715" y="498" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">Skills (Anthropic)</text>
+    <text x="715" y="516" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">MCP → Linux Foundation</text>
+  </g>
+
+  <!-- ============ HITO 7: ABR 2026 — GEMMA 4 + AI INDEX (ARRIBA) ============ -->
+  <g>
+    <line x1="842" y1="395" x2="842" y2="345" stroke="#bdc3c7" stroke-width="1.5"/>
+    <circle cx="842" cy="400" r="10" fill="#ffffff" stroke="#3498db" stroke-width="2.5"/>
+    <circle cx="842" cy="400" r="5" fill="#3498db"/>
+    <text x="842" y="330" text-anchor="middle" fill="#e74c3c" font-size="13" font-weight="600">Abr 2026</text>
+    <text x="842" y="305" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">Gemma 4 (Google)</text>
+    <text x="842" y="287" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">AI Index 2026</text>
+  </g>
+
+  <!-- ============ HITO 8: MAY 2026 — HOY (ABAJO, DESTACADO) ============ -->
+  <g>
+    <line x1="970" y1="405" x2="970" y2="455" stroke="#e74c3c" stroke-width="2"/>
+    <circle cx="970" cy="400" r="14" fill="#ffffff" stroke="#e74c3c" stroke-width="3"/>
+    <circle cx="970" cy="400" r="8" fill="#e74c3c"/>
+    <!-- Badge HOY -->
+    <rect x="935" y="467" width="70" height="28" rx="14" fill="#e74c3c"/>
+    <text x="970" y="486" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700" letter-spacing="1.5">HOY</text>
+    <text x="970" y="513" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">esta charla</text>
+    <text x="970" y="530" text-anchor="middle" fill="#34495e" font-size="12" font-weight="500">May 2026</text>
+  </g>
+
+  <!-- ============ MENSAJE AL PIE ============ -->
+  <g>
+    <rect x="150" y="600" width="750" height="50" rx="6" fill="#f8f9fa" stroke="#ecf0f1" stroke-width="1"/>
+    <text x="525" y="624" text-anchor="middle" fill="#34495e" font-size="14" font-weight="400">
+      <tspan fill="#7f8c8d" font-style="italic">en 18 meses pasamos de </tspan>
+      <tspan fill="#e74c3c" font-weight="600">"prompts en una caja"</tspan>
+      <tspan fill="#7f8c8d" font-style="italic"> a </tspan>
+      <tspan fill="#16a085" font-weight="600">"agentes conectados a todo"</tspan>
+    </text>
+  </g>
+
+  <!-- Atribución -->
+  <text x="525" y="685" text-anchor="middle" fill="#95a5a6" font-size="11" font-weight="300" font-style="italic">fuentes: anuncios oficiales de Anthropic, Google, Linux Foundation, Stanford HAI, GitHub</text>
+</svg>

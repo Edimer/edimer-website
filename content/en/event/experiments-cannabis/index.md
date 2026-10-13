@@ -24,7 +24,7 @@ image:
   focal_point: Center
   preview_only: false
 links: []
-url_slides: "https://edimer.github.io/talks/Cannabis-Statistics-Palmira/Cannabis-Statistics-Palmira.html#1"
+url_slides: "/slides/experiments-cannabis/index.html"
 url_code: "https://github.com/Edimer/edimer.github.io/tree/master/talks/Cannabis-Statistics-Palmira"
 url_pdf: ""
 url_video: ""

@@ -5,14 +5,15 @@ Uso típico (desde la raíz del sitio):
     python scripts/nueva_charla.py D:/Github/charlas-eventos/charla-unal-palmira-mayo-2026
 
 Qué hace:
-  1. Lee el YAML del .qmd/.Rmd principal (title, subtitle, date) y la URL de
-     quarto.pub desde _publish.yml.
+  1. Lee el YAML del .qmd/.Rmd principal (title, subtitle, date) y, si existe, la
+     URL de quarto.pub desde _publish.yml.
   2. Crea content/es/event/<slug>/index.md y content/en/event/<slug>/index.md
      con el mismo formato del resto de charlas (campos en inglés marcados con TODO).
   3. Copia una imagen de portada como featured.<ext> en ambos bundles.
-  4. Con --alojar, copia el HTML renderizado y sus recursos locales a
-     static/slides/<slug>/ y usa esa ruta como url_slides (útil cuando la charla
-     no está publicada en quarto.pub).
+  4. Aloja las slides en el propio sitio (static/slides/<slug>/) y usa esa ruta como
+     url_slides: copia el HTML renderizado y sus recursos locales o, si no está
+     renderizado, descarga la versión publicada en quarto.pub. Así las charlas no
+     dependen de servicios externos (quarto.pub deja de publicar el 31/12/2026).
 
 Opciones:
   --slug SLUG          slug de la URL (/talk/SLUG/). Por defecto, el nombre de la carpeta
@@ -24,7 +25,7 @@ Opciones:
   --fecha AAAA-MM-DD   fecha de la charla (por defecto la del YAML; si es "today",
                        se estima desde el HTML renderizado y se avisa).
   --ciudad TEXTO / --region TEXTO
-  --alojar             copiar las slides renderizadas a static/slides/<slug>/.
+  --externo            no alojar: enlazar directamente la URL de quarto.pub.
   --solo-alojar        solo copiar las slides (no crea ni toca los index.md).
   --forzar             sobrescribir index.md existentes.
 
@@ -38,6 +39,9 @@ import re
 import shutil
 import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from respaldar_slides import guardar_html, localizar_externos, optimizar_imagenes, respaldar  # noqa: E402
 
 try:
     import yaml
@@ -123,13 +127,19 @@ REF_LOCAL = re.compile(
 )
 
 
+def ruta_larga(ruta):
+    """En Windows, el prefijo \\\\?\\ evita el límite de 260 caracteres en las librerías de Quarto."""
+    ruta = str(Path(ruta).resolve())
+    return "\\\\?\\" + ruta if sys.platform == "win32" and not ruta.startswith("\\\\") else ruta
+
+
 def alojar_slides(html, slug):
     """Copia el HTML renderizado y los recursos locales que referencia a static/slides/<slug>/."""
     html = Path(html)
     destino = SITIO / "static" / "slides" / slug
     destino.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(html, destino / "index.html")
-    texto = html.read_text(encoding="utf-8", errors="ignore")
+    texto = html.read_bytes().decode("utf-8", errors="ignore")
+    guardar_html(localizar_externos(texto, destino), destino / "index.html")
     copiados = set()
     for m in REF_LOCAL.finditer(texto):
         ref = next(g for g in m.groups() if g)
@@ -140,7 +150,7 @@ def alojar_slides(html, slug):
         if partes and (partes[0] in ("libs",) or partes[0].endswith("_files")):
             raiz = html.parent / partes[0]
             if partes[0] not in copiados and raiz.is_dir():
-                shutil.copytree(raiz, destino / partes[0], dirs_exist_ok=True)
+                shutil.copytree(ruta_larga(raiz), ruta_larga(destino / partes[0]), dirs_exist_ok=True)
                 copiados.add(partes[0])
             continue
         archivo = html.parent / ref
@@ -207,7 +217,7 @@ def main():
     p.add_argument("--ciudad", default="")
     p.add_argument("--region", default="")
     p.add_argument("--fecha")
-    p.add_argument("--alojar", action="store_true")
+    p.add_argument("--externo", action="store_true")
     p.add_argument("--solo-alojar", action="store_true")
     p.add_argument("--forzar", action="store_true")
     a = p.parse_args()
@@ -218,6 +228,7 @@ def main():
 
     if a.solo_alojar:
         print(alojar_slides(fuente.with_suffix(".html"), slug))
+        optimizar_imagenes(SITIO / "static" / "slides" / slug)
         return
 
     meta = leer_yaml_frontmatter(fuente)
@@ -237,15 +248,18 @@ def main():
         footer = ""
     evento = a.evento or re.sub(r"\s*[|·].*$", "", footer) or "TODO evento"
 
-    url_slides = url_quarto_pub(carpeta, fuente)
-    if re.search(r"[()\s]", url_slides):
-        print("Aviso: la URL de las slides tiene paréntesis o espacios; Hugo los codifica y quarto.pub "
-              "puede responder 404. Agrega una redirección /go/<nombre> en static/_redirects y úsala en url_slides.")
-    if a.alojar or not url_slides:
-        if fuente.with_suffix(".html").exists():
-            url_slides = alojar_slides(fuente.with_suffix(".html"), slug)
-        else:
-            print("Aviso: no hay quarto.pub ni HTML renderizado; url_slides queda vacío.")
+    url_publicada = url_quarto_pub(carpeta, fuente)
+    html = fuente.with_suffix(".html")
+    if a.externo and url_publicada:
+        url_slides = url_publicada
+    elif html.exists():
+        url_slides = alojar_slides(html, slug)
+        optimizar_imagenes(SITIO / "static" / "slides" / slug)
+    elif url_publicada:
+        url_slides = respaldar(url_publicada, slug)
+    else:
+        url_slides = ""
+        print("Aviso: no hay HTML renderizado ni URL publicada; renderiza con `quarto render` o completa url_slides.")
 
     bundles = []
     for idioma in ("es", "en"):

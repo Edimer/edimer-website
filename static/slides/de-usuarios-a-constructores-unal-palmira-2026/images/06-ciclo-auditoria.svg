@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 700" font-family="Helvetica Neue, Arial, sans-serif">
+  <!-- Construimos el diagrama central de la charla: dos ciclos en paralelo, generación rápida y auditoría humana sincronizada -->
+
+  <!-- Definimos dos marcadores de flecha, uno para cada ciclo, que se orientan automáticamente con la tangente del path -->
+  <defs>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e74c3c" opacity="0.7"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a085" opacity="0.7"/>
+    </marker>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="1050" height="700" fill="#ffffff"/>
+
+  <!-- ============ TÍTULO ============ -->
+  <text x="525" y="55" text-anchor="middle" fill="#34495e" font-size="28" font-weight="600">Acelerar la generación obliga a sincronizar la auditoría</text>
+  <text x="525" y="86" text-anchor="middle" fill="#7f8c8d" font-size="15" font-weight="300" font-style="italic">Dos ciclos, una sola disciplina</text>
+
+  <!-- ============ CICLO IZQUIERDO: GENERACIÓN (rápido) ============ -->
+  <g>
+    <!-- Etiqueta del ciclo -->
+    <rect x="120" y="125" width="240" height="32" rx="16" fill="#e74c3c"/>
+    <text x="240" y="146" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="600" letter-spacing="1.5">CICLO DE GENERACIÓN</text>
+
+    <!-- Sub-etiqueta velocidad -->
+    <text x="240" y="180" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="400" font-style="italic">rápido · automatizado · barato</text>
+
+    <!-- Anillo conceptual -->
+    <circle cx="240" cy="380" r="140" fill="none" stroke="#e74c3c" stroke-width="2" stroke-dasharray="6,4" opacity="0.4"/>
+
+    <!-- Nodo 1: PROMPT (arriba) -->
+    <g>
+      <circle cx="240" cy="240" r="44" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+      <text x="240" y="237" text-anchor="middle" fill="#34495e" font-size="13" font-weight="600">Prompt</text>
+      <text x="240" y="254" text-anchor="middle" fill="#7f8c8d" font-size="10" font-style="italic">idea</text>
+    </g>
+
+    <!-- Nodo 2: AGENTE (derecha) -->
+    <g>
+      <circle cx="380" cy="380" r="44" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+      <text x="380" y="377" text-anchor="middle" fill="#34495e" font-size="13" font-weight="600">Agente</text>
+      <text x="380" y="394" text-anchor="middle" fill="#7f8c8d" font-size="10" font-style="italic">ejecuta</text>
+    </g>
+
+    <!-- Nodo 3: ARTEFACTO (abajo) -->
+    <g>
+      <circle cx="240" cy="520" r="44" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+      <text x="240" y="517" text-anchor="middle" fill="#34495e" font-size="13" font-weight="600">Artefacto</text>
+      <text x="240" y="534" text-anchor="middle" fill="#7f8c8d" font-size="10" font-style="italic">salida</text>
+    </g>
+
+    <!-- Nodo 4: ITERACIÓN (izquierda) -->
+    <g>
+      <circle cx="100" cy="380" r="44" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+      <text x="100" y="377" text-anchor="middle" fill="#34495e" font-size="13" font-weight="600">Iterar</text>
+      <text x="100" y="394" text-anchor="middle" fill="#7f8c8d" font-size="10" font-style="italic">refinar</text>
+    </g>
+
+    <!-- Flechas circulares en sentido horario, con marker que se orienta automáticamente -->
+    <g fill="none" stroke="#e74c3c" stroke-width="2" opacity="0.7" marker-end="url(#arrow-red)">
+      <!-- Prompt → Agente (SE) -->
+      <path d="M 271 271 Q 340 290 349 349"/>
+      <!-- Agente → Artefacto (SO) -->
+      <path d="M 349 411 Q 350 470 271 489"/>
+      <!-- Artefacto → Iterar (NO) -->
+      <path d="M 209 489 Q 130 470 131 411"/>
+      <!-- Iterar → Prompt (NE) -->
+      <path d="M 131 349 Q 130 290 209 271"/>
+    </g>
+  </g>
+
+  <!-- ============ CICLO DERECHO: AUDITORÍA (humano) ============ -->
+  <g>
+    <!-- Etiqueta del ciclo -->
+    <rect x="690" y="125" width="240" height="32" rx="16" fill="#16a085"/>
+    <text x="810" y="146" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="600" letter-spacing="1.5">CICLO DE AUDITORÍA</text>
+
+    <!-- Sub-etiqueta -->
+    <text x="810" y="180" text-anchor="middle" fill="#7f8c8d" font-size="12" font-weight="400" font-style="italic">lento · humano · costoso (¡pero indispensable!)</text>
+
+    <!-- Anillo conceptual -->
+    <circle cx="810" cy="380" r="140" fill="none" stroke="#16a085" stroke-width="2" stroke-dasharray="6,4" opacity="0.4"/>
+
+    <!-- Nodo 1: REVISAR (arriba) -->
+    <g>
+      <circle cx="810" cy="240" r="44" fill="#ffffff" stroke="#16a085" stroke-width="2"/>
+      <text x="810" y="237" text-anchor="middle" fill="#34495e" font-size="13" font-weight="600">Revisar</text>
+      <text x="810" y="254" text-anchor="middle" fill="#7f8c8d" font-size="10" font-style="italic">leer y entender</text>
+    </g>
+
+    <!-- Nodo 2: PROBAR (derecha) -->
+    <g>
+      <circle cx="950" cy="380" r="44" fill="#ffffff" stroke="#16a085" stroke-width="2"/>
+      <text x="950" y="377" text-anchor="middle" fill="#34495e" font-size="13" font-weight="600">Probar</text>
+      <text x="950" y="394" text-anchor="middle" fill="#7f8c8d" font-size="10" font-style="italic">verificar</text>
+    </g>
+
+    <!-- Nodo 3: APROBAR (abajo) -->
+    <g>
+      <circle cx="810" cy="520" r="44" fill="#ffffff" stroke="#16a085" stroke-width="2"/>
+      <text x="810" y="517" text-anchor="middle" fill="#34495e" font-size="13" font-weight="600">Aprobar</text>
+      <text x="810" y="534" text-anchor="middle" fill="#7f8c8d" font-size="10" font-style="italic">o rechazar</text>
+    </g>
+
+    <!-- Nodo 4: DOCUMENTAR (izquierda) -->
+    <g>
+      <circle cx="670" cy="380" r="44" fill="#ffffff" stroke="#16a085" stroke-width="2"/>
+      <text x="670" y="377" text-anchor="middle" fill="#34495e" font-size="13" font-weight="600">Documentar</text>
+      <text x="670" y="394" text-anchor="middle" fill="#7f8c8d" font-size="10" font-style="italic">trazabilidad</text>
+    </g>
+
+    <!-- Flechas circulares en sentido horario, con marker que se orienta automáticamente -->
+    <g fill="none" stroke="#16a085" stroke-width="2" opacity="0.7" marker-end="url(#arrow-green)">
+      <!-- Revisar → Probar (SE) -->
+      <path d="M 841 271 Q 920 290 919 349"/>
+      <!-- Probar → Aprobar (SO) -->
+      <path d="M 919 411 Q 920 470 841 489"/>
+      <!-- Aprobar → Documentar (NO) -->
+      <path d="M 779 489 Q 700 470 701 411"/>
+      <!-- Documentar → Revisar (NE) -->
+      <path d="M 701 349 Q 700 290 779 271"/>
+    </g>
+  </g>
+
+  <!-- ============ NODO CENTRAL: HUMANOS SINCRONIZADOS ============ -->
+  <g>
+    <!-- Caja central conectora -->
+    <rect x="455" y="340" width="140" height="80" rx="8" fill="#2c3e50"/>
+    <text x="525" y="368" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="600">Humanos</text>
+    <text x="525" y="388" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="600">sincronizados</text>
+    <text x="525" y="408" text-anchor="middle" fill="#bdc3c7" font-size="11" font-style="italic">equipo, no individuo</text>
+
+    <!-- Conexiones laterales al ciclo izquierdo y derecho -->
+    <line x1="424" y1="380" x2="455" y2="380" stroke="#34495e" stroke-width="2"/>
+    <line x1="595" y1="380" x2="626" y2="380" stroke="#34495e" stroke-width="2"/>
+  </g>
+
+  <!-- ============ MENSAJE INFERIOR ============ -->
+  <g>
+    <rect x="100" y="610" width="850" height="50" rx="6" fill="#f8f9fa" stroke="#ecf0f1" stroke-width="1"/>
+    <text x="525" y="635" text-anchor="middle" fill="#34495e" font-size="14" font-weight="400">
+      <tspan fill="#7f8c8d" font-style="italic">si acelero la generación </tspan>
+      <tspan fill="#e74c3c" font-weight="700">10x</tspan>
+      <tspan fill="#7f8c8d" font-style="italic"> y la auditoría sigue en </tspan>
+      <tspan fill="#16a085" font-weight="700">1x</tspan>
+      <tspan fill="#7f8c8d" font-style="italic">,</tspan>
+    </text>
+    <text x="525" y="654" text-anchor="middle" fill="#34495e" font-size="14" font-weight="500">no estoy avanzando — estoy acumulando deuda</text>
+  </g>
+
+</svg>

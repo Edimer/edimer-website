@@ -24,7 +24,7 @@ image:
   focal_point: Center
   preview_only: false
 links: []
-url_slides: "https://edimer.quarto.pub/charla-unalpalmira-mayo2026/"
+url_slides: "/slides/de-usuarios-a-constructores-unal-palmira-2026/index.html"
 url_code: ""
 url_pdf: ""
 url_video: ""

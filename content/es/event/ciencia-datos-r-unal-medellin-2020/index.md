@@ -25,7 +25,7 @@ image:
   preview_only: false
 links:
   - name: "Tablero (RPubs)"
-    url: "https://rpubs.com/Edimer/644810"
+    url: "/slides/dashboard-piscicultura-2020/index.html"
     icon_pack: fas
     icon: chart-bar
 url_slides: "/slides/ciencia-datos-r-unal-medellin-2020/index.html"

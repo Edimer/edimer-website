@@ -24,7 +24,7 @@ image:
   focal_point: Center
   preview_only: false
 links: []
-url_slides: "/go/datos-ia-toma-decisiones-2024"
+url_slides: "/slides/datos-ia-toma-decisiones-unal-palmira-2024/index.html"
 url_code: ""
 url_pdf: ""
 url_video: ""
