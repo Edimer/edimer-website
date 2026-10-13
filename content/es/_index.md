@@ -341,10 +341,6 @@ sections:
     - icon: envelope
       icon_pack: fa
       link: 
-      name: edimer.davidj@udea.edu.co
-    - icon: envelope
-      icon_pack: fa
-      link: 
       name: edimer.david@lovelytics.com  
     coordinates:
       latitude: "6.26210"
