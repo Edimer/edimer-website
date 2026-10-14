@@ -58,69 +58,69 @@ sections:
       date_end: ""
       date_start: "2021-10-04"
       description: |2-
-          Responsibilities include:
+          Responsabilidades:
 
-          * Data analysis
-          * Predictive modeling
-          * Deploying machine learning models
+          * Análisis de datos
+          * Modelado predictivo
+          * Despliegue de modelos de machine learning
       location: Medellín, Antioquia
-      title: Data Scientist
+      title: Científico de Datos
     - company: Universidad de Antioquia
       company_logo: 
       company_url: "https://www.udea.edu.co/wps/portal/udea/web/inicio/!ut/p/z1/hY7LDoIwEEW_xQVbOrSg4K5BYkDCIzERuzFgasEAJYDw-zbqxsTH7O7ccyaDGMoQa_OpEvlYyTavVT6y5SlKLc_ALoSxTzxInchKyNbH5oqgwz-AqRq-DAXlswdiOy42qAkh7AwLaOol0T52k02AX8CPGwFiopbF813aFsQWiPX8wnve67derctx7Ia1BhrM86wLKUXN9bNsNPiklHIYUfZOoq7J4GrVU0gXizthmbDl/dz/d5/L2dBISEvZ0FBIS9nQSEh/"
       date_end: "2025-12-01"
       date_start: "2020-07-01"
       description: |2-
-          Professor of statistics, experimental design and R programming language in animal experimentation.
+          Docente de estadística, diseño experimental y lenguaje de programación R en experimentación animal.
       location: Medellín, Antioquia
-      title: Professor
+      title: Docente
     - company: Grupo Éxito
       company_logo: 
       company_url: "https://www.grupoexito.com.co/es"
       date_end: "2021-10-04"
       date_start: "2021-07-19"
       description: |2-
-          Responsibilities include:
+          Responsabilidades:
 
-          * Data analysis
-          * Predictive modeling
-          * Evaluation of projects in digital analytics
+          * Análisis de datos
+          * Modelado predictivo
+          * Evaluación de proyectos de analítica digital
       location: Envigado, Antioquia
-      title: Data Analyst
+      title: Analista de Datos
     - company: Solla
       company_logo: 
       company_url: "https://www.solla.com/"
       date_end: "2021-07-19"
       date_start: "2019-05-01"
       description: |2-
-          Responsibilities include:
+          Responsabilidades:
 
-          * Design and statistical analysis of experiments
-          * Web application development with R
-          * Formulation of research projects
+          * Diseño y análisis estadístico de experimentos
+          * Desarrollo de aplicaciones web con R
+          * Formulación de proyectos de investigación
       location: Itagüi, Antioquia
-      title: R&D Assistant 
+      title: Asistente de I+D 
     - company: Universidad Nacional de Colombia, Medellín
       company_logo: 
       company_url: "https://medellin.unal.edu.co/"
       date_end: "2019-06-01"
       date_start: "2018-06-01"
       description: |2-
-          Professor of biostatistics and introduction to data analysis with R.
+          Docente de bioestadística e introducción al análisis de datos con R.
       location: Medellín, Antioquia 
-      title: Professor
+      title: Docente
     - company: Asimetrix
       company_logo: 
       company_url: "https://asimetrix.co/"
       date_end: "2019-05-01"
       date_start: "2016-07-01"
       description: |2-
-          Responsibilities include:
+          Responsabilidades:
 
-          * Statistical analysis of experimental and observational data
-          * Building reports with R
+          * Análisis estadístico de datos experimentales y observacionales
+          * Construcción de reportes con R
       location: Medellín, Antioquia
-      title: Statistical consultant   
+      title: Consultor estadístico   
     title: Experiencia
   design:
     columns: "1"
