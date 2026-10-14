@@ -18,3 +18,7 @@
 /en/talk/agentic-systems-with-artificial-intelligence-ai-emerging-and-disruptive-technologies/  /en/talk/sistemas-agenticos-ia-2025/  301!
 /en/talk/agentic-systems-with-artificial-intelligence-transforming-software-development-and-its-application-in-agriculture/  /en/talk/sistemas-agenticos-ia-agrosavia-2025/  301!
 
+
+# El CV vive una sola vez en /uploads/; Wowchemy antepone el idioma al enlace del perfil.
+/es/uploads/*  /uploads/:splat  200
+/en/uploads/*  /uploads/:splat  200

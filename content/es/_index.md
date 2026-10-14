@@ -242,7 +242,7 @@ sections:
     subtitle: La formación complementaria en la que he puesto mi interés está relacionada con la ciencia de datos, inteligencia artificial, modelado estadístico y programación con R y Python.
     title: Formación Complementaria
   design:
-    columns: "2"
+    columns: "1"
 - block: collection
   content:
     count: 5

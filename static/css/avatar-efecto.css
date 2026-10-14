@@ -1,0 +1,38 @@
+/* Efecto abstracto alrededor del avatar (bloque about.biography) */
+.avatar-efecto {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Lienzo decorativo: ocupa el ancho de la columna y un poco más arriba/abajo del avatar,
+   sin salirse lateralmente (no ensancha la página en móvil) */
+.avatar-efecto-canvas {
+  position: absolute;
+  top: -30px;
+  bottom: -24px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 54px);
+  z-index: 0;
+  pointer-events: none;
+  /* Difumina los bordes para que el efecto se disuelva suavemente */
+  -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 65%, transparent 100%);
+  mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 65%, transparent 100%);
+}
+
+/* El avatar siempre por encima del efecto */
+.avatar-efecto .avatar {
+  position: relative;
+  z-index: 1;
+}
+
+/* Intereses a todo el ancho (sin sección Educación): dos columnas desde 768px */
+@media (min-width: 768px) {
+  .intereses-ancho .ul-interests {
+    columns: 2;
+    column-gap: 2rem;
+  }
+  .intereses-ancho .ul-interests li {
+    break-inside: avoid;
+  }
+}

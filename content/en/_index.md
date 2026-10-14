@@ -242,7 +242,7 @@ sections:
     subtitle: The complementary education in which I have put my interest is related to data science, artificial intelligence, statistical modeling and programming with R and Python.
     title: Complementary education
   design:
-    columns: "2"
+    columns: "1"
 - block: collection
   content:
     count: 5

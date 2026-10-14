@@ -1,0 +1,66 @@
+{{/* Bloque Accomplishments (override del tema Wowchemy): cuadrícula de tarjetas agrupadas por año. */}}
+{{/* Base: themes/.../wowchemy-bootstrap/v5/layouts/partials/blocks/accomplishments.html */}}
+
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $columns := $block.design.columns | default "1" }}
+{{ $fmt := $block.content.date_format | default "Jan 2006" }}
+
+<div class="col-12 {{if eq $columns "2"}}col-lg-8{{end}}">
+  {{ with $block.content.text }}{{ . | emojify | $page.RenderString }}{{ end }}
+
+  {{ with $block.content.items }}
+  {{/* Orden: más reciente primero, por fecha de obtención (date_start), como el tema */}}
+  {{/* Contamos celdas (tarjetas + años) para que la última tarjeta llene la fila y no queden huecos */}}
+  {{ $items := sort . ".date_start" "desc" }}
+  {{ $anios := slice }}
+  {{ range $items }}{{ $anios = $anios | append ((time .date_start).Format "2006") }}{{ end }}
+  {{ $total := add (len $items) (len (uniq $anios)) }}
+  {{ $resto4 := mod $total 4 }}
+  {{ $spanLg := cond (gt $resto4 0) (sub 5 $resto4) 1 }}
+  {{ $spanMd := cond (gt (mod $total 2) 0) 2 1 }}
+  {{ $ultimo := sub (len $items) 1 }}
+  <div class="acc-grid">
+    {{ $prev := "" }}
+    {{ range $i, $item := $items }}{{ with $item }}
+      {{ $year := (time .date_start).Format "2006" }}
+      {{ if ne $year $prev }}
+        <div class="acc-year"><span>{{ $year }}</span></div>
+        {{ $prev = $year }}
+      {{ end }}
+      {{- $icon := .icon | default (replace (lower .organization) " " "_") }}
+      {{- $svg_icon := resources.Get (printf "media/icons/brands/%s.svg" $icon) -}}
+      <article class="acc-card{{ if eq $i $ultimo }} acc-span-lg-{{ $spanLg }} acc-span-md-{{ $spanMd }}{{ end }}">
+        <div class="acc-head">
+          {{- if $svg_icon }}
+            {{- with .organization_url }}<a href="{{.}}" target="_blank" rel="noopener" class="acc-logo">{{ else }}<span class="acc-logo">{{ end -}}
+            <img src="{{ $svg_icon.RelPermalink }}" width="36" height="36" alt="{{ .organization | plainify }}" loading="lazy">
+            {{- if .organization_url }}</a>{{ else }}</span>{{ end -}}
+          {{- end }}
+          <div class="acc-meta">
+            <div class="acc-org">
+              {{- with .organization_url }}<a href="{{.}}" target="_blank" rel="noopener">{{ end -}}
+              {{- .organization | markdownify | emojify -}}
+              {{- with .organization_url }}</a>{{ end -}}
+            </div>
+            <div class="acc-date">
+              {{- $ini := (time .date_start) | time.Format $fmt -}}
+              {{- $ini -}}
+              {{- with .date_end }}{{ $fin := (time .) | time.Format $fmt }}{{ if ne $fin $ini }} – {{ $fin }}{{ end }}{{ end -}}
+            </div>
+          </div>
+        </div>
+        <h3 class="acc-title">
+          {{- with .url }}<a href="{{.}}" target="_blank" rel="noopener">{{ end -}}
+          {{- .title | markdownify | emojify -}}
+          {{- with .url }}</a>{{ end -}}
+        </h3>
+        {{ with .description }}<div class="acc-desc">{{ . | markdownify | emojify }}</div>{{ end }}
+        {{ with .certificate_url }}
+          <a class="acc-cert" href="{{.}}" target="_blank" rel="noopener">{{ i18n "see_certificate" | default "See certificate" }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        {{ end }}
+      </article>
+    {{ end }}{{ end }}
+  </div>
+  {{ end }}
+</div>

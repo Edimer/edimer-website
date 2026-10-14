@@ -1,13 +1,5 @@
 ---
 bio: I am more of a friend of Salviati than of Simplicio, although I respect and admire Sagredo's neutral vision!
-education:
-  courses:
-  - course: Specialist in statistics
-    institution: Universidad Nacional, Colombia
-    year: 2017
-  - course: Zootechnician
-    institution: Universidad Nacional, Colombia
-    year: 2016
 name_pronunciation: Edimer David Jaramillo
 first_name: Edimer
 last_name: David Jaramillo
@@ -17,6 +9,8 @@ interests:
 - Machine learning - Deep learning
 - Agentic AI
 - Simulation
+- Complexity science
+- Emergent systems
 - Data storytelling
 - Bioinformatics
 - Geographic Information System
@@ -93,7 +87,7 @@ social:
   link: https://www.linkedin.com/in/edimer-david-jaramillo-94a510199/
 - icon: cv
   icon_pack: ai
-  link: uploads/cv_edimer.html
+  link: /uploads/cv_edimer.html
 - display:
     header: true
   icon: atom
@@ -105,5 +99,11 @@ status:
 superuser: true
 ---
 
-I am a Zootechnician and Statistics specialist, with a strong background in applying statistical methods and artificial intelligence techniques to solve problems in various knowledge areas. I have experience in university teaching, formulating research projects, and statistical consulting. I am passionate about extracting knowledge from data by implementing machine learning and artificial intelligence techniques, using programming languages such as *R* and *Python*. I am an active participant in Data Science competitions through platforms such as  [Kaggle](https://www.kaggle.com/), [Zindi (Africa)](https://zindi.africa/) and [DataSource (Latin America)](https://www.datasource.ai/).
+I studied animal science (zootecnia) at the Universidad Nacional de Colombia, Medellín campus. I like mathematics, especially probability theory, which is why I pursued graduate studies in statistics. I became interested in data science competitions and, for a while, I was an active participant on platforms such as [Kaggle](https://www.kaggle.com/), [Zindi (Africa)](https://zindi.africa/), [DataSource (Latin America)](https://www.datasource.ai/), among others.
+{style="text-align: justify;"}
+
+I am fascinated by ants and the complexity underlying them and other social insects; for that reason, for some years now I have been interested in complexity science and emergent systems. I enjoy building software, I have fun with computer simulations, and philosophy is a persistent passion.
+{style="text-align: justify;"}
+
+I work with data analysis, building solutions that include, among other things, machine learning (artificial intelligence) and a lot of statistics. I like agentic systems and the automation capabilities that emerge from all these technologies.
 {style="text-align: justify;"}

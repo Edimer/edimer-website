@@ -1,13 +1,5 @@
 ---
 bio: Soy más amigo de Salviati que de Simplicio, ¡aunque respeto y admiro la visión neutral de Sagredo!
-education:
-  courses:
-  - course: Especialista en estadística
-    institution: Universidad Nacional, Colombia
-    year: 2017
-  - course: Zootecnista
-    institution: Universidad Nacional, Colombia
-    year: 2016
 name_pronunciation: Edimer David Jaramillo
 first_name: Edimer
 last_name: David Jaramillo
@@ -17,6 +9,8 @@ interests:
 - Machine learning - Deep learning
 - IA Agéntica
 - Simulación
+- Ciencias de la complejidad
+- Sistemas emergentes
 - Data storytelling
 - Bioinformática
 - Sistema de Información Geográfica
@@ -93,7 +87,7 @@ social:
   link: https://www.linkedin.com/in/edimer-david-jaramillo-94a510199/
 - icon: cv
   icon_pack: ai
-  link: uploads/cv_edimer.html
+  link: /uploads/cv_edimer.html
 - display:
     header: true
   icon: atom
@@ -105,5 +99,11 @@ status:
 superuser: true
 ---
 
-Soy Zootecnista y Especialista en Estadística, con una sólida trayectoria en la aplicación de métodos estadísticos y técnicas de inteligencia artificial para resolver problemas en diversas áreas del conocimiento. Tengo experiencia en docencia universitaria, formulación de proyectos de investigación y consultoría estadística. Me apasiona la idea de extraer conocimiento de los datos mediante la implementación de técnicas de machine learning e inteligencia artificial, utilizando lenguajes de programación como *R* y *Python*. Soy un participante activo en competencias de Data Science a través de plataformas como [Kaggle](https://www.kaggle.com/), [Zindi (África)](https://zindi.africa/) y [DataSource (América Latina)](https://www.datasource.ai/).
+Estudié zootecnia en la Universidad Nacional de Colombia, sede Medellín. Me gustan las matemáticas y especialmente la teoría de la probabilidad; por esa razón llevé a cabo estudios de posgrado en el área de la estadística. Me interesé por las competencias en ciencia de datos y durante un tiempo fui un participante activo en plataformas como [Kaggle](https://www.kaggle.com/), [Zindi (África)](https://zindi.africa/), [DataSource (América Latina)](https://www.datasource.ai/), entre otras.
+{style="text-align: justify;"}
+
+Tengo una fascinación por las hormigas y la complejidad subyacente a este y otro tipo de insectos sociales; por esa razón, desde hace algunos años me interesan las ciencias de la complejidad y los sistemas emergentes. Disfruto crear software, me divierten las simulaciones computacionales y la filosofía es una pasión persistente.
+{style="text-align: justify;"}
+
+Trabajo con análisis de datos, construyo soluciones que incluyen, entre otras cosas, aprendizaje automático (inteligencia artificial) y mucha estadística. Me gustan los sistemas agénticos y la capacidad de automatización que emerge con todas estas tecnologías.
 {style="text-align: justify;"}
