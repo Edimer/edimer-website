@@ -123,7 +123,7 @@ sections:
       title: Statistical consultant   
     title: Experiencia
   design:
-    columns: "2"
+    columns: "1"
 - block: markdown
   content:
     text: |

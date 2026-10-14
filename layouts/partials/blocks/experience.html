@@ -1,0 +1,37 @@
+{{/* Bloque Experience (override del tema Wowchemy): camino en zigzag de lado a lado. */}}
+{{/* Base: themes/.../wowchemy-bootstrap/v5/layouts/partials/blocks/experience.html */}}
+{{/* Cada experiencia es un tramo a todo el ancho; el camino gira en curva alternando derecha e izquierda. */}}
+
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $fmt := $block.content.date_format | default "January 2006" }}
+
+<div class="col-12">
+  {{ with $block.content.text }}{{ . | emojify | $page.RenderString }}{{ end }}
+
+  {{ with $block.content.items }}
+  {{ $n := len . }}
+  {{/* Respetamos el orden escrito por el usuario, como el tema */}}
+  <div class="exp-camino">
+    {{ range $i, $item := . }}{{ with $item }}
+    <div class="exp-tramo {{ if modBool $i 2 }}curva-der{{ else }}curva-izq{{ end }}{{ if eq $i 0 }} primero{{ end }}{{ if eq $i (sub $n 1) }} ultimo{{ end }}">
+      <span class="exp-hito{{ if not .date_end }} actual{{ end }}" aria-hidden="true">{{ (time .date_start).Format "2006" }}</span>
+      <div class="exp-contenido">
+        <div class="exp-cabecera">
+          <div class="exp-cargo">{{ .title | markdownify | emojify }}</div>
+          <div class="exp-empresa">
+            {{- with .company_url }}<a href="{{.}}" target="_blank" rel="noopener">{{ end }}{{ .company | markdownify | emojify }}{{ with .company_url }}</a>{{ end -}}
+          </div>
+          <div class="exp-fechas">
+            {{ (time .date_start) | time.Format $fmt }} –
+            {{ with .date_end }}{{ (time .) | time.Format $fmt }}{{ else }}{{ i18n "present" | default "Present" }}{{ end }}
+            {{ with .location }}<span class="middot-divider"></span><span>{{ . }}</span>{{ end }}
+          </div>
+        </div>
+        {{ with .description }}<div class="exp-descripcion">{{ . | markdownify | emojify }}</div>{{ end }}
+      </div>
+    </div>
+    {{ end }}{{ end }}
+  </div>
+  {{ end }}
+</div>

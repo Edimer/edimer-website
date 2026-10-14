@@ -151,3 +151,111 @@ body.dark {
 @media (min-width: 576px) and (max-width: 991.98px) {
   .acc-span-md-2 { grid-column: span 2; }
 }
+
+/* Experiencia: camino en zigzag */
+// Cada tramo dibuja su curva lateral (::before) y la recta inferior (::after); los tramos
+// se solapan el grosor del trazo para que el camino sea continuo de lado a lado.
+$exp-r: 56px;   // radio de las curvas
+$exp-w: 4px;    // grosor del camino
+.exp-camino {
+  --exp-color: #{rgba($sta-primary, 0.55)};
+  margin-top: 1rem;
+  padding: 0 1.75rem; // espacio para que los hitos de las curvas no se corten
+}
+body.dark .exp-camino { --exp-color: #{rgba(lighten($sta-primary, 25%), 0.6)}; }
+
+.exp-tramo {
+  position: relative;
+  min-height: 2 * $exp-r + 16px;
+  padding: 2rem calc(#{$exp-r} + 1.75rem) 2rem 1.75rem;
+  & + & { margin-top: -$exp-w; }
+  &.curva-izq { padding: 2rem 1.75rem 2rem calc(#{$exp-r} + 1.75rem); }
+
+  // Curva: media "C" del alto del tramo
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: $exp-r;
+    border: $exp-w solid var(--exp-color);
+  }
+  &.curva-der::before { right: 0; border-left: 0; border-radius: 0 $exp-r $exp-r 0; }
+  &.curva-izq::before { left: 0; border-right: 0; border-radius: $exp-r 0 0 $exp-r; }
+
+  // Recta inferior entre esta curva y la siguiente
+  &::after {
+    content: "";
+    position: absolute;
+    left: $exp-r;
+    right: $exp-r;
+    bottom: 0;
+    border-bottom: $exp-w solid var(--exp-color);
+  }
+  // Inicio y final del camino: la recta llega hasta el borde
+  &.primero.curva-der { background: linear-gradient(var(--exp-color), var(--exp-color)) no-repeat left top / calc(100% - #{$exp-r}) $exp-w; }
+  &.primero.curva-izq { background: linear-gradient(var(--exp-color), var(--exp-color)) no-repeat right top / calc(100% - #{$exp-r}) $exp-w; }
+  &.ultimo.curva-der::after { left: 0; }
+  &.ultimo.curva-izq::after { right: 0; }
+}
+
+// Hito con el año de inicio, sobre la curva
+.exp-hito {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.3rem;
+  height: 3.3rem;
+  border-radius: 50%;
+  border: $exp-w solid var(--exp-color);
+  background: #fff;
+  color: $sta-primary;
+  font-weight: 700;
+  font-size: 0.85rem;
+  .curva-der & { left: calc(100% - #{$exp-w / 2}); }
+  .curva-izq & { left: $exp-w / 2; }
+  &.actual { background: $sta-primary; border-color: $sta-primary; color: #fff; box-shadow: 0 0 0 6px rgba($sta-primary, 0.15); }
+}
+body.dark .exp-hito { background: #1d2230; color: lighten($sta-primary, 28%); }
+body.dark .exp-hito.actual { background: lighten($sta-primary, 10%); color: #fff; }
+
+// Contenido: cabecera y descripción lado a lado para ocupar el ancho del tramo
+.exp-contenido {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+  gap: 0.5rem 2rem;
+  align-items: start;
+}
+.exp-cargo { font-size: 1.2rem; font-weight: 700; line-height: 1.3; }
+.exp-empresa { font-size: 1.05rem; font-weight: 600; }
+.exp-fechas { font-size: 0.9rem; opacity: 0.75; margin-top: 0.25rem; }
+.exp-descripcion {
+  font-size: 0.95rem;
+  p { margin-bottom: 0.35rem; }
+  ul { margin-bottom: 0; padding-left: 1.1rem; }
+}
+
+@media (max-width: 767.98px) {
+  .exp-contenido { grid-template-columns: 1fr; }
+}
+@media (max-width: 575.98px) {
+  $r: 28px;
+  .exp-tramo {
+    min-height: 2 * $r + 16px;
+    padding: 1.5rem calc(#{$r} + 0.9rem) 1.5rem 0.25rem;
+    &.curva-izq { padding: 1.5rem 0.25rem 1.5rem calc(#{$r} + 0.9rem); }
+    &::before { width: $r; }
+    &.curva-der::before { border-radius: 0 $r $r 0; }
+    &.curva-izq::before { border-radius: $r 0 0 $r; }
+    &::after { left: $r; right: $r; }
+    &.primero.curva-der { background-size: calc(100% - #{$r}) $exp-w; }
+    &.ultimo.curva-der::after { left: 0; }
+    &.ultimo.curva-izq::after { right: 0; }
+  }
+  .exp-camino { padding: 0 1.3rem; }
+  .exp-hito { width: 2.6rem; height: 2.6rem; font-size: 0.72rem; }
+}
